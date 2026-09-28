@@ -1,0 +1,1411 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unterlagenwerkstatt</title>
+<meta name="description" content="Lehr- und Schulungsunterlagen ordnen, Dopplungen finden und als Unterrichtseinheiten mit Dozentenversion, Handout und Präsentation ausgeben – offline im Browser.">
+<meta name="theme-color" content="#1f3440">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+:root{--ink:#1f3440;--ink2:#4c5f69;--paper:#f5f6f4;--card:#fff;--line:#d5dcdf;--soft:#eef1f2;--red:#b3261e;--redbg:#fbecea;--green:#2f6b4f;--greenbg:#e4f0e8;--amber:#855800;--amberbg:#fcf2da;--focus:#1b6fb5}
+*{box-sizing:border-box}
+html{scroll-padding-top:70px}
+body{margin:0;font:15px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:var(--paper)}
+header{background:var(--ink);color:#fff;padding:11px 18px;display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline;border-bottom:4px solid var(--red)}
+header h1{font-size:1.1rem;margin:0;font-weight:650}
+header .logo{width:30px;height:30px;align-self:center;border-radius:7px}
+header{align-items:center}
+header .sub{font-size:.82rem;opacity:.78}
+header #hdrStatus{margin-left:auto;font-size:.82rem;opacity:.9}
+.layout{display:grid;grid-template-columns:220px minmax(0,1fr)}
+nav{background:#e8ecee;border-right:1px solid var(--line);padding:12px 8px;position:sticky;top:0;align-self:start;min-height:100vh}
+nav button{display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;text-align:left;border:0;background:none;padding:9px 10px;border-radius:6px;font:inherit;color:var(--ink);cursor:pointer;margin-bottom:2px}
+nav button:hover{background:#dbe2e5}
+nav button[aria-current="page"]{background:var(--ink);color:#fff}
+.badge{font-size:.72rem;min-width:1.6em;text-align:center;border-radius:9px;padding:0 6px;background:rgba(0,0,0,.08)}
+.badge:empty{display:none}
+.badge.alert{background:var(--red);color:#fff}
+main{padding:18px 24px 80px;max-width:1180px;min-width:0}
+h2{font-size:1.35rem;margin:4px 0 12px}
+h3{font-size:1.05rem;margin:0 0 8px}
+h4{font-size:.95rem;margin:14px 0 6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px;margin:0 0 14px}
+.muted{color:var(--ink2)}.small{font-size:.84rem}
+label{display:block;font-size:.84rem;font-weight:600;margin:8px 0 3px}
+label.inline{display:inline-flex;align-items:center;gap:6px;margin:0;font-weight:500}
+input,select,textarea{font:inherit;color:inherit;padding:8px 9px;border:1px solid #b6c1c6;border-radius:6px;background:#fff;width:100%}
+label.inline select{width:auto;padding:4px 6px}
+input[type=checkbox],input[type=radio]{width:auto;accent-color:var(--ink)}
+textarea{min-height:90px;resize:vertical}
+textarea.tall{min-height:260px}
+textarea.mono{font-family:Consolas,"Cascadia Mono",monospace;font-size:.86rem}
+:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:4px 14px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:4px 14px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.headrow{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.btn{border:1px solid #b6c1c6;background:#fff;color:var(--ink);border-radius:6px;padding:7px 12px;font:inherit;font-size:.9rem;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--soft)}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn.primary:hover{background:#2c4655}
+.btn.ghost{border-color:transparent;background:none;padding:5px 8px}
+.btn.ghost:hover{background:var(--soft)}
+.btn.danger{color:var(--red)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.pill{display:inline-block;padding:1px 8px;border-radius:10px;background:var(--soft);font-size:.76rem;margin:0 2px;vertical-align:1px}
+.pill.red{background:var(--redbg);color:var(--red)}
+.pill.green{background:var(--greenbg);color:var(--green)}
+.pill.amber{background:var(--amberbg);color:var(--amber)}
+.item{display:flex;gap:10px;border-top:1px solid var(--line);padding:10px 0}
+.item:first-child{border-top:0}
+.item .grow{flex:1;min-width:0}
+.item.dublette,.item.archiviert{opacity:.72}
+.titleline b{overflow-wrap:anywhere}
+.sel{padding-top:2px}
+.snip{background:#fffbe8;border-left:3px solid #e6c200;padding:4px 8px;margin:6px 0;font-size:.86rem;overflow-wrap:anywhere}
+mark{background:#ffe066;padding:0 1px}
+pre.fulltext,.passage{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--soft);padding:10px;border-radius:6px;font-size:.84rem;max-height:420px;overflow:auto}
+.note{background:var(--amberbg);border:1px solid #ecd49a;border-radius:6px;padding:10px 12px;font-size:.9rem;margin-bottom:12px}
+.note.err{background:var(--redbg);border-color:#e7b3ae}
+.note.ok{background:var(--greenbg);border-color:#b7d6c3}
+.filters{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}
+.bulk{position:sticky;top:0;z-index:4;background:var(--ink);color:#fff;border-radius:6px;padding:8px 10px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.bulk select{width:auto;padding:4px 6px}
+.bulk .btn{padding:4px 9px}
+table.tbl{border-collapse:collapse;width:100%;font-size:.9rem}
+.tbl th,.tbl td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.tbl th{background:var(--soft);font-weight:600}
+.tbl td.num{text-align:right;font-variant-numeric:tabular-nums}
+.tbl tr.empty td{color:#98a5ab}
+.tbl a,.linkbtn{color:var(--ink);text-decoration:underline;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.scroll{overflow-x:auto}
+ol.flow{list-style:none;counter-reset:f;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+ol.flow li{counter-increment:f;border:1px solid var(--line);border-radius:8px;padding:10px 12px 10px 42px;position:relative;background:#fbfcfc}
+ol.flow li::before{content:counter(f);position:absolute;left:12px;top:10px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;font-size:.8rem;display:grid;place-items:center}
+ol.flow li.todo::before{background:var(--red)}
+ol.flow li.done::before{background:var(--green)}
+ol.flow b{display:block}
+.phases input,.phases textarea{padding:5px 6px;font-size:.88rem}
+.phases textarea{min-height:38px}
+.phases td{padding:4px}
+.phases .min{width:4.6em}
+.sum{font-weight:600}.sum.ok{color:var(--green)}.sum.warn{color:var(--red)}
+.checklist{max-height:260px;overflow:auto;border:1px solid var(--line);border-radius:6px;padding:6px 10px}
+.checklist label{font-weight:400;display:flex;gap:8px;align-items:flex-start;margin:4px 0}
+.editor{border:2px solid var(--ink)}
+.editor .section{border-top:1px solid var(--line);margin-top:14px;padding-top:6px}
+.help{font-size:.8rem;color:var(--ink2);margin:2px 0 0}
+details.menu{position:relative;display:inline-block}
+details.menu summary{list-style:none}
+details.menu summary::-webkit-details-marker{display:none}
+.menu-body{position:absolute;z-index:6;left:0;top:calc(100% + 4px);background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 6px 20px rgba(20,40,50,.18);padding:8px;min-width:250px;display:grid;gap:2px}
+.menu-body b{font-size:.78rem;color:var(--ink2);margin:6px 4px 2px}
+.menu-body .btn{text-align:left;border:0}
+.cmp-stats{display:flex;gap:18px;flex-wrap:wrap;margin:8px 0}
+.cmp-stats div{border-left:4px solid var(--line);padding-left:8px}
+.cmp-stats strong{font-size:1.3rem;display:block}
+.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,40px);opacity:0;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;max-width:min(92vw,620px);z-index:50;transition:.2s;pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.toast.err{background:var(--red)}
+[hidden]{display:none!important}
+.help p,.help li{max-width:78ch}
+.help .toc ol{columns:2;column-gap:28px;margin:0;padding-left:22px}
+.help .toc a{color:var(--ink)}
+.help ol.steps>li{margin-bottom:6px}
+.help code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.85em;background:var(--soft);padding:0 4px;border-radius:3px}
+.help .card{scroll-margin-top:70px;transition:box-shadow .3s}
+.help .card.flash{box-shadow:0 0 0 3px var(--focus)}
+.helplink{font-size:.84rem;font-weight:400;margin-left:10px}
+@media(max-width:820px){.help .toc ol{columns:1}}
+@media(max-width:820px){.layout{display:block}nav{position:sticky;top:0;z-index:8;min-height:0;display:flex;overflow-x:auto;gap:4px;border-right:0;border-bottom:1px solid var(--line);padding:6px}nav button{width:auto;white-space:nowrap;margin:0}main{padding:14px 12px 80px}.filters{grid-template-columns:1fr}.bulk{top:52px}}
+@media(prefers-reduced-motion:reduce){.toast{transition:none}}
+</style>
+</head>
+<body>
+<header><img class="logo" alt="" src="data:image/png;base64,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"><h1>Unterlagenwerkstatt</h1><span class="sub">Version 2.0 – Lehr- und Schulungsunterlagen ordnen, entdoppeln und als Unterrichtseinheiten ausgeben</span><span id="hdrStatus"></span></header>
+<div class="layout">
+<nav id="nav" aria-label="Bereiche"></nav>
+<main>
+<div id="fatal"></div>
+
+<!-- ÜBERSICHT -->
+<section id="p-home" class="page">
+<h2>Übersicht<button class="linkbtn helplink" onclick="helpAt('h-ablauf')">Anleitung</button></h2>
+<div id="homeAlerts"></div>
+<div class="card"><h3>Arbeitsablauf</h3><ol class="flow" id="flow"></ol></div>
+<div class="card"><h3>Themenlandkarte</h3><p class="muted small">Je Thema: wie viele Quellen vorliegen, wo Überschneidungen ungeklärt sind und welche Unterrichtseinheiten es schon gibt. Zahlen anklicken, um die Einträge zu öffnen.</p><div class="scroll"><table class="tbl" id="topicMap"></table></div></div>
+</section>
+
+<!-- QUELLEN -->
+<section id="p-sources" class="page" hidden>
+<h2>Quellen<button class="linkbtn helplink" onclick="helpAt('h-sources')">Anleitung</button></h2>
+<div class="card"><h3>Unterlagen einlesen</h3>
+<p class="muted small">Word (DOCX), PowerPoint (PPTX), PDF mit Textschicht, TXT, MD und HTML. Ältere DOC- oder PPT-Dateien bitte vorher in Word bzw. PowerPoint als DOCX/PPTX speichern; eingescannte PDFs vorher per Texterkennung (OCR) umwandeln. Für DOCX, PPTX und PDF wird beim ersten Mal eine Lesebibliothek aus dem Internet geladen. Die Originaldateien bleiben unverändert; gespeichert wird nur der Text in diesem Browser.</p>
+<div class="grid2"><label>Einzelne oder mehrere Dateien<input type="file" id="importFiles" multiple accept=".docx,.pdf,.pptx,.txt,.md,.html,.htm"></label><label>Ganzer Ordner mit Unterordnern<input type="file" id="importFolder" webkitdirectory multiple></label></div>
+<div class="row"><button class="btn primary" onclick="importSelected()">Einlesen</button><span id="importProgress" role="status" aria-live="polite" class="muted"></span></div>
+<div id="importResult"></div>
+</div>
+<div class="card">
+<div class="filters"><label>Suche in Dateiname und Volltext<input id="docSearch" type="search" oninput="docLimit=40;renderSources()" placeholder="Suchbegriff"></label><label>Thema<select id="docTopic" onchange="docLimit=40;renderSources()"></select></label><label>Status<select id="docStatus" onchange="docLimit=40;renderSources()"><option value="aktiv">aktive Quellen</option><option value="dublette">Dubletten</option><option value="archiviert">archiviert</option><option value="alle">alle</option></select></label></div>
+<div class="row small"><label class="inline"><input type="checkbox" id="selAllShown" onchange="selectAllShown(this.checked)"> alle angezeigten auswählen</label><span id="docCount" class="muted"></span></div>
+<div id="bulkBar"></div>
+<div id="docList"></div>
+<div id="docMore"></div>
+</div>
+</section>
+
+<!-- DUBLETTEN & VERGLEICH -->
+<section id="p-compare" class="page" hidden>
+<h2>Dubletten und Vergleich<button class="linkbtn helplink" onclick="helpAt('h-compare')">Anleitung</button></h2>
+<div class="card"><h3>Hinweise auf Überschneidungen</h3>
+<p class="muted small">Die Werkstatt vergleicht alle nicht archivierten Quellen paarweise: gleiche Datei, wortgleiche Sätze und ähnlicher Fachwortschatz. Das sind Prüfvorschläge; es wird nichts automatisch gelöscht. Ein Paar verschwindet aus der Liste, sobald eine der beiden Quellen als Dublette der anderen markiert oder das Paar als „kein Duplikat“ bestätigt wurde.</p>
+<div id="ovList"></div>
+<div class="row"><button class="btn ghost small" onclick="resetIgnored()">Als „kein Duplikat“ bestätigte Paare wieder anzeigen</button></div>
+</div>
+<div class="card" id="cmpCard"><h3>Zwei Quellen vergleichen</h3>
+<div class="grid2"><label>Quelle A<select id="cmpA" onchange="cmpPair[0]=this.value;renderCompareOut()"></select></label><label>Quelle B<select id="cmpB" onchange="cmpPair[1]=this.value;renderCompareOut()"></select></label></div>
+<div id="cmpOut"></div>
+</div>
+</section>
+
+<!-- UNTERRICHTSEINHEITEN -->
+<section id="p-lessons" class="page" hidden>
+<div class="headrow"><h2>Unterrichtseinheiten<button class="linkbtn helplink" onclick="helpAt('h-lessons')">Anleitung</button></h2><button class="btn primary" onclick="newLesson()">Neue Einheit</button></div>
+
+<div class="card editor" id="editor" hidden>
+<div class="headrow"><h3 id="eHeading">Einheit bearbeiten</h3><div class="row" style="margin:0"><button class="btn" onclick="previewLesson()">Vorschau Dozentenversion</button><button class="btn primary" onclick="saveEditor(false)">Speichern</button><button class="btn" onclick="saveEditor(true)">Speichern und schließen</button><button class="btn ghost" onclick="closeEditor(false)">Schließen</button></div></div>
+<div id="eCheck"></div>
+<div class="grid2"><label>Titel<input id="eTitle"></label><label>Thema<select id="eTopic"></select></label></div>
+<div class="grid4"><label>Umfang in UE (je <span class="ueMinLbl">45</span> Min.)<input id="eUe" type="number" min="1" max="16" step="1" value="1" oninput="updatePhaseSum()"><span class="help" id="eUeHint"></span></label><label>Beginn <span class="muted">(optional, für Uhrzeiten im Ablauf)</span><input id="eStart" type="time" oninput="updatePhaseSum()"></label><label>Zielgruppe<input id="eAudience" placeholder="z. B. Auszubildende, neue Mitarbeitende"></label><label>Stand / Version<input id="eVersion" placeholder="z. B. 2026-10"></label><label>Status<select id="eStatus"><option>Entwurf</option><option>fachlich geprüft</option><option>freigegeben</option></select></label></div>
+<label for="eGoals">Lernziele</label><textarea id="eGoals" placeholder="Eine Zeile je Lernziel, z. B.: Die Teilnehmenden können die drei Phasen eines Beratungsgesprächs beschreiben."></textarea>
+
+<div class="section"><h4>Ablaufplan</h4>
+<div class="scroll"><table class="tbl phases"><thead><tr><th>Zeit</th><th>Min.</th><th>Phase</th><th>Inhalt</th><th>Methode / Sozialform</th><th>Medien</th><th></th></tr></thead><tbody id="ePhases"></tbody></table></div>
+<div class="row"><button class="btn" onclick="addPhase()">Zeile hinzufügen</button><button class="btn" onclick="addBreak()">Pause einfügen</button><button class="btn ghost" onclick="standardPhases()">Standardablauf einsetzen</button><span id="phaseSum" class="sum"></span></div>
+<p class="help">Zeilen mit der Phase „Pause“ oder „Mittagspause“ zählen nicht zur Unterrichtszeit, erscheinen aber im Zeitplan.</p></div>
+
+<div class="section"><h4>Inhalte</h4>
+<label for="eTeacher">Dozentenhinweise und Hintergrundwissen <span class="muted">(nur Dozentenversion)</span></label><textarea id="eTeacher"></textarea>
+<label for="eContent">Lehrinhalt</label><textarea id="eContent" class="tall"></textarea>
+<p class="help">Formatierung: „# Überschrift“, „## Unterüberschrift“, „- Aufzählung“, **fett**. Zeilen mit [Quelle: …], [PRÜFEN: …] oder [ERGÄNZUNG: …] erscheinen nur in der Dozentenversion.</p>
+<label for="eKey">Kernaussagen für das Teilnehmer-Handout</label><textarea id="eKey" placeholder="Leer lassen, dann erhält das Handout den Lehrinhalt."></textarea>
+<label for="eSlides">Folien</label><textarea id="eSlides" class="mono tall" placeholder="## Folientitel&#10;- Stichpunkt&#10;- Stichpunkt&#10;Notiz: Sprechertext für die Dozentin / den Dozenten"></textarea>
+<div class="row" style="margin-top:4px"><button class="btn" onclick="fillAutoSlides()">Folien aus Lernzielen und Lehrinhalt vorschlagen</button><span class="help">Leer gelassen, werden die Folien beim Export automatisch erzeugt.</span></div>
+</div>
+
+<div class="section"><h4>Sicherung und Anwendung</h4>
+<label for="eQuiz">Lernkontrolle</label><textarea id="eQuiz" placeholder="F: Frage&#10;A: Musterantwort (nur Dozentenversion)"></textarea>
+<label for="eHomework">Hausaufgabe</label><textarea id="eHomework"></textarea>
+<div class="grid2"><div><label for="eExercise">Planspiel / praktische Übung (Aufgabe)</label><textarea id="eExercise"></textarea></div><div><label for="eSolution">Lösung / Auswertung <span class="muted">(nur Dozentenversion)</span></label><textarea id="eSolution"></textarea></div></div>
+<label>Verknüpfte Praxisbausteine</label><div id="ePractice" class="checklist"></div>
+</div>
+
+<div class="section"><h4>Quellen dieser Einheit</h4>
+<div class="grid2"><label>Quellen filtern<input id="eSrcFilter" type="search" oninput="renderEditorSources()"></label><label class="inline" style="margin-top:28px"><input type="checkbox" id="eSrcTopic" checked onchange="renderEditorSources()"> nur Quellen zum gewählten Thema</label></div>
+<div id="eSources" class="checklist"></div>
+</div>
+<div class="row"><button class="btn primary" onclick="saveEditor(false)">Speichern</button><button class="btn" onclick="saveEditor(true)">Speichern und schließen</button><button class="btn ghost" onclick="closeEditor(false)">Schließen</button></div>
+</div>
+
+<div class="card">
+<div class="filters"><label>Suche<input id="lessonSearch" type="search" oninput="renderLessonList()"></label><label>Thema<select id="lessonTopic" onchange="renderLessonList()"></select></label><label>Status<select id="lessonStatus" onchange="renderLessonList()"><option value="">alle</option><option>Entwurf</option><option>fachlich geprüft</option><option>freigegeben</option></select></label></div>
+<div id="lessonList"></div>
+</div>
+</section>
+
+<!-- KI-ASSISTENT -->
+<section id="p-ai" class="page" hidden>
+<h2>KI-Assistent<button class="linkbtn helplink" onclick="helpAt('h-ai')">Anleitung</button></h2>
+<div class="note small">Die Werkstatt sendet selbst nichts an einen KI-Dienst. Sie stellt einen Auftrag mit den ausgewählten Quelltexten zusammen; Sie kopieren ihn in Claude oder ChatGPT und fügen die Antwort hier wieder ein. Vor dem Kopieren bitte prüfen, ob die Texte personenbezogene oder vertrauliche Angaben enthalten.</div>
+<div class="card"><h3>1. Auftrag festlegen</h3>
+<div class="grid2"><label>Art des Auftrags<select id="aiMode" onchange="renderAI()"><option value="new">Neue Unterrichtseinheit aus Quellen erstellen</option><option value="revise">Vorhandene Einheit überarbeiten oder ergänzen</option><option value="check">Quellen auf Dopplungen und Widersprüche prüfen</option></select></label><label id="aiLessonWrap">Einheit<select id="aiLesson" onchange="const l=lessons.find(x=>x.id===this.value);if(l)$('aiUe').value=l.ue"></select></label></div>
+<label for="aiWish">Thema bzw. Wunsch</label><textarea id="aiWish" oninput="scheduleSuggest()" placeholder="z. B. Grundlagen der Gesprächsführung, mit Planspiel zu einem schwierigen Kundengespräch"></textarea>
+<div class="grid2"><label>Umfang in UE (je <span class="ueMinLbl">45</span> Min.)<input id="aiUe" type="number" min="1" max="16" step="1" value="1"></label><label>Zielgruppe<input id="aiAudience" placeholder="z. B. Auszubildende im ersten Jahr"></label></div>
+</div>
+<div class="card"><h3>2. Quellen auswählen</h3>
+<div class="row" style="margin-top:0"><button class="btn" onclick="suggestSources(true)">Passende Quellen suchen</button><button class="btn ghost" onclick="aiCheckAll(true)">alle markieren</button><button class="btn ghost" onclick="aiCheckAll(false)">keine</button></div>
+<div id="aiCands"><p class="muted">Noch keine Quellen ausgewählt.</p></div>
+<fieldset style="border:0;padding:0;margin:10px 0 0"><legend class="small" style="font-weight:600">Textumfang je Quelle</legend><label class="inline"><input type="radio" name="aiScope" value="excerpt" checked> relevante Auszüge (bis 8.000 Zeichen)</label> <label class="inline" style="margin-left:14px"><input type="radio" name="aiScope" value="full"> Volltext (für echtes Zusammenführen)</label></fieldset>
+</div>
+<div class="card"><h3>3. Auftrag erstellen und übertragen</h3>
+<div class="row" style="margin-top:0"><button class="btn primary" onclick="buildPrompt()">Auftrag erstellen</button><button class="btn" onclick="copyPrompt()">Auftrag kopieren</button><a class="btn ghost" href="https://claude.ai/" target="_blank" rel="noopener">Claude öffnen</a><a class="btn ghost" href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT öffnen</a><span id="aiSize" class="muted small"></span></div>
+<textarea id="aiPrompt" class="mono" style="min-height:200px;margin-top:8px"></textarea>
+</div>
+<div class="card"><h3>4. Antwort übernehmen</h3>
+<textarea id="aiAnswer" class="mono" style="min-height:180px" placeholder="Antwort der KI hier vollständig einfügen. Bei mehrteiligen Antworten (Theorietag) alle Teile nacheinander einfügen."></textarea>
+<div class="row"><button class="btn primary" id="aiAdoptBtn" onclick="adoptAnswer()">In Unterrichtseinheit übernehmen</button><span id="aiAdoptHint" class="muted small"></span></div>
+</div>
+</section>
+
+<!-- PRAXIS -->
+<section id="p-practice" class="page" hidden>
+<h2>Praxis und Planspiele<button class="linkbtn helplink" onclick="helpAt('h-practice')">Anleitung</button></h2>
+<div class="card"><h3 id="pHeading">Neuer Praxisbaustein</h3>
+<div class="grid2"><label>Titel<input id="pTitle"></label><label>Thema<select id="pTopic"></select></label></div>
+<div class="grid4"><label>Format<select id="pFormat"></select></label><label>Dauer<input id="pDuration" placeholder="z. B. 30 Min."></label><label>Niveau<select id="pLevel"><option>Grundlage</option><option>Aufbau</option><option>Praxisnah</option></select></label><label>Hilfsmittel<input id="pTools" placeholder="z. B. Flipchart, Fallkarten, Moderationskarten"></label></div>
+<label for="pGoal">Lernziel</label><textarea id="pGoal"></textarea>
+<label for="pSteps">Ablauf / Lage / Rollen</label><textarea id="pSteps"></textarea>
+<label for="pSolution">Lösung / Hinweise für Lehrende <span class="muted">(erscheint nicht im Handout)</span></label><textarea id="pSolution"></textarea>
+<div class="row"><button class="btn primary" onclick="savePractice()">Praxisbaustein speichern</button><button class="btn ghost" onclick="clearPractice()">Formular leeren</button></div>
+</div>
+<div class="card"><h3>Entwurf erzeugen</h3><p class="muted small">Regelbasierte Vorlage ohne KI als Ausgangspunkt. Sie landet im Formular oben und wird erst durch „Speichern“ übernommen.</p>
+<div class="grid4"><label>Thema<select id="gTopic"></select></label><label>Teilnehmende<input id="gPeople" type="number" min="1" max="30" value="6"></label><label>Dauer (Min.)<input id="gMinutes" type="number" min="20" max="360" value="45"></label><label>Charakter<select id="gStyle"><option>Planspiel am Tisch</option><option>Fallbeispiel</option><option>Stationslernen</option><option>praxisnah</option><option>spielerisch</option><option>prüfungsvorbereitend</option></select></label></div>
+<div class="row"><button class="btn" onclick="generateExercise()">Entwurf ins Formular übernehmen</button></div>
+</div>
+<div class="card"><h3>Praxisbibliothek</h3><div id="practiceList"></div></div>
+</section>
+
+<!-- DATEN -->
+<section id="p-data" class="page" hidden>
+<h2>Daten und Einstellungen<button class="linkbtn helplink" onclick="helpAt('h-data')">Anleitung</button></h2>
+<div class="card"><h3>Angaben für die Ausgabedokumente</h3>
+<div class="grid2"><label>Einrichtung, Organisation oder Abteilung (Kopf- und Fußzeile)<input id="sOrg" placeholder="z. B. Musterschule, Abteilung Fortbildung"></label><label>Verfasser/in<input id="sAuthor"></label></div>
+<div class="grid2"><label>Länge einer Unterrichtseinheit (Minuten)<input id="sUeMin" type="number" min="20" max="180" step="5" value="45"></label><label>Themenvorlage<select id="sPreset"></select></label></div>
+<label for="sTopics">Eigene Themen <span class="muted">(eine Zeile je Thema)</span></label><textarea id="sTopics" placeholder="z. B.&#10;Arbeitsschutz&#10;Kommunikation&#10;Datenschutz"></textarea>
+<p class="help">Themen lassen sich auch unterwegs anlegen: In jeder Themenauswahl steht am Ende „+ Neues Thema …“.</p>
+<p class="help" id="sTopicsDefault"></p>
+<div class="row"><button class="btn primary" onclick="saveSettings()">Einstellungen speichern</button></div>
+</div>
+<div class="card"><h3>Sicherung</h3>
+<p class="muted small">Alle Daten liegen nur in diesem Browser auf diesem Gerät. Browserdaten löschen oder ein anderer Browser bedeutet: leere Werkstatt. Deshalb regelmäßig sichern; die Sicherungsdatei kann auch an Kolleginnen und Kollegen weitergegeben werden.</p>
+<div class="row"><button class="btn primary" onclick="exportBackup()">Vollständige Sicherung herunterladen</button><span id="lastBackup" class="muted small"></span></div>
+<label for="restoreFile">Sicherung einspielen</label>
+<div class="row" style="margin-top:0"><input type="file" id="restoreFile" accept=".json" style="max-width:360px"><button class="btn" onclick="restoreBackup()">Einspielen</button></div>
+</div>
+<div class="card"><h3>Speicher</h3><p id="storageInfo" class="muted small"></p>
+<div class="row"><button class="btn" onclick="requestPersist()">Dauerhaften Speicher beim Browser anfordern</button></div>
+<p class="help">Ohne diese Freigabe darf der Browser die Daten bei Speicherknappheit selbstständig löschen.</p>
+</div>
+<div class="card"><h3>Alles löschen</h3><p class="muted small">Entfernt alle Quellen, Einheiten, Praxisbausteine und Einstellungen aus diesem Browser.</p><button class="btn danger" onclick="wipeAll()">Alle Daten löschen</button></div>
+</section>
+<section id="p-help" class="page help" hidden>
+<div class="headrow"><h2>Anleitung</h2><button class="btn" onclick="printHelp()">Anleitung drucken oder als PDF speichern</button></div>
+<div class="card toc"><h3>Inhalt</h3><ol>
+<li><a href="#h-zweck" onclick="return helpJump('h-zweck')">Wofür die Werkstatt gedacht ist</a></li>
+<li><a href="#h-start" onclick="return helpJump('h-start')">Voraussetzungen und erster Start</a></li>
+<li><a href="#h-ablauf" onclick="return helpJump('h-ablauf')">Der Arbeitsablauf im Überblick</a></li>
+<li><a href="#h-sources" onclick="return helpJump('h-sources')">Quellen einlesen und ordnen</a></li>
+<li><a href="#h-compare" onclick="return helpJump('h-compare')">Dubletten finden und klären</a></li>
+<li><a href="#h-lessons" onclick="return helpJump('h-lessons')">Unterrichtseinheiten erstellen und bearbeiten</a></li>
+<li><a href="#h-export" onclick="return helpJump('h-export')">Ausgeben: Word, PDF, PowerPoint, Komplettpaket</a></li>
+<li><a href="#h-ai" onclick="return helpJump('h-ai')">Unterlagen mit der KI aufbereiten</a></li>
+<li><a href="#h-practice" onclick="return helpJump('h-practice')">Praxis und Planspiele</a></li>
+<li><a href="#h-data" onclick="return helpJump('h-data')">Sichern, weitergeben, Gerät wechseln</a></li>
+<li><a href="#h-faq" onclick="return helpJump('h-faq')">Häufige Fragen und Probleme</a></li>
+</ol></div>
+
+<div class="card" id="h-zweck"><h3>1. Wofür die Werkstatt gedacht ist</h3>
+<p>Über die Jahre sammeln sich in Schulen, Betrieben, Vereinen und Fortbildungsteams Präsentationen, Handouts und Skripte zu denselben Themen – oft in mehreren Fassungen, von verschiedenen Personen, mit Überschneidungen. Die Unterlagenwerkstatt hilft, diesen Bestand zu ordnen und daraus einheitliche Unterrichtsunterlagen zu machen:</p>
+<ul><li>Unterlagen einlesen und nach Themen sortieren,</li><li>doppelte und fast gleiche Unterlagen erkennen und klären,</li><li>Inhalte mehrerer Unterlagen zu einer Unterrichtseinheit zusammenführen – von 1 UE bis zum ganzen Theorietag,</li><li>daraus Dozentenversion, Teilnehmer-Handout und Präsentation erzeugen,</li><li>bei Bedarf eine KI (Claude oder ChatGPT) als Formulierungs- und Strukturierungshilfe einbeziehen.</li></ul>
+<p>Die Werkstatt ist eine einzelne HTML-Datei. Sie läuft im Browser, benötigt keine Installation und kein Konto. <b>Alle Daten bleiben auf Ihrem Gerät</b>; die Originaldateien werden nie verändert.</p></div>
+
+<div class="card" id="h-start"><h3>2. Voraussetzungen und erster Start</h3>
+<ol class="steps">
+<li><b>Datei ablegen.</b> Speichern Sie die Datei an einem festen Ort, z. B. in „Dokumente“. Öffnen Sie sie immer von dort, per Doppelklick.</li>
+<li><b>Browser.</b> Geeignet sind Microsoft Edge, Google Chrome und Mozilla Firefox in einem <i>normalen</i> Fenster. Im privaten bzw. Inkognito-Modus werden die Daten beim Schließen gelöscht oder gar nicht erst gespeichert.</li>
+<li><b>Immer derselbe Browser.</b> Die Daten liegen im Speicher des jeweiligen Browsers. Öffnen Sie die Datei in einem anderen Browser, ist die Werkstatt dort leer. Zum Umziehen dient die Sicherung (Abschnitt 10).</li>
+<li><b>Internet beim ersten Mal.</b> Zum Einlesen von Word-, PowerPoint- und PDF-Dateien sowie zum Erzeugen von Word- und PowerPoint-Dateien lädt die Werkstatt einmalig kleine Zusatzbibliotheken aus dem Internet. Danach hält der Browser sie in der Regel vorrätig.</li>
+<li><b>Einstellungen.</b> Tragen Sie unter <i>Daten &amp; Einstellungen</i> Ihre Einrichtung bzw. Abteilung und Ihren Namen ein; beides erscheint in Kopf- und Fußzeilen der Ausgaben. Legen Sie dort außerdem die <b>Länge einer Unterrichtseinheit</b> fest (Standard 45 Minuten) und tragen Sie Ihre <b>Themen</b> ein – eines je Zeile. Für die Rettungshundearbeit gibt es eine fertige Themenvorlage.</li>
+<li><b>Dauerhaften Speicher anfordern.</b> Ebenfalls unter <i>Daten &amp; Einstellungen</i>. Ohne diese Freigabe darf der Browser die Daten bei Speicherknappheit selbst löschen.</li>
+</ol></div>
+
+<div class="card" id="h-ablauf"><h3>3. Der Arbeitsablauf im Überblick</h3>
+<p>Die <i>Übersicht</i> zeigt den Ablauf mit dem jeweiligen Stand. Rote Ziffern bedeuten: hier ist etwas offen.</p>
+<table class="tbl"><thead><tr><th>Schritt</th><th>Bereich</th><th>Was Sie tun</th></tr></thead><tbody>
+<tr><td>1. Einlesen</td><td>Quellen</td><td>Dateien oder ganzen Ordner einlesen.</td></tr>
+<tr><td>2. Themen zuordnen</td><td>Quellen</td><td>Vorgeschlagenes Thema prüfen, „Noch zuordnen“ auflösen.</td></tr>
+<tr><td>3. Dubletten klären</td><td>Dubletten &amp; Vergleich</td><td>Hinweise prüfen, Dubletten markieren oder „kein Duplikat“ bestätigen.</td></tr>
+<tr><td>4. Einheiten erstellen</td><td>Unterrichtseinheiten / KI-Assistent</td><td>Neu anlegen, Quellen zusammenführen oder per KI entwerfen.</td></tr>
+<tr><td>5. Prüfen und freigeben</td><td>Unterrichtseinheiten</td><td>Fachlich prüfen, Status setzen.</td></tr>
+<tr><td>6. Ausgeben</td><td>Unterrichtseinheiten → Ausgeben</td><td>Word, PDF, PowerPoint oder Komplettpaket.</td></tr>
+<tr><td>7. Sichern</td><td>Daten &amp; Einstellungen</td><td>Sicherungsdatei herunterladen – mindestens alle zwei Wochen.</td></tr>
+</tbody></table>
+<p>Die <b>Themenlandkarte</b> darunter zeigt je Thema, wie viele Quellen, offene Überschneidungen und Einheiten es gibt. Ein Klick auf eine Zahl öffnet die zugehörigen Einträge; „Einheit erstellen“ übergibt alle Quellen des Themas an den KI-Assistenten.</p></div>
+
+<div class="card" id="h-sources"><h3>4. Quellen einlesen und ordnen</h3>
+<h4>Einlesen</h4>
+<ol class="steps"><li>Bereich <i>Quellen</i> öffnen.</li><li>Unter „Einzelne oder mehrere Dateien“ Dateien auswählen – oder unter „Ganzer Ordner“ Ihren Unterlagenordner samt Unterordnern.</li><li>„Einlesen“ antippen. Der Fortschritt wird angezeigt; danach erscheint eine Zusammenfassung.</li></ol>
+<table class="tbl"><thead><tr><th>Dateityp</th><th>Hinweis</th></tr></thead><tbody>
+<tr><td>Word (DOCX), PowerPoint (PPTX)</td><td>Text und – bei PowerPoint – Sprechernotizen werden übernommen. Bilder und Diagramme nicht.</td></tr>
+<tr><td>PDF</td><td>Nur mit Textschicht. Eingescannte Seiten vorher per Texterkennung (OCR) umwandeln, z. B. mit Adobe Acrobat.</td></tr>
+<tr><td>DOC, PPT (alte Formate)</td><td>In Word bzw. PowerPoint öffnen, „Speichern unter“ → DOCX/PPTX, dann einlesen.</td></tr>
+<tr><td>TXT, MD, HTML</td><td>Werden direkt gelesen.</td></tr>
+</tbody></table>
+<p>Byte-gleiche Dateien werden automatisch übersprungen. Nicht unterstützte Dateien (Bilder, Tabellen …) werden ausgelassen und gezählt. Die Werkstatt schlägt anhand von Dateiname und Inhalt ein Thema aus Ihrer Themenliste vor.</p>
+<h4>Ordnen</h4>
+<ul><li><b>Suche</b> durchsucht Dateinamen und Volltexte; die Fundstelle wird hervorgehoben angezeigt.</li><li><b>Thema</b> und <b>Status</b> ändern Sie direkt am Eintrag. Fehlt ein Thema, wählen Sie in der Auswahl „+ Neues Thema …“. Status: <i>aktiv</i> (Normalfall), <i>Dublette</i> (verzichtbar, wird ausgeblendet), <i>archiviert</i> (veraltet, bleibt nachschlagbar, wird nicht mehr verglichen).</li><li><b>Mehrfachauswahl:</b> Kästchen links anhaken. Oben erscheint eine dunkle Leiste: Thema zuweisen, zu einer Einheit zusammenführen, an den KI-Assistenten übergeben, vergleichen (bei genau zwei), archivieren, löschen.</li><li><b>Löschen</b> entfernt die Quelle nur aus der Werkstatt, nie vom Datenträger.</li></ul></div>
+
+<div class="card" id="h-compare"><h3>5. Dubletten finden und klären</h3>
+<p>Die Werkstatt vergleicht alle nicht archivierten Quellen paarweise und meldet Paare mit</p>
+<ul><li>identischem Dateiinhalt,</li><li>vielen <b>wortgleichen</b> Sätzen oder</li><li>stark ähnlichem Fachwortschatz.</li></ul>
+<p>Die Zahl im Menü zeigt die offenen Hinweise. Es wird <b>nie automatisch gelöscht</b> – jede Entscheidung treffen Sie.</p>
+<h4>So klären Sie ein Paar</h4>
+<ol class="steps"><li>„Vergleichen“ antippen. Unten sehen Sie Kennzahlen und drei Listen: gemeinsame Sätze, nur in A, nur in B.</li><li>Entscheiden:
+<ul><li><b>„B ist Dublette von A“</b> (bzw. umgekehrt): Die schwächere Fassung wird ausgeblendet; das Paar verschwindet aus der Liste.</li><li><b>„Zu Einheit zusammenführen“</b>: Beide Texte werden zu einer Rohfassung verbunden (siehe Abschnitt 6).</li><li><b>„KI-Prüfung auf Widersprüche“</b>: Übergibt beide an den KI-Assistenten – sinnvoll, wenn die Fassungen inhaltlich voneinander abweichen.</li><li><b>„Kein Duplikat“</b>: Das Paar gehört thematisch zusammen, ist aber gewollt verschieden. Es wird ausgeblendet.</li></ul></li></ol>
+<p class="muted">Hinweis: Gezählt werden nur wortgleiche Sätze. Umformulierte Passagen erscheinen als „nur in A/B“. Für eine inhaltliche Prüfung eignet sich der KI-Assistent.</p></div>
+
+<div class="card" id="h-lessons"><h3>6. Unterrichtseinheiten erstellen und bearbeiten</h3>
+<h4>Drei Wege zur Einheit</h4>
+<table class="tbl"><tbody>
+<tr><th>Neu</th><td><i>Unterrichtseinheiten</i> → „Neue Einheit“. Leeres Formular.</td></tr>
+<tr><th>Zusammenführen</th><td>Quellen auswählen → „Zu Einheit zusammenführen“. Die umfangreichste Quelle bildet die Grundlage; aus weiteren Quellen kommen nur Zeilen hinzu, die noch nicht vorhanden sind. Die Herkunft steht jeweils als [Quelle: …] im Text. Ergebnis ist eine <b>Rohfassung</b>, die Sie ordnen und kürzen.</td></tr>
+<tr><th>Mit KI</th><td>Siehe Abschnitt 8. Die Antwort der KI wird automatisch auf alle Felder verteilt.</td></tr>
+</tbody></table>
+<p>In allen drei Fällen öffnet sich der Bearbeitungsbereich. <b>Erst „Speichern“ legt die Einheit an.</b> Verlassen Sie den Bereich mit ungespeicherten Änderungen, fragt die Werkstatt nach.</p>
+<h4>Die Felder</h4>
+<table class="tbl"><thead><tr><th>Feld</th><th>Inhalt</th><th>Erscheint in</th></tr></thead><tbody>
+<tr><td>Umfang in UE</td><td>1 bis 16 UE – vom Einzeltermin bis zum Theorietag.</td><td>alle</td></tr>
+<tr><td>Beginn</td><td>Optional. Dann zeigt der Ablauf Uhrzeiten statt Minuten.</td><td>alle</td></tr>
+<tr><td>Lernziele</td><td>Eine Zeile je Lernziel.</td><td>alle</td></tr>
+<tr><td>Ablaufplan</td><td>Minuten, Phase, Inhalt, Methode, Medien. „Standardablauf einsetzen“ liefert eine passende Vorlage – ab 3 UE in Blöcken mit Pausen.</td><td>Dozent; ab 3 UE als Tagesablauf auch im Handout</td></tr>
+<tr><td>Dozentenhinweise</td><td>Hintergrundwissen, typische Fehler, Durchführungshinweise.</td><td>Dozent</td></tr>
+<tr><td>Lehrinhalt</td><td>Der eigentliche Unterrichtsstoff.</td><td>Dozent; Handout, falls keine Kernaussagen</td></tr>
+<tr><td>Kernaussagen</td><td>Kurzfassung für Teilnehmende.</td><td>Handout</td></tr>
+<tr><td>Folien</td><td>Eigener Folientext. Leer gelassen, werden Folien automatisch erzeugt.</td><td>Präsentation</td></tr>
+<tr><td>Lernkontrolle</td><td>Fragen mit Musterantworten.</td><td>Dozent mit, Handout ohne Antworten</td></tr>
+<tr><td>Hausaufgabe</td><td>Aufgabenstellung.</td><td>alle</td></tr>
+<tr><td>Planspiel / Übung und Lösung</td><td>Aufgabe für alle; Lösung nur für Dozierende.</td><td>Aufgabe: alle; Lösung: Dozent</td></tr>
+<tr><td>Praxisbausteine, Quellen</td><td>Verknüpfungen zur Praxisbibliothek und zu den Quellen.</td><td>Praxis: alle (Lösung nur Dozent); Quellen: Dozent</td></tr>
+</tbody></table>
+<h4>Schreibregeln für Textfelder</h4>
+<table class="tbl"><tbody>
+<tr><td><code># Überschrift</code></td><td>Hauptüberschrift</td></tr>
+<tr><td><code>## Unterüberschrift</code></td><td>Zwischenüberschrift</td></tr>
+<tr><td><code>- Punkt</code></td><td>Aufzählung</td></tr>
+<tr><td><code>**fett**</code></td><td>Hervorhebung</td></tr>
+<tr><td><code>[Quelle: …]</code> <code>[PRÜFEN: …]</code> <code>[ERGÄNZUNG: …]</code></td><td>Arbeitsvermerke – nur in der Dozentenversion sichtbar. Offene [PRÜFEN]-Stellen werden bei der Freigabe angemahnt.</td></tr>
+<tr><td>Folien: <code>## Titel</code>, <code>- Stichpunkt</code>, <code>Notiz: …</code></td><td>Eine Folie je Titel; „Notiz:“ wird Sprechertext.</td></tr>
+<tr><td>Lernkontrolle: <code>F: …</code> / <code>A: …</code></td><td>Frage und Musterantwort, je eine Zeile.</td></tr>
+</tbody></table>
+<h4>Pausen und Theorietage</h4>
+<p>Zeilen mit der Phase „Pause“ oder „Mittagspause“ zählen nicht zur Unterrichtszeit. Unter dem Ablauf steht z. B.: <i>Unterricht 360 von 360 Min. – Pausen 75 Min. – Gesamtdauer 7 Std. 15 Min. (08:30–15:45 Uhr)</i>. Grün heißt: die Unterrichtszeit passt zum gewählten Umfang. Die Beispielzahlen beziehen sich auf 8 UE zu je 45 Minuten.</p>
+<h4>Prüfung und Status</h4>
+<p>Oben im Formular steht, was fehlt (Lernziele, Ablaufplan, Lehrinhalt) und welche Hinweise bestehen. Status: <i>Entwurf</i> → <i>fachlich geprüft</i> → <i>freigegeben</i>. Solange nicht freigegeben ist, tragen alle Ausgaben einen Entwurfsvermerk. Über „Vorschau Dozentenversion“ sehen Sie das Ergebnis vor dem Speichern.</p></div>
+
+<div class="card" id="h-export"><h3>7. Ausgeben: Word, PDF, PowerPoint, Komplettpaket</h3>
+<p>In der Liste der Unterrichtseinheiten öffnet „Ausgeben“ ein Menü. Bitte die Einheit vorher speichern.</p>
+<table class="tbl"><thead><tr><th>Ausgabe</th><th>Formate</th><th>Enthält</th></tr></thead><tbody>
+<tr><td>Dozentenversion</td><td>Word, PDF</td><td>Alles: Ablaufplan, Dozentenhinweise, Lehrinhalt mit Vermerken, Musterantworten, Lösungen, Quellen.</td></tr>
+<tr><td>Teilnehmer-Handout</td><td>Word, PDF</td><td>Lernziele, Kernaussagen bzw. Inhalt, Fragen ohne Antworten, Aufgaben ohne Lösungen, Notizlinien; ab 3 UE der Tagesablauf.</td></tr>
+<tr><td>Präsentation</td><td>PowerPoint</td><td>Titelfolie, Folien aus dem Feld „Folien“ oder automatisch erzeugt, Sprechernotizen.</td></tr>
+<tr><td>Komplettpaket</td><td>ZIP</td><td>Beide Word-Dateien, die Präsentation und beide Druckansichten.</td></tr>
+</tbody></table>
+<p><b>PDF:</b> Es öffnet sich eine Druckansicht, der Druckdialog startet automatisch. Als Drucker „Als PDF speichern“ bzw. „Microsoft Print to PDF“ wählen. Blockiert der Browser das Fenster, wird die Druckansicht als HTML-Datei gespeichert – diese öffnen und drucken.</p>
+<p><b>Word und PowerPoint</b> lassen sich danach wie gewohnt weiterbearbeiten, z. B. um Bilder oder das Layout Ihrer Einrichtung einzufügen.</p></div>
+
+<div class="card" id="h-ai"><h3>8. Unterlagen mit der KI aufbereiten</h3>
+<div class="note small"><b>Grundsatz:</b> Die Werkstatt sendet selbst nichts an einen KI-Dienst. Sie stellt einen Auftrag zusammen; Sie kopieren ihn in Claude oder ChatGPT und fügen die Antwort zurück ein. So behalten Sie die Kontrolle darüber, welche Texte die Werkstatt verlassen.</div>
+<h4>Die drei Auftragsarten</h4>
+<table class="tbl"><tbody>
+<tr><th>Neue Unterrichtseinheit</th><td>Aus den markierten Quellen entsteht eine vollständige Einheit mit allen Feldern.</td></tr>
+<tr><th>Vorhandene Einheit überarbeiten</th><td>Eine gespeicherte Einheit wird ergänzt, geglättet oder erweitert – z. B. von 2 UE auf einen Theorietag.</td></tr>
+<tr><th>Quellen prüfen</th><td>Die KI listet Dopplungen, Widersprüche und veraltete Aussagen auf. Das Ergebnis ist eine Arbeitsgrundlage und wird nicht in eine Einheit übernommen.</td></tr>
+</tbody></table>
+<h4>Schritt für Schritt</h4>
+<ol class="steps">
+<li><b>Auftrag festlegen:</b> Art wählen, Thema bzw. Wunsch beschreiben (je genauer, desto besser, z. B. „mit Planspiel zu einem Konfliktgespräch“), Umfang in UE und Zielgruppe angeben.</li>
+<li><b>Quellen auswählen:</b> „Passende Quellen suchen“ – die fünf besten Treffer sind vorab markiert. Alternativ Quellen unter <i>Quellen</i> anhaken und „An KI-Assistent“ wählen. Dubletten nicht mitschicken.</li>
+<li><b>Textumfang:</b> „relevante Auszüge“ für einen ersten Überblick; <b>„Volltext“</b>, wenn wirklich zusammengeführt werden soll.</li>
+<li><b>„Auftrag erstellen“</b>, dann <b>„Auftrag kopieren“</b>. Rechts daneben steht der ungefähre Umfang.</li>
+<li><b>In die KI einfügen:</b>
+<ul><li><i>Claude:</i> Im Projekt einen <b>neuen Chat</b> beginnen – ein Chat je Thema bzw. Einheit – und den Auftrag mit Strg+V einfügen. Nicht ins Projektwissen hochladen: Das ist für dauerhafte Grundlagen gedacht und wird in allen Chats mitgelesen.</li>
+<li><i>ChatGPT:</i> Neuen Chat öffnen und einfügen.</li>
+<li>Bei sehr großen Aufträgen: den kopierten Text im Editor als TXT-Datei speichern und im Chat als Anhang hochladen.</li></ul></li>
+<li><b>Antwort zurückholen:</b> Die Antwort über das Kopiersymbol unter der Antwort kopieren und unter „4. Antwort übernehmen“ einfügen, dann „In Unterrichtseinheit übernehmen“. Die Einheit öffnet sich mit allen Feldern gefüllt.</li>
+<li><b>Prüfen und speichern:</b> Fachlich durchsehen, [PRÜFEN]- und [ERGÄNZUNG]-Stellen klären, die Prüfhinweise in den Dozentenhinweisen lesen, dann speichern.</li>
+</ol>
+<h4>Theorietag und lange Antworten</h4>
+<p>Ab 4 UE darf die KI in Teilen antworten. Endet eine Antwort mit „===FORTSETZUNG FOLGT===“, schreiben Sie „weiter“. Alle Teile nacheinander in das Antwortfeld einfügen – die Werkstatt setzt sie zusammen. Oft wird das Ergebnis besser, wenn Sie den Tag in Blöcken von 2 bis 3 UE erarbeiten und danach per „Vorhandene Einheit überarbeiten“ zusammenführen.</p>
+<h4>Was die KI darf und was nicht</h4>
+<ul><li>Der Auftrag verbietet ausdrücklich, Fakten, Zahlen oder Vorschriften zu erfinden, und verlangt, Widersprüche zwischen Quellen offenzulegen. Das senkt das Risiko, schließt Fehler aber nicht aus.</li><li>Jede übernommene Einheit ist als „mit KI-Entwurf“ gekennzeichnet und bleibt Entwurf, bis Sie sie freigeben.</li><li><b>Datenschutz:</b> Keine Namen, Kunden- oder Personaldaten, Gesundheitsdaten oder andere personenbezogene Angaben mitschicken. Soweit Ihre Einrichtung Regeln zur KI-Nutzung hat, gelten diese.</li></ul>
+<h4>Ohne Umweg über die Werkstatt</h4>
+<p>Für besonders ausgefeilte Präsentationen können Sie die Originaldateien eines Themas auch direkt im KI-Chat anhängen. Dann sind auch Tabellen und Folienaufbau sichtbar, die die Werkstatt beim Einlesen nicht übernimmt.</p></div>
+
+<div class="card" id="h-practice"><h3>9. Praxis und Planspiele</h3>
+<p>Die Praxisbibliothek sammelt wiederverwendbare Übungen: Planspiele, Lageübungen, Fallbeispiele, Stationstraining, Hausaufgaben, Quiz u. a.</p>
+<ul><li><b>Anlegen:</b> Formular ausfüllen, „Praxisbaustein speichern“. Die „Lösung / Hinweise für Lehrende“ erscheinen nur in der Dozentenversion.</li><li><b>Vorlage:</b> Unter „Entwurf erzeugen“ Thema, Teilnehmerzahl, Dauer und Charakter wählen – „Planspiel am Tisch“ passt zu jedem Thema. Die Vorlage landet im Formular und wird erst mit „Speichern“ übernommen.</li><li><b>Verknüpfen:</b> Im Formular einer Unterrichtseinheit unter „Verknüpfte Praxisbausteine“ anhaken. Ein Baustein kann in vielen Einheiten stecken.</li></ul></div>
+
+<div class="card" id="h-data"><h3>10. Sichern, weitergeben, Gerät wechseln</h3>
+<ul><li><b>Sichern:</b> <i>Daten &amp; Einstellungen</i> → „Vollständige Sicherung herunterladen“. Die JSON-Datei enthält alle Quelltexte, Einheiten, Praxisbausteine und Einstellungen. Die Übersicht erinnert nach 14 Tagen.</li><li><b>Einspielen:</b> Datei wählen, „Einspielen“. <b>Der aktuelle Bestand wird dabei vollständig ersetzt</b>, nicht ergänzt. Schlägt das Einspielen fehl, bleibt der bisherige Bestand unverändert.</li><li><b>Gerät oder Browser wechseln:</b> Auf dem alten Gerät sichern, auf dem neuen die Werkstatt öffnen und die Sicherung einspielen.</li><li><b>An Kolleginnen und Kollegen weitergeben:</b> Die Werkstatt-Datei und – falls gewünscht – eine Sicherung weitergeben. Jede Person arbeitet danach mit einer eigenen Kopie; es gibt keinen automatischen Abgleich. Vereinbaren Sie deshalb, wer welches Thema pflegt, oder geben Sie fertige Ausgaben (Word, PDF, PowerPoint) weiter.</li><li><b>Alle Daten löschen:</b> Entfernt alles aus diesem Browser. Vorher sichern.</li></ul></div>
+
+<div class="card" id="h-faq"><h3>11. Häufige Fragen und Probleme</h3>
+<table class="tbl"><thead><tr><th>Problem</th><th>Ursache und Lösung</th></tr></thead><tbody>
+<tr><td>Die Werkstatt ist plötzlich leer.</td><td>Anderer Browser, privates Fenster oder gelöschte Browserdaten. Im gewohnten Browser öffnen oder die letzte Sicherung einspielen.</td></tr>
+<tr><td>„Zusatzbibliothek konnte nicht geladen werden“</td><td>Keine Internetverbindung beim ersten Einlesen bzw. Ausgeben. Verbindung herstellen, erneut versuchen.</td></tr>
+<tr><td>„Kein Text erkannt“</td><td>Eingescanntes PDF oder Datei nur mit Bildern. Texterkennung (OCR) anwenden.</td></tr>
+<tr><td>DOC/PPT werden ausgelassen.</td><td>Alte Formate. Als DOCX/PPTX speichern.</td></tr>
+<tr><td>Viele Überschneidungen bei unterschiedlichen Themen.</td><td>Ähnlicher Fachwortschatz. „Kein Duplikat“ bestätigen.</td></tr>
+<tr><td>„Keine Abschnittsmarken gefunden“</td><td>Die KI hat das Format nicht eingehalten oder die Antwort ist unvollständig. Die KI bitten: „Bitte exakt im vorgegebenen Format mit den Abschnittsmarken antworten.“</td></tr>
+<tr><td>Ablauf rot markiert</td><td>Unterrichtsminuten passen nicht zum Umfang. Minuten anpassen; Pausen als „Pause“ benennen.</td></tr>
+<tr><td>PDF öffnet sich nicht.</td><td>Popup blockiert. Popups für die Datei erlauben oder die gespeicherte Druckansicht öffnen.</td></tr>
+<tr><td>Die Werkstatt meldet „in einem anderen Tab geöffnet“.</td><td>Alle anderen Tabs mit der Werkstatt schließen und neu laden.</td></tr>
+</tbody></table></div>
+</section>
+
+</main>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script>
+'use strict';
+/* ================= Grundlagen ================= */
+const APP_VERSION='2.0';
+const DBNAME='rhs-ausbildungsbibliothek-dokumente-v1';
+const LEGACY_KEY='rhs-ausbildungsbibliothek-v1';
+const UNASSIGNED='Noch zuordnen';
+const RHS_TOPICS=['Kynologie','Flächensuche','Trümmersuche','Mantrailing','Einsatztaktik','Orientierung / Kartenkunde / GPS','Sprechfunk','Erste Hilfe Hund','Erste Hilfe Mensch','UVV / Sicherheit','PSNV','Organisation / Recht'];
+const OTHER='Sonstiges';
+const DOC_STATUS={aktiv:'aktiv',dublette:'Dublette',archiviert:'archiviert'};
+const NEW_TOPIC='__neu__';
+const LESSON_STATUS=['Entwurf','fachlich geprüft','freigegeben'];
+const PRACTICE_FORMATS=['Planspiel','Lageübung','Fallbeispiel','Stationstraining','Hausaufgabe','Quiz','Orientierungslauf','Schnitzeljagd','Mini-Challenge'];
+const SUPPORTED=/\.(docx|pdf|pptx|txt|md|html?)$/i;
+const TOPIC_PATTERNS=[
+ ['Erste Hilfe Hund',/erste[ -]hilfe[^.\n]{0,25}hund|hunde?[- ]?erste[- ]?hilfe|pfotenverband|magendrehung|hitzschlag beim hund/],
+ ['Erste Hilfe Mensch',/reanimation|\bhlw\b|\baed\b|stabile seitenlage|erste[ -]hilfe/],
+ ['Trümmersuche',/trümmer|verschüttet|ortungshund/],
+ ['Mantrailing',/mantrail|personenspürhund|geruchsartikel|point last seen/],
+ ['Flächensuche',/flächensuch|suchgebiet|flächenhund/],
+ ['Kynologie',/kynolog|lerntheorie|hundeverhalten|konditionierung|ausdrucksverhalten|lernverhalten/],
+ ['Einsatztaktik',/einsatztaktik|suchstrategie|einsatzabschnitt|lagemeldung|führungsvorgang/],
+ ['Sprechfunk',/sprechfunk|funkverkehr|funkgerät|digitalfunk|funkrufname/],
+ ['Orientierung / Kartenkunde / GPS',/orientierung|kartenkunde|kompass|\bgps\b|koordinat|\butm\b/],
+ ['UVV / Sicherheit',/\buvv\b|unfallverhütung|arbeitsschutz|hygiene/],
+ ['PSNV',/\bpsnv\b|psychosozial/]
+];
+const TOPIC_PRESETS={none:{label:'Keine – nur eigene Themen',topics:[],patterns:[]},rhs:{label:'Rettungshundearbeit',topics:RHS_TOPICS,patterns:TOPIC_PATTERNS}};
+const LIBS={
+ jszip:{test:()=>!!window.JSZip,urls:['https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js','https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js']},
+ mammoth:{test:()=>!!window.mammoth,urls:['https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.9.1/mammoth.browser.min.js','https://cdn.jsdelivr.net/npm/mammoth@1.9.1/mammoth.browser.min.js']},
+ pdfjs:{test:()=>!!window.pdfjsLib,urls:['https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js','https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js'],after:u=>{window.pdfjsLib.GlobalWorkerOptions.workerSrc=u.replace('pdf.min.js','pdf.worker.min.js')}},
+ pptx:{test:()=>!!window.PptxGenJS,urls:['https://cdnjs.cloudflare.com/ajax/libs/pptxgenjs/3.12.0/pptxgen.bundle.js','https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js','https://cdn.jsdelivr.net/npm/pptxgenjs@4.0.1/dist/pptxgen.bundle.js']}
+};
+const libPromises={};
+function loadLib(name){
+ const L=LIBS[name];if(L.test())return Promise.resolve();
+ if(libPromises[name])return libPromises[name];
+ libPromises[name]=(async()=>{
+  for(const u of L.urls){
+   try{await new Promise((res,rej)=>{const s=document.createElement('script');s.src=u;s.onload=res;s.onerror=rej;document.head.appendChild(s)});if(L.test()){if(L.after)L.after(u);return}}catch(e){}
+  }
+  libPromises[name]=null;
+  throw new Error('Eine benötigte Zusatzbibliothek konnte nicht geladen werden. Für das erste Einlesen bzw. Ausgeben wird eine Internetverbindung benötigt.');
+ })();
+ return libPromises[name];
+}
+const $=id=>document.getElementById(id);
+const v=id=>($(id)?$(id).value:'');
+function esc(x){return String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function uid(p){return p+'-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8)}
+const nowISO=()=>new Date().toISOString();
+function fmtDate(iso){if(!iso)return '–';const d=new Date(iso);return isNaN(d)?'–':d.toLocaleDateString('de-DE')}
+function norm(s){return String(s||'').toLocaleLowerCase('de').replace(/[^\p{L}\p{N}]+/gu,' ').trim()}
+function lines(t){return String(t||'').split('\n').map(s=>s.trim().replace(/^[-*•–]\s+/,'')).filter(Boolean)}
+function slug(s){return String(s||'Einheit').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/Ä/g,'Ae').replace(/Ö/g,'Oe').replace(/Ü/g,'Ue').replace(/ß/g,'ss').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\p{L}\p{N}]+/gu,'_').replace(/^_+|_+$/g,'').slice(0,60)||'Einheit'}
+function clamp(n,a,b){return Math.max(a,Math.min(b,n))}
+const MAX_UE=16;
+function ueVal(id){return clamp(parseInt(v(id),10)||1,1,MAX_UE)}
+function hm(min){const h=Math.floor(min/60),m=min%60;return h?`${h} Std.${m?' '+m+' Min.':''}`:`${m} Min.`}
+function isBreak(p){return /^\s*(mittags?pause|pause|kaffeepause|mittag)/i.test(p.phase||'')}
+function ueText(l){const b=breakSum(l);return `${l.ue} UE (${l.ue*ueMin()} Minuten Unterricht${b?`, zzgl. ${b} Min. Pausen`:''})`}
+function addClock(start,min){const m=/^(\d{1,2}):(\d{2})$/.exec(start||'');if(!m)return '';const t=(+m[1]*60+ +m[2]+min)%1440;return String(Math.floor(t/60)).padStart(2,'0')+':'+String(t%60).padStart(2,'0')}
+function toast(msg,kind){const t=$('toast');if(!t)return;t.textContent=msg;t.className='toast show '+(kind||'');clearTimeout(toast.t);toast.t=setTimeout(()=>{t.className='toast'},kind==='err'?7000:3500)}
+function download(name,data,type){const blob=data instanceof Blob?data:new Blob([data],{type:type||'application/octet-stream'});const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),20000)}
+function htmlToText(h){const d=new DOMParser().parseFromString(String(h).replace(/<li[^>]*>/gi,'\n- ').replace(/<\/(p|h\d|div|li|ol|ul)>/gi,'\n').replace(/<br\s*\/?>/gi,'\n'),'text/html');return (d.body.textContent||'').replace(/\n{3,}/g,'\n\n').trim()}
+
+/* ================= Speicher (IndexedDB) ================= */
+let db,docs=[],lessons=[],meta=defaultMeta();
+function defaultMeta(){return {key:'state',practice:[],settings:{org:'',author:'',topics:[],topicPreset:'',ueMinutes:45},ignoredPairs:[],lastBackup:'',migratedV10:false}}
+function openDB(){return new Promise((res,rej)=>{const r=indexedDB.open(DBNAME,2);r.onupgradeneeded=()=>{const d=r.result;[['documents','id'],['lessons','id'],['meta','key']].forEach(([n,k])=>{if(!d.objectStoreNames.contains(n))d.createObjectStore(n,{keyPath:k})})};r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);r.onblocked=()=>rej(new Error('Die Werkstatt ist noch in einem anderen Tab geöffnet. Bitte diesen Tab schließen und die Seite neu laden.'))})}
+function tx(stores,fn){return new Promise((res,rej)=>{const t=db.transaction(stores,'readwrite');fn(t);t.oncomplete=()=>res();t.onerror=()=>rej(t.error);t.onabort=()=>rej(t.error||new Error('Speichern abgebrochen'))})}
+function dbAll(s){return new Promise((res,rej)=>{const q=db.transaction(s).objectStore(s).getAll();q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)})}
+const dbPut=(s,x)=>tx([s],t=>t.objectStore(s).put(x));
+const dbDel=(s,id)=>tx([s],t=>t.objectStore(s).delete(id));
+async function saveMeta(){try{await dbPut('meta',meta)}catch(e){toast('Speichern fehlgeschlagen: '+e.message,'err')}}
+function storeErr(e){toast('Speichern fehlgeschlagen: '+(e&&e.name==='QuotaExceededError'?'Der Browserspeicher ist voll.':(e&&e.message)||e),'err')}
+
+function normalizeMeta(m){const d=defaultMeta();m=m||{};return {...d,...m,key:'state',settings:{...d.settings,...(m.settings||{}),topics:Array.isArray(m.settings&&m.settings.topics)?m.settings.topics:[]},practice:Array.isArray(m.practice)?m.practice.map(normalizePractice):[],ignoredPairs:Array.isArray(m.ignoredPairs)?m.ignoredPairs:[]}}
+function normalizeDoc(d){const ext=String(d.name||'').split('.').pop().toLowerCase();return {...d,name:String(d.name||'ohne Namen'),path:d.path||d.name||'',type:d.type||ext,text:String(d.text||''),topic:d.topic||UNASSIGNED,status:DOC_STATUS[d.status]?d.status:'aktiv',dupOf:d.dupOf||'',added:d.added||nowISO()}}
+function normalizePractice(p){let steps=String(p.steps||'');if(/<[a-z][\s\S]*>/i.test(steps))steps=htmlToText(steps);return {id:p.id||uid('prac'),title:p.title||'Ohne Titel',topic:p.topic||UNASSIGNED,format:p.format||'Planspiel',duration:p.duration||'',level:p.level==='Einsatznah'?'Praxisnah':(p.level||'Grundlage'),tools:p.tools||'',goal:p.goal||'',steps,solution:p.solution||'',status:p.status||'Entwurf',created:p.created||p.createdAt||nowISO()}}
+function normalizeLesson(l){
+ const x={id:l.id||uid('lesson'),title:l.title||'Ohne Titel',topic:l.topic||UNASSIGNED,ue:clamp(parseInt(l.ue,10)||1,1,MAX_UE),start:l.start||'',audience:l.audience||'',version:l.version||'',status:LESSON_STATUS.includes(l.status)?l.status:'Entwurf',goals:l.goals||'',phases:Array.isArray(l.phases)?l.phases.map(p=>({min:Number(p.min)||0,phase:p.phase||'',content:p.content||'',method:p.method||'',media:p.media||''})):[],teacherNotes:l.teacherNotes||'',content:l.content!=null?l.content:(l.body||''),keyPoints:l.keyPoints||'',slides:l.slides||'',quiz:l.quiz||'',homework:l.homework||'',exercise:l.exercise||'',exerciseSolution:l.exerciseSolution||'',practiceIds:Array.isArray(l.practiceIds)?l.practiceIds:[],sourceIds:Array.isArray(l.sourceIds)?l.sourceIds:[],aiDraft:!!(l.aiDraft||/\[KI-ENTWURF/.test(l.body||'')),created:l.created||l.updated||nowISO(),updated:l.updated||nowISO()};
+ if(!x.phases.length&&Array.isArray(l.parts)){const n=['Einstieg','Erarbeitung','Übung / Abschluss'];x.phases=l.parts.map((m,i)=>({min:Number(m)||0,phase:n[i]||'',content:'',method:i===1?(l.methods||''):'',media:''}))}
+ return x;
+}
+async function migrateV10(){
+ if(meta.migratedV10)return;
+ try{const old=JSON.parse(localStorage.getItem(LEGACY_KEY)||'null');if(old&&Array.isArray(old.practice)){const have=new Set(meta.practice.map(p=>p.id));old.practice.filter(p=>!have.has(p.id)).forEach(p=>meta.practice.push(normalizePractice(p)))}}catch(e){}
+ meta.migratedV10=true;await saveMeta();
+}
+
+/* ================= Themen ================= */
+function preset(){return TOPIC_PRESETS[meta.settings.topicPreset]||TOPIC_PRESETS.none}
+function topics(){return [...new Set([...preset().topics,...(meta.settings.topics||[]),OTHER])]}
+function topicOptions(sel,withUn,extra,allowNew){const base=topics();const list=[...(withUn?[UNASSIGNED]:[]),...base,...(extra||[]).filter(x=>x&&x!==UNASSIGNED&&!base.includes(x))];return list.map(t=>`<option${t===sel?' selected':''}>${esc(t)}</option>`).join('')+(allowNew?`<option value="${NEW_TOPIC}">+ Neues Thema …</option>`:'')}
+function usedTopics(){return [...new Set([...docs.map(d=>d.topic),...lessons.map(l=>l.topic),...meta.practice.map(p=>p.topic)])]}
+function topicGuess(name,text){
+ const n=name.toLowerCase(),pats=preset().patterns;
+ const hit=pats.find(([,r])=>r.test(n));if(hit)return hit[0];
+ const cand=topics().filter(t=>t!==OTHER);
+ const direct=cand.find(t=>n.includes(t.toLowerCase()));if(direct)return direct;
+ const tx=text.slice(0,4000).toLowerCase();let best=null,bestN=1;
+ for(const [topic,r] of pats){const c=(tx.match(new RegExp(r.source,'g'))||[]).length;if(c>bestN){best=topic;bestN=c}}
+ if(!best)for(const t of cand){const ws=norm(t).split(' ').filter(w=>w.length>3);if(!ws.length)continue;const c=ws.reduce((a,w)=>a+(n.includes(w)?3:0)+(tx.split(w).length-1),0);if(c>bestN){best=t;bestN=c}}
+ return best||UNASSIGNED;
+}
+function ueMin(){return clamp(parseInt(meta.settings.ueMinutes,10)||45,20,180)}
+function addTopic(t){t=String(t||'').trim();if(!t||t===UNASSIGNED||t===NEW_TOPIC)return '';if(!topics().includes(t)){meta.settings.topics.push(t);saveMeta()}return t}
+if(typeof document!=='undefined'&&document.addEventListener){
+document.addEventListener('focusin',e=>{if(e.target.tagName==='SELECT')e.target.dataset.prev=e.target.value},true);
+document.addEventListener('change',e=>{const sel=e.target;if(sel.tagName!=='SELECT'||sel.value!==NEW_TOPIC)return;const t=addTopic(prompt('Name des neuen Themas:'));if(!t){sel.value=sel.dataset.prev||UNASSIGNED;e.stopImmediatePropagation();return}const o=document.createElement('option');o.textContent=t;sel.insertBefore(o,sel.querySelector(`option[value="${NEW_TOPIC}"]`));sel.value=t;sel.dataset.prev=t;toast(`Thema „${t}“ angelegt.`)},true);
+}
+function matchTopic(s){const n=norm(s);if(!n)return UNASSIGNED;return topics().find(t=>norm(t)===n)||topics().find(t=>n.includes(norm(t))||norm(t).includes(n))||UNASSIGNED}
+
+/* ================= Navigation ================= */
+const PAGES=[['home','Übersicht'],['sources','Quellen'],['compare','Dubletten & Vergleich'],['lessons','Unterrichtseinheiten'],['ai','KI-Assistent'],['practice','Praxis & Planspiele'],['data','Daten & Einstellungen'],['help','Anleitung']];
+let current='home';
+function buildNav(){$('nav').innerHTML=PAGES.map(([id,l])=>`<button data-p="${id}" onclick="go('${id}')"><span>${l}</span><span class="badge" id="b-${id}"></span></button>`).join('')}
+function go(p){
+ if(!PAGES.some(x=>x[0]===p))p='home';
+ if(p!==current&&editorDirty){if(!confirm('Die geöffnete Unterrichtseinheit enthält ungespeicherte Änderungen. Beim Wechsel gehen sie verloren. Trotzdem wechseln?'))return;closeEditor(true)}
+ current=p;
+ document.querySelectorAll('.page').forEach(s=>{s.hidden=s.id!=='p-'+p});
+ document.querySelectorAll('nav button').forEach(b=>{if(b.dataset.p===p)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
+ history.replaceState(null,'','#'+p);renderPage(p);window.scrollTo(0,0);
+}
+function renderPage(p){
+ ({home:renderHome,sources:renderSources,compare:renderCompare,lessons:renderLessons,ai:renderAI,practice:renderPractice,data:renderData,help:()=>{}})[p]();
+ renderChrome();
+}
+function renderChrome(){
+ const ov=overlaps().length;
+ $('b-sources').textContent=docs.filter(d=>d.status==='aktiv').length||'';
+ const bc=$('b-compare');bc.textContent=ov||'';bc.classList.toggle('alert',ov>0);
+ $('b-lessons').textContent=lessons.length||'';
+ $('b-practice').textContent=meta.practice.length||'';
+ document.querySelectorAll('.ueMinLbl').forEach(e=>e.textContent=ueMin());
+ $('hdrStatus').textContent=`${docs.length} Quellen – letzte Sicherung: ${meta.lastBackup?fmtDate(meta.lastBackup):'noch nie'}`;
+}
+document.addEventListener('click',e=>{const b=e.target.closest('.menu-body button');if(b){const d=b.closest('details');if(d)d.open=false}});
+window.addEventListener('beforeunload',e=>{if(editorDirty){e.preventDefault();e.returnValue=''}});
+
+/* ================= Überschneidungen ================= */
+const STOP=new Set('aber alle allem allen aller alles also andere anderen auch auf aus bei beim bereits bis dabei damit dann dass dem den denen der des dessen die dies diese diesem diesen dieser dieses doch dort durch eine einem einen einer eines etwa euch für gegen habe haben hat hatte hier immer indem jede jedem jeden jeder jedes kann kein keine können mehr muss müssen nach nicht noch nur oder ohne sehr sein seine sich sie sind soll sollen sowie über unter vom von vor wann warum weil welche wenn werden wird wieder wird wurde zum zur zwischen folie seite notizen'.split(' '));
+const fpCache=new Map();let overlapCache=null;
+function splitSentences(t){return String(t).split(/(?<=[.!?:;])\s+|\n+/).map(s=>s.trim()).filter(Boolean)}
+function fp(d){let f=fpCache.get(d.id);if(f&&f.len===d.text.length)return f;const sents=new Set(splitSentences(d.text).map(norm).filter(s=>s.length>=40));const toks=new Set(norm(d.text).split(' ').slice(0,6000).filter(w=>w.length>3&&!STOP.has(w)));f={sents,toks,len:d.text.length};fpCache.set(d.id,f);return f}
+function inter(a,b){if(a.size>b.size)[a,b]=[b,a];let n=0;for(const x of a)if(b.has(x))n++;return n}
+const pairKey=(a,b)=>[a,b].sort().join('|');
+function invalidate(){overlapCache=null}
+function overlaps(){
+ if(overlapCache)return overlapCache;
+ const ign=new Set(meta.ignoredPairs),list=docs.filter(d=>d.status!=='archiviert'),out=[];
+ for(let i=0;i<list.length;i++)for(let j=i+1;j<list.length;j++){
+  const a=list[i],b=list[j];
+  if(ign.has(pairKey(a.id,b.id)))continue;
+  if((a.status==='dublette'&&a.dupOf===b.id)||(b.status==='dublette'&&b.dupOf===a.id))continue;
+  if(a.hash&&a.hash===b.hash){out.push({a,b,score:100,kind:'identische Datei'});continue}
+  const fa=fp(a),fb=fp(b);
+  const c=fa.sents.size&&fb.sents.size?inter(fa.sents,fb.sents):0;
+  const ratio=c?c/Math.min(fa.sents.size,fb.sents.size):0;
+  const voc=fa.toks.size>20&&fb.toks.size>20?inter(fa.toks,fb.toks)/Math.min(fa.toks.size,fb.toks.size):0;
+  const score=Math.max(ratio,voc*0.55);
+  if(score>=0.3)out.push({a,b,score:Math.round(score*100),kind:ratio>=0.3?`${c} wortgleiche Sätze`:'ähnlicher Fachwortschatz'});
+ }
+ out.sort((x,y)=>y.score-x.score);
+ return overlapCache=out;
+}
+function compareDocs(a,b){
+ const sa=splitSentences(a.text).filter(s=>s.length>=25),sb=splitSentences(b.text).filter(s=>s.length>=25);
+ const na=new Set(sa.map(norm)),nb=new Set(sb.map(norm)),seen=new Set(),common=[],onlyA=[],onlyB=[];
+ for(const s of sa){const n=norm(s);if(nb.has(n)){if(!seen.has(n)){common.push(s);seen.add(n)}}else onlyA.push(s)}
+ for(const s of sb)if(!na.has(norm(s)))onlyB.push(s);
+ return {common,onlyA,onlyB};
+}
+function mergeDocTexts(list){
+ const seen=new Set();let dropped=0;const parts=[];
+ for(const d of list){
+  const kept=[];
+  for(const para of d.text.split(/\n\s*\n/)){
+   const ls=para.split('\n').map(l=>l.trim()).filter(l=>l&&!/^(Folie|Seite)\s+\d+$/i.test(l)&&!/^Notizen:\s*$/.test(l)).filter(l=>{const n=norm(l);if(n.length<12)return true;if(seen.has(n)){dropped++;return false}seen.add(n);return true});
+   if(ls.length)kept.push(ls.join('\n'));
+  }
+  if(kept.length)parts.push(`[Quelle: ${d.name}]\n`+kept.join('\n\n'));
+ }
+ return {content:parts.join('\n\n'),dropped};
+}
+
+/* ================= Übersicht ================= */
+function lessonCheck(l){
+ const miss=[],warn=[];
+ if(!l.goals.trim())miss.push('Lernziele');if(!l.phases.length)miss.push('Ablaufplan');if(!l.content.trim()&&!l.keyPoints.trim())miss.push('Lehrinhalt');
+ const sum=phaseSum(l),target=l.ue*ueMin();if(l.phases.length&&sum!==target)warn.push(`Unterrichtszeit im Ablauf ${sum} statt ${target} Min.`);
+ if(!l.sourceIds.length)warn.push('keine Quelle verknüpft');
+ if(!l.quiz.trim())warn.push('keine Lernkontrolle');
+ if(l.topic===UNASSIGNED)warn.push('Thema fehlt');
+ const all=[l.content,l.keyPoints,l.slides,l.teacherNotes,l.exercise].join('\n');
+ if(/\[PRÜFEN/i.test(all))warn.push('offene [PRÜFEN]-Stellen');
+ return {miss,warn};
+}
+const phaseSum=l=>(l.phases||[]).filter(p=>!isBreak(p)).reduce((a,p)=>a+(Number(p.min)||0),0);
+const breakSum=l=>(l.phases||[]).filter(isBreak).reduce((a,p)=>a+(Number(p.min)||0),0);
+function renderHome(){
+ const act=docs.filter(d=>d.status==='aktiv'),un=act.filter(d=>d.topic===UNASSIGNED).length,ov=overlaps().length;
+ const ent=lessons.filter(l=>l.status==='Entwurf').length,gep=lessons.filter(l=>l.status==='fachlich geprüft').length,frei=lessons.filter(l=>l.status==='freigegeben').length;
+ const daysSince=meta.lastBackup?(Date.now()-new Date(meta.lastBackup))/864e5:Infinity;
+ let alerts='';
+ if(docs.length&&daysSince>14)alerts+=`<div class="note err"><b>Sicherung empfohlen.</b> ${meta.lastBackup?`Die letzte Sicherung ist ${Math.floor(daysSince)} Tage alt.`:'Es wurde noch keine Sicherung erstellt.'} <button class="btn" onclick="exportBackup()">Jetzt sichern</button></div>`;
+ if(topics().length<=1)alerts+=`<div class="note">Es sind noch keine Themen angelegt. Tragen Sie Ihre Themen unter <button class="linkbtn" onclick="go('data')">Daten &amp; Einstellungen</button> ein oder wählen Sie dort eine Themenvorlage. Einzelne Themen können Sie auch direkt beim Zuordnen über „+ Neues Thema …“ anlegen.</div>`;
+ if(!docs.length)alerts+=`<div class="note">Die Werkstatt ist leer. Beginnen Sie mit <button class="linkbtn" onclick="go('sources')">Quellen → Unterlagen einlesen</button>; am einfachsten den ganzen Ordner mit Ihren Unterlagen auswählen. Eine Schritt-für-Schritt-Hilfe steht unter <button class="linkbtn" onclick="helpAt('h-start')">Anleitung</button>.</div>`;
+ $('homeAlerts').innerHTML=alerts;
+ const step=(done,todo,title,text,btn)=>`<li class="${done?'done':todo?'todo':''}"><b>${title}</b><span class="small muted">${text}</span>${btn?`<div class="row" style="margin-top:6px">${btn}</div>`:''}</li>`;
+ $('flow').innerHTML=[
+  step(docs.length>0,false,'Unterlagen einlesen',`${act.length} aktive Quellen`,`<button class="btn" onclick="go('sources')">Quellen</button>`),
+  step(docs.length&&!un,un>0,'Themen zuordnen',un?`${un} Quellen ohne Thema`:'alle zugeordnet',un?`<button class="btn" onclick="showSources('${UNASSIGNED}')">Zuordnen</button>`:''),
+  step(docs.length&&!ov,ov>0,'Dubletten klären',ov?`${ov} offene Überschneidungen`:'keine offenen Hinweise',ov?`<button class="btn" onclick="go('compare')">Prüfen</button>`:''),
+  step(lessons.length>0,false,'Einheiten erstellen',`${lessons.length} Einheiten (${lessons.reduce((a,l)=>a+l.ue,0)} UE)`,`<button class="btn" onclick="go('ai')">KI-Assistent</button><button class="btn" onclick="go('lessons')">Einheiten</button>`),
+  step(lessons.length&&!ent&&!gep,ent+gep>0,'Prüfen und freigeben',`${ent} Entwurf, ${gep} geprüft, ${frei} freigegeben`,''),
+  step(false,false,'Ausgeben','Dozentenversion, Handout, Präsentation als Word, PDF, PowerPoint oder Komplettpaket',''),
+  step(daysSince<=14,docs.length&&daysSince>14,'Sichern',meta.lastBackup?`zuletzt ${fmtDate(meta.lastBackup)}`:'noch keine Sicherung',`<button class="btn" onclick="exportBackup()">Sichern</button>`)
+ ].join('');
+ const tl=[...new Set([UNASSIGNED,...topics(),...usedTopics()])].sort((a,b)=>{const w=t=>docs.some(d=>d.topic===t)||lessons.some(l=>l.topic===t)||meta.practice.some(p=>p.topic===t)?0:1;return w(a)-w(b)});
+ const rows=tl.map(t=>{
+  const q=act.filter(d=>d.topic===t).length,o=overlaps().filter(x=>x.a.topic===t||x.b.topic===t).length,ls=lessons.filter(l=>l.topic===t),pr=meta.practice.filter(p=>p.topic===t).length;
+  if(t===UNASSIGNED&&!q&&!ls.length)return '';
+  const empty=!q&&!ls.length&&!pr;
+  const st=LESSON_STATUS.map(s=>ls.filter(l=>l.status===s).length);
+  return `<tr class="${empty?'empty':''}"><td>${esc(t)}</td><td class="num">${q?`<button class="linkbtn" onclick="showSources(this.dataset.t)" data-t="${esc(t)}">${q}</button>`:'0'}</td><td class="num">${o?`<span class="pill red">${o}</span>`:'–'}</td><td class="num">${ls.length?`<button class="linkbtn" onclick="showLessons(this.dataset.t)" data-t="${esc(t)}">${ls.length}</button>`:'0'}</td><td class="num">${ls.reduce((a,l)=>a+l.ue,0)||'–'}</td><td class="small">${ls.length?`${st[0]} Entwurf, ${st[1]} geprüft, ${st[2]} freigegeben`:''}</td><td class="num">${pr||'–'}</td><td>${q&&!ls.length?`<button class="btn ghost small" onclick="startAIForTopic(this.dataset.t)" data-t="${esc(t)}">Einheit erstellen</button>`:''}</td></tr>`;
+ }).join('');
+ $('topicMap').innerHTML=`<thead><tr><th>Thema</th><th>Quellen</th><th>Überschneidungen</th><th>Einheiten</th><th>UE</th><th>Stand</th><th>Praxis</th><th></th></tr></thead><tbody>${rows}</tbody>`;
+}
+function showSources(t){go('sources');$('docTopic').value=t;$('docStatus').value='aktiv';docLimit=40;renderSources()}
+function showLessons(t){go('lessons');$('lessonTopic').value=t;renderLessonList()}
+function startAIForTopic(t){const ids=docs.filter(d=>d.topic===t&&d.status==='aktiv').map(d=>d.id);preselectAI(ids,'new',t)}
+
+/* ================= Quellen ================= */
+let docLimit=40;const selDocs=new Set();
+function filteredDocs(){const q=v('docSearch').trim().toLowerCase(),t=v('docTopic'),s=v('docStatus')||'aktiv';return docs.filter(d=>(!t||d.topic===t)&&(s==='alle'||d.status===s)&&(!q||d.name.toLowerCase().includes(q)||d.text.toLowerCase().includes(q))).sort((a,b)=>a.topic.localeCompare(b.topic,'de')||a.name.localeCompare(b.name,'de'))}
+function renderSources(){
+ const sel=$('docTopic'),old=sel.value;
+ sel.innerHTML='<option value="">alle Themen</option>'+topicOptions('',true,usedTopics());sel.value=old;
+ const list=filteredDocs(),q=v('docSearch').trim().toLowerCase();
+ $('docCount').textContent=`${list.length} von ${docs.length} Quellen angezeigt`;
+ $('docList').innerHTML=list.length?list.slice(0,docLimit).map(d=>docItem(d,q)).join(''):`<p class="muted">${docs.length?'Keine Quelle passt zu Suche und Filter.':'Noch keine Unterlagen eingelesen.'}</p>`;
+ $('docMore').innerHTML=list.length>docLimit?`<div class="row"><button class="btn" onclick="docLimit+=40;renderSources()">Weitere ${Math.min(40,list.length-docLimit)} anzeigen</button><span class="muted small">noch ${list.length-docLimit} weitere</span></div>`:'';
+ $('selAllShown').checked=list.length>0&&list.slice(0,docLimit).every(d=>selDocs.has(d.id));
+ renderBulk();
+}
+function snippet(text,q){const i=text.toLowerCase().indexOf(q);if(i<0)return '';const s=Math.max(0,i-90),e=Math.min(text.length,i+q.length+90);return (s?'…':'')+esc(text.slice(s,i))+'<mark>'+esc(text.slice(i,i+q.length))+'</mark>'+esc(text.slice(i+q.length,e))+(e<text.length?'…':'')}
+function docItem(d,q){
+ const dup=d.status==='dublette'&&d.dupOf?docs.find(x=>x.id===d.dupOf):null;const snip=q&&!d.name.toLowerCase().includes(q)?snippet(d.text,q):(q?snippet(d.text,q):'');
+ const used=lessons.filter(l=>l.sourceIds.includes(d.id)).length;
+ return `<div class="item ${d.status}"><label class="sel"><input type="checkbox" ${selDocs.has(d.id)?'checked':''} onchange="toggleSel('${d.id}',this.checked)" aria-label="Auswählen"></label><div class="grow">
+<div class="titleline"><b>${esc(d.name)}</b> <span class="pill">${esc(String(d.type).toUpperCase())}</span>${d.status!=='aktiv'?`<span class="pill ${d.status==='dublette'?'red':''}">${DOC_STATUS[d.status]}</span>`:''}${used?`<span class="pill green">in ${used} Einheit${used>1?'en':''}</span>`:''}</div>
+<div class="muted small">${esc(d.path)} – ${d.text.length.toLocaleString('de-DE')} Zeichen – eingelesen ${fmtDate(d.added)}${dup?` – Dublette von „${esc(dup.name)}“`:''}</div>
+${snip?`<div class="snip">${snip}</div>`:''}
+<div class="row small" style="margin-top:6px"><label class="inline">Thema <select onchange="setDocField('${d.id}','topic',this.value)">${topicOptions(d.topic,true,[d.topic],true)}</select></label><label class="inline">Status <select onchange="setDocField('${d.id}','status',this.value)">${Object.entries(DOC_STATUS).map(([k,l])=>`<option value="${k}"${k===d.status?' selected':''}>${l}</option>`).join('')}</select></label>
+<button class="btn ghost" onclick="toggleText('${d.id}')">Volltext</button><button class="btn ghost" onclick="cmpWith('${d.id}')">Vergleichen</button><button class="btn ghost danger" onclick="deleteDocs(['${d.id}'])">Löschen</button></div>
+<pre class="fulltext" id="ft-${d.id}" hidden></pre></div></div>`;
+}
+function toggleText(id){const p=$('ft-'+id),d=docs.find(x=>x.id===id);if(!p||!d)return;if(p.hidden){p.textContent=d.text;p.hidden=false}else{p.hidden=true;p.textContent=''}}
+function toggleSel(id,on){on?selDocs.add(id):selDocs.delete(id);renderBulk()}
+function selectAllShown(on){filteredDocs().slice(0,docLimit).forEach(d=>on?selDocs.add(d.id):selDocs.delete(d.id));renderSources()}
+function renderBulk(){
+ for(const id of [...selDocs])if(!docs.some(d=>d.id===id))selDocs.delete(id);
+ const n=selDocs.size;
+ $('bulkBar').innerHTML=n?`<div class="bulk"><b>${n} ausgewählt</b><select id="bulkTopic" aria-label="Thema für Auswahl">${topicOptions(UNASSIGNED,true,usedTopics(),true)}</select><button class="btn" onclick="bulkTopic()">Thema zuweisen</button><button class="btn" onclick="mergeToLesson([...selDocs])">Zu Einheit zusammenführen</button><button class="btn" onclick="preselectAI([...selDocs],'new','')">An KI-Assistent</button>${n===2?`<button class="btn" onclick="cmpPair=[...selDocs];go('compare')">Vergleichen</button>`:''}<button class="btn" onclick="bulkStatus('archiviert')">Archivieren</button><button class="btn danger" onclick="deleteDocs([...selDocs])">Löschen</button><button class="btn ghost" style="color:#fff" onclick="selDocs.clear();renderSources()">Auswahl aufheben</button></div>`:'';
+}
+async function setDocField(id,f,val){const d=docs.find(x=>x.id===id);if(!d)return;d[f]=val;if(f==='status'&&val!=='dublette')d.dupOf='';try{await dbPut('documents',d)}catch(e){return storeErr(e)}invalidate();renderSources();renderChrome()}
+async function bulkTopic(){const t=v('bulkTopic');const list=docs.filter(d=>selDocs.has(d.id));list.forEach(d=>d.topic=t);try{await tx(['documents'],x=>list.forEach(d=>x.objectStore('documents').put(d)))}catch(e){return storeErr(e)}toast(`${list.length} Quellen dem Thema „${t}“ zugewiesen.`);renderSources();renderChrome()}
+async function bulkStatus(s){const list=docs.filter(d=>selDocs.has(d.id));list.forEach(d=>{d.status=s;if(s!=='dublette')d.dupOf=''});try{await tx(['documents'],x=>list.forEach(d=>x.objectStore('documents').put(d)))}catch(e){return storeErr(e)}invalidate();selDocs.clear();toast(`${list.length} Quellen archiviert.`);renderSources();renderChrome()}
+async function deleteDocs(ids){
+ const list=docs.filter(d=>ids.includes(d.id));if(!list.length)return;
+ const used=lessons.filter(l=>l.sourceIds.some(id=>ids.includes(id))).length;
+ if(!confirm(`${list.length===1?`„${list[0].name}“`:list.length+' Quellen'} aus der Werkstatt löschen?${used?`\n\nAchtung: ${used} Unterrichtseinheit(en) verweisen darauf; der Verweis entfällt.`:''}\n\nDie Originaldatei auf dem Datenträger bleibt unberührt.`))return;
+ try{await tx(['documents'],x=>ids.forEach(id=>x.objectStore('documents').delete(id)))}catch(e){return storeErr(e)}
+ docs=docs.filter(d=>!ids.includes(d.id));ids.forEach(id=>{selDocs.delete(id);fpCache.delete(id)});
+ docs.forEach(d=>{if(ids.includes(d.dupOf)){d.dupOf='';}});
+ invalidate();toast(`${list.length} Quelle(n) gelöscht.`);renderPage(current);
+}
+
+/* ---------- Import ---------- */
+async function sha(buffer){if(!(window.crypto&&crypto.subtle))return 'len-'+buffer.byteLength+'-'+Array.from(new Uint8Array(buffer.slice(0,4096))).reduce((h,b)=>(h*31+b)>>>0,7).toString(16);const bytes=new Uint8Array(await crypto.subtle.digest('SHA-256',buffer));return [...bytes].map(x=>x.toString(16).padStart(2,'0')).join('')}
+async function extractFile(file,ab){
+ const name=file.name.toLowerCase();
+ if(/\.(txt|md|html?)$/.test(name)){const t=new TextDecoder('utf-8').decode(ab);return /\.html?$/.test(name)?htmlToText(t.replace(/<(script|style)[\s\S]*?<\/\1>/gi,'')):t}
+ if(name.endsWith('.docx')){await loadLib('mammoth');return (await mammoth.extractRawText({arrayBuffer:ab})).value}
+ if(name.endsWith('.pptx')){
+  await loadLib('jszip');const zip=await JSZip.loadAsync(ab);
+  const slides=Object.keys(zip.files).filter(x=>/^ppt\/slides\/slide\d+\.xml$/.test(x)).sort((a,b)=>+a.match(/(\d+)\.xml/)[1]-+b.match(/(\d+)\.xml/)[1]);
+  const paras=xml=>[...xml.getElementsByTagNameNS('*','p')].filter(p=>p.namespaceURI&&p.namespaceURI.includes('drawingml')).map(p=>[...p.getElementsByTagNameNS('*','t')].map(t=>t.textContent).join('').trim()).filter(Boolean);
+  const out=[];
+  for(const path of slides){
+   const xml=new DOMParser().parseFromString(await zip.file(path).async('string'),'application/xml');
+   const txt=paras(xml);let block='Folie '+path.match(/(\d+)\.xml/)[1]+(txt.length?'\n'+txt.join('\n'):'');
+   const rels=zip.file(path.replace('slides/slide','slides/_rels/slide')+'.rels');
+   let notesPath=path.replace('slides/slide','notesSlides/notesSlide');
+   if(rels){const r=(await rels.async('string')).match(/Target="\.\.\/notesSlides\/(notesSlide\d+\.xml)"/);if(r)notesPath='ppt/notesSlides/'+r[1]}
+   if(zip.file(notesPath)){const nx=new DOMParser().parseFromString(await zip.file(notesPath).async('string'),'application/xml');const n=paras(nx).filter(x=>!/^\d+$/.test(x));if(n.length)block+='\nNotizen:\n'+n.join('\n')}
+   out.push(block);
+  }
+  return out.join('\n\n');
+ }
+ if(name.endsWith('.pdf')){
+  await loadLib('pdfjs');const pdf=await pdfjsLib.getDocument({data:new Uint8Array(ab),disableFontFace:true}).promise,out=[];
+  for(let i=1;i<=pdf.numPages;i++){const c=await(await pdf.getPage(i)).getTextContent();out.push('Seite '+i+'\n'+c.items.map(x=>x.str+(x.hasEOL?'\n':' ')).join('').replace(/[ \t]+\n/g,'\n').trim())}
+  return out.join('\n\n');
+ }
+ throw new Error('Format wird nicht unterstützt');
+}
+async function importSelected(){
+ if(!db)return toast('Der Browserspeicher ist nicht verfügbar.','err');
+ const all=[...$('importFiles').files,...$('importFolder').files];
+ if(!all.length)return toast('Bitte zuerst Dateien oder einen Ordner auswählen.','err');
+ const skipped={},files=[];
+ for(const f of all){if(/^(~\$|\.)/.test(f.name)||/(^|\/)\./.test(f.webkitRelativePath||''))continue;if(SUPPORTED.test(f.name))files.push(f);else{const e=(f.name.includes('.')?'.'+f.name.split('.').pop().toLowerCase():'ohne Endung');skipped[e]=(skipped[e]||0)+1}}
+ const st=$('importProgress'),ok=[],same=[],errs=[];
+ for(let i=0;i<files.length;i++){
+  const f=files[i];st.textContent=`${i+1} von ${files.length}: ${f.name}`;await new Promise(r=>setTimeout(r,0));
+  try{
+   const ab=await f.arrayBuffer(),hash=await sha(ab);
+   const twin=docs.find(x=>x.hash===hash);if(twin){same.push(`${f.name} (bereits als „${twin.name}“)`);continue}
+   const text=(await extractFile(f,ab)).replace(/\r/g,'').replace(/\n{3,}/g,'\n\n').trim();
+   if(text.replace(/(Folie|Seite)\s+\d+/g,'').trim().length<20)throw new Error('kein Text erkannt – bei Scans vorher Texterkennung (OCR) anwenden');
+   const item=normalizeDoc({id:uid('doc'),name:f.name,path:f.webkitRelativePath||f.name,type:f.name.split('.').pop().toLowerCase(),size:f.size,hash,topic:topicGuess((f.webkitRelativePath||f.name),text),text,added:nowISO()});
+   await dbPut('documents',item);docs.push(item);ok.push(item);
+  }catch(e){errs.push(`${f.name}: ${e.message}`);if(/Zusatzbibliothek/.test(e.message))break}
+ }
+ st.textContent='';$('importFiles').value='';$('importFolder').value='';invalidate();
+ const skipTxt=Object.entries(skipped).map(([e,n])=>`${n}× ${e}`).join(', ');
+ const legacy=(skipped['.doc']||0)+(skipped['.ppt']||0);
+ $('importResult').innerHTML=`<div class="note ${errs.length?'':'ok'}"><b>${ok.length} Datei(en) eingelesen.</b>${ok.length?` Davon ohne erkanntes Thema: ${ok.filter(d=>d.topic===UNASSIGNED).length}.`:''}
+${same.length?`<details><summary>${same.length} identische Datei(en) übersprungen</summary><ul class="small">${same.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></details>`:''}
+${skipTxt?`<div class="small">Nicht unterstützte Dateien ausgelassen: ${esc(skipTxt)}.${legacy?' DOC- und PPT-Dateien bitte in Word bzw. PowerPoint als DOCX/PPTX speichern und erneut einlesen.':''}</div>`:''}
+${errs.length?`<details open><summary>${errs.length} Datei(en) nicht eingelesen</summary><ul class="small">${errs.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></details>`:''}
+${ok.length?`<div class="row"><button class="btn" onclick="go('compare')">Überschneidungen prüfen (${overlaps().length})</button></div>`:''}</div>`;
+ renderSources();renderChrome();
+}
+
+/* ================= Vergleich ================= */
+let cmpPair=['',''];
+function cmpWith(id){cmpPair=[id,cmpPair[0]&&cmpPair[0]!==id?cmpPair[0]:''];go('compare');$('cmpCard').scrollIntoView()}
+function renderCompare(){
+ const ov=overlaps();
+ $('ovList').innerHTML=ov.length?ov.slice(0,80).map(o=>`<div class="item"><div class="grow"><b>${esc(o.a.name)}</b> ↔ <b>${esc(o.b.name)}</b><div class="muted small">${o.score} % – ${esc(o.kind)} – ${esc(o.a.topic)}${o.a.topic!==o.b.topic?' / '+esc(o.b.topic):''}</div></div><div class="row" style="margin:0"><button class="btn" onclick="openPair('${o.a.id}','${o.b.id}')">Vergleichen</button><button class="btn ghost" onclick="ignorePair('${o.a.id}','${o.b.id}')">Kein Duplikat</button></div></div>`).join('')+(ov.length>80?`<p class="muted small">Weitere ${ov.length-80} Hinweise werden angezeigt, sobald die obigen geklärt sind.</p>`:''):`<p class="muted">${docs.length>1?'Keine offenen Hinweise auf Überschneidungen.':'Für einen Vergleich werden mindestens zwei Quellen benötigt.'}</p>`;
+ const opts='<option value="">– Quelle wählen –</option>'+docs.slice().sort((a,b)=>a.name.localeCompare(b.name,'de')).map(d=>`<option value="${d.id}">${esc(d.name)}${d.status!=='aktiv'?' ('+DOC_STATUS[d.status]+')':''}</option>`).join('');
+ $('cmpA').innerHTML=opts;$('cmpB').innerHTML=opts;$('cmpA').value=cmpPair[0]||'';$('cmpB').value=cmpPair[1]||'';
+ renderCompareOut();
+}
+function openPair(a,b){cmpPair=[a,b];$('cmpA').value=a;$('cmpB').value=b;renderCompareOut();$('cmpCard').scrollIntoView({behavior:'smooth'})}
+async function ignorePair(a,b){meta.ignoredPairs.push(pairKey(a,b));await saveMeta();invalidate();renderCompare();renderChrome()}
+async function resetIgnored(){if(!meta.ignoredPairs.length)return toast('Es sind keine Paare ausgeblendet.');meta.ignoredPairs=[];await saveMeta();invalidate();renderCompare();renderChrome()}
+function renderCompareOut(){
+ const a=docs.find(d=>d.id===cmpPair[0]),b=docs.find(d=>d.id===cmpPair[1]),out=$('cmpOut');
+ if(!a||!b||a===b){out.innerHTML='<p class="muted">Zwei verschiedene Quellen wählen.</p>';return}
+ const r=compareDocs(a,b),list=(arr)=>arr.length?`<div class="passage">${arr.slice(0,400).map(esc).join('\n\n')}${arr.length>400?'\n\n[… gekürzt]':''}</div>`:'<p class="muted small">keine</p>';
+ const pa=r.common.length+r.onlyA.length?Math.round(r.common.length/(r.common.length+r.onlyA.length)*100):0,pb=r.common.length+r.onlyB.length?Math.round(r.common.length/(r.common.length+r.onlyB.length)*100):0;
+ out.innerHTML=`<div class="cmp-stats"><div><strong>${r.common.length}</strong><span class="small">wortgleiche Sätze</span></div><div><strong>${pa} %</strong><span class="small">von A auch in B</span></div><div><strong>${pb} %</strong><span class="small">von B auch in A</span></div><div><strong>${r.onlyA.length} / ${r.onlyB.length}</strong><span class="small">Sätze nur in A / nur in B</span></div></div>
+<p class="muted small">Gezählt werden nur wortgleiche Sätze. Umformulierte Passagen erscheinen als „nur in A/B“ – für eine inhaltliche Prüfung eignet sich der KI-Assistent.</p>
+<div class="row"><button class="btn" onclick="markDup('${b.id}','${a.id}')">B ist Dublette von A</button><button class="btn" onclick="markDup('${a.id}','${b.id}')">A ist Dublette von B</button><button class="btn primary" onclick="mergeToLesson(['${a.id}','${b.id}'])">Zu Einheit zusammenführen</button><button class="btn" onclick="preselectAI(['${a.id}','${b.id}'],'check','')">KI-Prüfung auf Widersprüche</button><button class="btn ghost" onclick="ignorePair('${a.id}','${b.id}');renderCompareOut()">Kein Duplikat</button></div>
+<details><summary>Gemeinsame Sätze (${r.common.length})</summary>${list(r.common)}</details>
+<details${r.onlyA.length<200?' open':''}><summary>Nur in A: ${esc(a.name)} (${r.onlyA.length})</summary>${list(r.onlyA)}</details>
+<details${r.onlyB.length<200?' open':''}><summary>Nur in B: ${esc(b.name)} (${r.onlyB.length})</summary>${list(r.onlyB)}</details>`;
+}
+async function markDup(dupId,origId){const d=docs.find(x=>x.id===dupId),o=docs.find(x=>x.id===origId);if(!d||!o)return;d.status='dublette';d.dupOf=origId;try{await dbPut('documents',d)}catch(e){return storeErr(e)}invalidate();toast(`„${d.name}“ ist als Dublette markiert und erscheint nicht mehr unter den aktiven Quellen.`);renderCompare();renderChrome()}
+function mergeToLesson(ids){
+ const list=docs.filter(d=>ids.includes(d.id)).sort((a,b)=>b.text.length-a.text.length);
+ if(!list.length)return toast('Keine Quelle ausgewählt.','err');
+ const {content,dropped}=mergeDocTexts(list);
+ const tc={};list.forEach(d=>tc[d.topic]=(tc[d.topic]||0)+1);const topic=Object.entries(tc).sort((a,b)=>b[1]-a[1])[0][0];
+ newLesson({title:list.length===1?list[0].name.replace(/\.[^.]+$/,''):(topic!==UNASSIGNED?topic+' (zusammengeführt)':'Zusammenführung'),topic,content,sourceIds:list.map(d=>d.id),teacherNotes:`Rohfassung: ${list.length} Quelle(n) zusammengeführt, ${dropped} wortgleiche Zeilen entfernt. Reihenfolge: umfangreichste Quelle zuerst, danach nur noch neue Zeilen der weiteren Quellen. Bitte fachlich ordnen, kürzen und prüfen.`},true);
+}
+
+/* ================= Unterrichtseinheiten ================= */
+let editing=null,editorDirty=false,editorIsNew=false;
+function renderLessons(){const sel=$('lessonTopic'),old=sel.value;sel.innerHTML='<option value="">alle Themen</option>'+topicOptions('',true,usedTopics());sel.value=old;renderLessonList()}
+function renderLessonList(){
+ const q=v('lessonSearch').trim().toLowerCase(),t=v('lessonTopic'),s=v('lessonStatus');
+ const list=lessons.filter(l=>(!t||l.topic===t)&&(!s||l.status===s)&&(!q||[l.title,l.goals,l.content].join(' ').toLowerCase().includes(q))).sort((a,b)=>a.topic.localeCompare(b.topic,'de')||a.title.localeCompare(b.title,'de'));
+ $('lessonList').innerHTML=list.length?list.map(l=>{const c=lessonCheck(l),sc=l.status==='freigegeben'?'green':l.status==='fachlich geprüft'?'':'amber';return `<div class="item"><div class="grow">
+<div class="titleline"><b>${esc(l.title)}</b> <span class="pill">${esc(l.topic)}</span><span class="pill">${l.ue} UE</span><span class="pill ${sc}">${esc(l.status)}</span>${l.aiDraft?'<span class="pill amber">mit KI-Entwurf</span>':''}</div>
+<div class="muted small">geändert ${fmtDate(l.updated)} – ${l.sourceIds.length} Quelle(n)${c.miss.length?` – <span style="color:var(--red)">fehlt: ${c.miss.join(', ')}</span>`:''}${c.warn.length?` – ${c.warn.join(', ')}`:''}</div>
+<div class="row"><button class="btn" onclick="openEditor('${l.id}')">Bearbeiten</button>${exportMenu(l.id)}<button class="btn ghost" onclick="duplicateLesson('${l.id}')">Duplizieren</button><button class="btn ghost danger" onclick="deleteLesson('${l.id}')">Löschen</button></div></div></div>`}).join(''):`<p class="muted">${lessons.length?'Keine Einheit passt zum Filter.':'Noch keine Unterrichtseinheit. Neue Einheit anlegen, Quellen zusammenführen oder den KI-Assistenten nutzen.'}</p>`;
+}
+function exportMenu(id){return `<details class="menu"><summary class="btn primary">Ausgeben</summary><div class="menu-body">
+<b>Dozentenversion</b><button class="btn" onclick="exportLesson('${id}','teacher','docx')">Word (.docx)</button><button class="btn" onclick="exportLesson('${id}','teacher','pdf')">PDF (Druckansicht)</button>
+<b>Teilnehmer-Handout</b><button class="btn" onclick="exportLesson('${id}','handout','docx')">Word (.docx)</button><button class="btn" onclick="exportLesson('${id}','handout','pdf')">PDF (Druckansicht)</button>
+<b>Präsentation</b><button class="btn" onclick="exportLesson('${id}','slides','pptx')">PowerPoint (.pptx)</button>
+<b>Alles zusammen</b><button class="btn" onclick="exportPackage('${id}')">Komplettpaket (.zip)</button></div></details>`}
+function newLesson(preset,dirty){
+ if(!confirmLeaveEditor())return;
+ const l=normalizeLesson({id:uid('lesson'),topic:v('lessonTopic')||UNASSIGNED,...(preset||{})});
+ if(!(preset&&preset.title))l.title='';
+ editing=l;editorIsNew=true;showEditor();editorDirty=!!dirty;
+ if(dirty)toast('Entwurf geöffnet – bitte prüfen und speichern.');
+}
+function openEditor(id){if(editing&&editing.id===id){showEditor();return}if(!confirmLeaveEditor())return;const l=lessons.find(x=>x.id===id);if(!l)return;editing=JSON.parse(JSON.stringify(l));editorIsNew=false;showEditor()}
+function confirmLeaveEditor(){if(editorDirty&&!confirm('Die geöffnete Einheit enthält ungespeicherte Änderungen. Verwerfen?'))return false;editorDirty=false;return true}
+function showEditor(){
+ editorDirty=false;if(current!=='lessons')go('lessons');
+ const l=editing;$('eHeading').textContent=editorIsNew?'Neue Unterrichtseinheit':'Einheit bearbeiten';
+ $('eTopic').innerHTML=topicOptions(l.topic,true,[l.topic],true);
+ const map={eTitle:'title',eAudience:'audience',eVersion:'version',eStatus:'status',eGoals:'goals',eTeacher:'teacherNotes',eContent:'content',eKey:'keyPoints',eSlides:'slides',eQuiz:'quiz',eHomework:'homework',eExercise:'exercise',eSolution:'exerciseSolution'};
+ for(const [id,f] of Object.entries(map))$(id).value=l[f]||'';
+ $('eUe').value=String(l.ue);$('eStart').value=l.start||'';$('eSrcFilter').value='';
+ renderPhases();renderEditorSources();renderEditorPractice();updateCheck();
+ $('editor').hidden=false;$('editor').scrollIntoView({behavior:'smooth'});
+}
+function readEditor(){
+ const l=editing;if(!l)return;
+ const map={eTitle:'title',eAudience:'audience',eVersion:'version',eStatus:'status',eGoals:'goals',eTeacher:'teacherNotes',eContent:'content',eKey:'keyPoints',eSlides:'slides',eQuiz:'quiz',eHomework:'homework',eExercise:'exercise',eSolution:'exerciseSolution'};
+ for(const [id,f] of Object.entries(map))l[f]=$(id).value;
+ l.title=l.title.trim();l.topic=v('eTopic');l.ue=ueVal('eUe');l.start=v('eStart');
+}
+function renderPhases(){
+ const ph=editing.phases;
+ $('ePhases').innerHTML=ph.map((p,i)=>`<tr><td class="clock small muted" style="white-space:nowrap"></td><td><input class="min" type="number" min="0" value="${p.min}" oninput="phaseEdit(${i},'min',this.value)" aria-label="Minuten"></td><td><input value="${esc(p.phase)}" oninput="phaseEdit(${i},'phase',this.value)" aria-label="Phase"></td><td><textarea oninput="phaseEdit(${i},'content',this.value)" aria-label="Inhalt">${esc(p.content)}</textarea></td><td><input value="${esc(p.method)}" oninput="phaseEdit(${i},'method',this.value)" aria-label="Methode"></td><td><input value="${esc(p.media)}" oninput="phaseEdit(${i},'media',this.value)" aria-label="Medien"></td><td style="white-space:nowrap">${i?`<button class="btn ghost" title="nach oben" onclick="movePhase(${i})">↑</button>`:''}<button class="btn ghost danger" title="Zeile entfernen" onclick="removePhase(${i})">✕</button></td></tr>`).join('')||'<tr><td colspan="7" class="muted">Noch kein Ablauf. „Standardablauf einsetzen“ liefert eine Vorlage.</td></tr>';
+ updatePhaseSum();
+}
+function phaseEdit(i,f,val){editing.phases[i][f]=f==='min'?Math.max(0,parseInt(val,10)||0):val;editorDirty=true;if(f==='min'||f==='phase')updatePhaseSum()}
+function addBreak(){editing.phases.push({min:15,phase:'Pause',content:'',method:'',media:''});editorDirty=true;renderPhases()}
+function addPhase(){editing.phases.push({min:0,phase:'',content:'',method:'',media:''});editorDirty=true;renderPhases()}
+function removePhase(i){editing.phases.splice(i,1);editorDirty=true;renderPhases()}
+function movePhase(i){const p=editing.phases;[p[i-1],p[i]]=[p[i],p[i-1]];editorDirty=true;renderPhases()}
+function templatePhases(ue){
+ const row=(min,phase,content,method,media)=>({min,phase,content,method,media});
+ if(ue===1)return [row(5,'Einstieg','Begrüßung, Anknüpfen an Vorwissen, Lernziele','Lehrgespräch','Folie'),row(15,'Vermittlung','Kerninhalte','Vortrag mit Rückfragen','Präsentation'),row(15,'Erarbeitung / Übung','Anwendung an Beispiel oder Fall','Gruppenarbeit','Arbeitsblatt'),row(7,'Sicherung','Lernkontrolle, offene Fragen','Unterrichtsgespräch','Fragen'),row(3,'Abschluss','Zusammenfassung, Hausaufgabe','Vortrag','Handout')];
+ if(ue===2)return [row(10,'Einstieg','Begrüßung, Vorwissen, Lernziele','Lehrgespräch','Folie'),row(20,'Vermittlung I','Grundlagen','Vortrag mit Rückfragen','Präsentation'),row(15,'Übung I','Anwendung der Grundlagen','Partnerarbeit','Arbeitsblatt'),row(15,'Vermittlung II','Vertiefung','Vortrag / Demonstration','Präsentation'),row(20,'Planspiel / Fallarbeit','Übertragung auf einen Praxisfall','Gruppenarbeit','Fallbeschreibung'),row(10,'Sicherung und Abschluss','Lernkontrolle, Zusammenfassung, Hausaufgabe','Unterrichtsgespräch','Handout')];
+ const out=[];let done=0,block=0;
+ while(done<ue){
+  const size=ue-done>=2?2:1;block++;
+  const parts=size===2?[row(40,`Block ${block}: Vermittlung`,'','Vortrag mit Rückfragen','Präsentation'),row(35,`Block ${block}: Übung / Planspiel`,'Anwendung, Fallarbeit oder Planspiel','Gruppenarbeit','Arbeitsblatt / Fallbeschreibung'),row(15,`Block ${block}: Sicherung`,'Zusammenfassung, Kontrollfragen','Unterrichtsgespräch','Fragen')]
+   :[row(25,`Block ${block}: Vermittlung`,'','Vortrag mit Rückfragen','Präsentation'),row(15,`Block ${block}: Übung`,'Anwendung','Partnerarbeit','Arbeitsblatt'),row(5,`Block ${block}: Sicherung`,'Kontrollfragen','Unterrichtsgespräch','Fragen')];
+  if(block===1){parts[0].min-=10;out.push(row(10,'Einstieg','Begrüßung, Tagesablauf, Lernziele','Lehrgespräch','Folie'))}
+  done+=size;
+  if(done>=ue){parts[parts.length-1].min-=5;out.push(...parts,row(5,'Abschluss','Tageszusammenfassung, Hausaufgabe, Feedback','Blitzlicht','Handout'))}
+  else{out.push(...parts);out.push(done===4&&ue>4?row(45,'Mittagspause','','',''):row(15,'Pause','','',''))}
+ }
+ return out;
+}
+function scalePhases(ph,target){
+ const f=ueMin()/45;if(f===1)return ph;
+ ph.forEach(p=>{if(!isBreak(p))p.min=Math.max(5,Math.round(p.min*f/5)*5)});
+ const teach=ph.filter(p=>!isBreak(p)),diff=target-teach.reduce((a,p)=>a+p.min,0);
+ if(teach.length){const big=teach.reduce((a,p)=>p.min>a.min?p:a);big.min=Math.max(1,big.min+diff)}
+ return ph;
+}
+function standardPhases(){
+ if(editing.phases.length&&!confirm('Vorhandenen Ablaufplan durch die Vorlage ersetzen?'))return;
+ editing.phases=scalePhases(templatePhases(ueVal('eUe')),ueVal('eUe')*ueMin());editorDirty=true;renderPhases();
+}
+function updatePhaseSum(){
+ if(!editing)return;const ue=ueVal('eUe'),s=phaseSum(editing),b=breakSum(editing),t=ue*ueMin(),el=$('phaseSum');
+ $('eUeHint').textContent=`= ${hm(t)} Unterricht`;
+ const start=v('eStart'),end=start?addClock(start,s+b):'';
+ el.textContent=`Unterricht: ${s} von ${t} Min.`+(s!==t&&editing.phases.length?` (${s>t?'+':''}${s-t})`:'')+(b?` – Pausen: ${b} Min.`:'')+` – Gesamtdauer ${hm(s+b)}`+(end?` (${start}–${end} Uhr)`:'');
+ el.className='sum '+(s===t?'ok':'warn');
+ renderPhaseTimes();
+}
+function renderPhaseTimes(){const start=v('eStart');let t=0;document.querySelectorAll('#ePhases tr').forEach((tr,i)=>{const p=editing.phases[i];if(!p)return;const c=tr.querySelector('.clock');const a=t;t+=+p.min||0;if(c)c.textContent=start?`${addClock(start,a)}–${addClock(start,t)}`:`${a}–${t}`;tr.style.background=isBreak(p)?'#eef1f2':''})}
+function renderEditorSources(){
+ if(!editing)return;
+ const q=v('eSrcFilter').trim().toLowerCase(),onlyT=$('eSrcTopic').checked,t=v('eTopic');
+ const chosen=new Set(editing.sourceIds);
+ const list=docs.filter(d=>chosen.has(d.id)||((!onlyT||t===UNASSIGNED||d.topic===t)&&d.status!=='archiviert'&&(!q||d.name.toLowerCase().includes(q)))).sort((a,b)=>(chosen.has(b.id)-chosen.has(a.id))||a.name.localeCompare(b.name,'de')).slice(0,250);
+ const missing=editing.sourceIds.filter(id=>!docs.some(d=>d.id===id)).length;
+ $('eSources').innerHTML=(list.map(d=>`<label><input type="checkbox" ${chosen.has(d.id)?'checked':''} onchange="toggleEditorSource('${d.id}',this.checked)"> <span>${esc(d.name)} <span class="muted small">${esc(d.topic)}${d.status==='dublette'?' – Dublette':''}</span></span></label>`).join('')||'<p class="muted small">Keine passenden Quellen.</p>')+(missing?`<p class="small muted">${missing} verknüpfte Quelle(n) wurden inzwischen gelöscht.</p>`:'');
+}
+function toggleEditorSource(id,on){const s=new Set(editing.sourceIds);on?s.add(id):s.delete(id);editing.sourceIds=[...s];editorDirty=true}
+function renderEditorPractice(){const ch=new Set(editing.practiceIds);$('ePractice').innerHTML=meta.practice.length?meta.practice.slice().sort((a,b)=>(ch.has(b.id)-ch.has(a.id))||a.title.localeCompare(b.title,'de')).map(p=>`<label><input type="checkbox" ${ch.has(p.id)?'checked':''} onchange="togglePracticeLink('${p.id}',this.checked)"> <span>${esc(p.title)} <span class="muted small">${esc(p.format)} – ${esc(p.topic)}</span></span></label>`).join(''):'<p class="muted small">Noch keine Praxisbausteine angelegt (Bereich „Praxis & Planspiele“).</p>'}
+function togglePracticeLink(id,on){const s=new Set(editing.practiceIds);on?s.add(id):s.delete(id);editing.practiceIds=[...s];editorDirty=true}
+function updateCheck(){if(!editing)return;readEditor();const c=lessonCheck(editing);$('eCheck').innerHTML=c.miss.length||c.warn.length?`<div class="note small">${c.miss.length?`<b>Fehlt noch:</b> ${c.miss.join(', ')}. `:''}${c.warn.length?`<b>Hinweise:</b> ${c.warn.join(', ')}.`:''}</div>`:'<div class="note ok small">Die Einheit ist vollständig.</div>'}
+function fillAutoSlides(){readEditor();if(editing.slides.trim()&&!confirm('Vorhandene Folien durch einen neuen Vorschlag ersetzen?'))return;const tmp={...editing,slides:''};$('eSlides').value=serializeSlides(slidesFor(tmp));editorDirty=true}
+async function saveEditor(close){
+ if(!editing)return;readEditor();
+ if(!editing.title){toast('Bitte einen Titel eingeben.','err');$('eTitle').focus();return}
+ const c=lessonCheck(editing);
+ if(editing.status==='freigegeben'&&(c.miss.length||c.warn.some(w=>/PRÜFEN/.test(w)))&&!confirm(`Für die Freigabe ${c.miss.length?'fehlt noch: '+c.miss.join(', '):'sind noch [PRÜFEN]-Stellen offen'}.\nTrotzdem als „freigegeben“ speichern?`))return;
+ editing.updated=nowISO();
+ try{await dbPut('lessons',editing)}catch(e){return storeErr(e)}
+ const saved=JSON.parse(JSON.stringify(editing)),i=lessons.findIndex(x=>x.id===saved.id);if(i<0)lessons.push(saved);else lessons[i]=saved;
+ editorDirty=false;editorIsNew=false;$('eHeading').textContent='Einheit bearbeiten';toast('Unterrichtseinheit gespeichert.');
+ if(close)closeEditor(true);else updateCheck();
+ renderLessonList();renderChrome();
+}
+function closeEditor(force){if(!force&&editorDirty&&!confirm('Ungespeicherte Änderungen verwerfen?'))return;editing=null;editorDirty=false;$('editor').hidden=true}
+async function duplicateLesson(id){const l=lessons.find(x=>x.id===id);if(!l)return;const c={...JSON.parse(JSON.stringify(l)),id:uid('lesson'),title:l.title+' (Kopie)',status:'Entwurf',created:nowISO(),updated:nowISO()};try{await dbPut('lessons',c)}catch(e){return storeErr(e)}lessons.push(c);toast('Kopie angelegt.');renderLessonList();renderChrome()}
+async function deleteLesson(id){const l=lessons.find(x=>x.id===id);if(!l||!confirm(`Unterrichtseinheit „${l.title}“ löschen?`))return;try{await dbDel('lessons',id)}catch(e){return storeErr(e)}lessons=lessons.filter(x=>x.id!==id);if(editing&&editing.id===id)closeEditor(true);toast('Einheit gelöscht.');renderLessonList();renderChrome()}
+function previewLesson(){readEditor();const w=window.open('','_blank');if(!w)return toast('Das Vorschaufenster wurde vom Browser blockiert.','err');w.document.open();w.document.write(lessonHTML(editing,'teacher',false));w.document.close()}
+document.addEventListener('input',e=>{if(editing&&e.target.closest&&e.target.closest('#editor')&&!e.target.closest('#eSrcFilter'))editorDirty=true});
+document.addEventListener('change',e=>{if(editing&&e.target.id==='eTopic')renderEditorSources();if(editing&&e.target.closest&&e.target.closest('#editor'))updateCheck()});
+
+/* ================= Textstruktur für Ausgaben ================= */
+function mdBlocks(text){
+ const out=[];let para=[];const flush=()=>{if(para.length){out.push({type:'p',text:para.join('\n')});para=[]}};
+ for(const raw of String(text||'').split('\n')){
+  const l=raw.trim();let m;
+  if(!l){flush();continue}
+  if((m=l.match(/^#{2,}\s+(.*)/))){flush();out.push({type:'h2',text:m[1]});continue}
+  if((m=l.match(/^#\s+(.*)/))){flush();out.push({type:'h',text:m[1]});continue}
+  if((m=l.match(/^[-*•–]\s+(.*)/))){flush();out.push({type:'li',text:m[1]});continue}
+  if((m=l.match(/^(\d{1,2})[.)]\s+(.*)/))){flush();out.push({type:'li',num:m[1],text:m[2]});continue}
+  if(/^\[(Quelle|PRÜFEN|PRUEFEN|ERGÄNZUNG|ERGAENZUNG|KI)/i.test(l)){flush();out.push({type:'note',text:l});continue}
+  para.push(l);
+ }
+ flush();return out;
+}
+function parseQuiz(t){
+ const items=[];let cur=null;
+ for(const raw of String(t||'').split('\n')){const l=raw.trim();if(!l)continue;let m;
+  if((m=l.match(/^(?:F|Frage)\s*\d*\s*[:.)]\s*(.*)/i))){cur={q:m[1],a:''};items.push(cur);continue}
+  if((m=l.match(/^(?:A|Antwort|Lösung)\s*[:.)]\s*(.*)/i))&&cur){cur.a+=(cur.a?'\n':'')+m[1];continue}
+  if(!cur||/\?$/.test(l)&&cur.a){cur={q:l.replace(/^\d+[.)]\s*/,''),a:''};items.push(cur);continue}
+  if(cur.a)cur.a+='\n'+l;else if(/\?$/.test(cur.q))cur.a=l;else cur.q+=' '+l;
+ }
+ return items;
+}
+function parseSlides(t){const out=[];let cur=null;for(const raw of String(t).split('\n')){const s=raw.trim();if(!s)continue;let m;if((m=s.match(/^#{1,3}\s+(.*)/))){cur={title:m[1],bullets:[],notes:''};out.push(cur);continue}if(!cur){cur={title:'',bullets:[],notes:''};out.push(cur)}if((m=s.match(/^(?:Notiz|Notizen|Sprechertext)\s*:\s*(.*)/i))){cur.notes+=(cur.notes?'\n':'')+m[1];continue}cur.bullets.push(s.replace(/^[-*•–]\s+/,''))}return out}
+function shorten(s,n){s=String(s).replace(/\s+/g,' ').trim();return s.length>n?s.slice(0,n-1).replace(/\s+\S*$/,'')+' …':s}
+function slidesFor(l){
+ if(l.slides&&l.slides.trim())return parseSlides(l.slides);
+ const out=[],goals=lines(l.goals);
+ if(goals.length)out.push({title:'Lernziele',bullets:goals,notes:''});
+ let cur=null;
+ for(const b of mdBlocks(l.content)){
+  if(b.type==='note')continue;
+  if(b.type==='h'||b.type==='h2'){cur={title:b.text,bullets:[],notes:''};out.push(cur);continue}
+  if(!cur){cur={title:l.title,bullets:[],notes:''};out.push(cur)}
+  if(b.type==='li')cur.bullets.push(shorten(b.text,140));
+  else{const sents=b.text.replace(/\n/g,' ').split(/(?<=[.!?])\s+/);cur.bullets.push(...sents.slice(0,2).map(s=>shorten(s,140)));cur.notes+=(cur.notes?'\n':'')+b.text.replace(/\n/g,' ')}
+ }
+ const kp=mdBlocks(l.keyPoints).filter(b=>b.type==='li'||b.type==='p').map(b=>shorten(b.text,140));
+ if(kp.length)out.push({title:'Das Wichtigste in Kürze',bullets:kp,notes:''});
+ const qa=parseQuiz(l.quiz);if(qa.length)out.push({title:'Lernkontrolle',bullets:qa.map(q=>shorten(q.q,140)),notes:qa.map(q=>q.q+' – '+q.a).join('\n')});
+ if(l.exercise.trim())out.push({title:'Planspiel / Übung',bullets:lines(l.exercise).slice(0,8).map(s=>shorten(s,140)),notes:l.exerciseSolution||''});
+ if(l.homework.trim())out.push({title:'Hausaufgabe',bullets:lines(l.homework).map(s=>shorten(s,140)),notes:''});
+ return out.filter(s=>s.bullets.length||s.notes);
+}
+function serializeSlides(arr){return arr.map(s=>`## ${s.title}\n${s.bullets.map(b=>'- '+b).join('\n')}${s.notes?'\nNotiz: '+s.notes.replace(/\n/g,' '):''}`).join('\n\n')}
+
+/* Einheitliche Dokumentstruktur für Word und PDF */
+function lessonNodes(l,variant){
+ const T=variant==='teacher',N=[],org=meta.settings.org;
+ N.push({k:'title',t:l.title});
+ N.push({k:'subtitle',t:(T?'Dozentenversion':'Teilnehmerunterlage')+(org?' – '+org:'')});
+ if(l.status!=='freigegeben')N.push({k:'notice',t:T?`Status: ${l.status}${l.aiDraft?' – enthält KI-gestützte Entwurfsteile, fachliche Prüfung erforderlich':''}.`:'Entwurf – noch nicht freigegeben.'});
+ const mr=[['Thema',l.topic],['Umfang',ueText(l)]];if(l.start&&l.phases.length)mr.push(['Zeitraum',`${l.start}–${addClock(l.start,phaseSum(l)+breakSum(l))} Uhr`]);
+ if(l.audience)mr.push(['Zielgruppe',l.audience]);
+ mr.push(['Stand',l.version||fmtDate(l.updated)]);
+ if(T&&meta.settings.author)mr.push(['Verfasser/in',meta.settings.author]);
+ N.push({k:'kv',rows:mr});
+ const goals=lines(l.goals);if(goals.length){N.push({k:'h1',t:'Lernziele'});N.push({k:'blocks',b:goals.map(g=>({type:'li',text:g}))})}
+ if(l.phases.length&&(T||l.ue>2)){let t=0;const clk=m=>l.start?addClock(l.start,m):String(m);N.push({k:'h1',t:T?'Ablaufplan':'Tagesablauf'});N.push(T?{k:'table',head:['Zeit','Phase','Inhalt','Methode / Sozialform','Medien'],w:[12,18,36,19,15],rows:l.phases.map(p=>{const r=[`${clk(t)}–${clk(t+(+p.min||0))}`,p.phase,p.content,p.method,p.media];t+=+p.min||0;return r})}:{k:'table',head:['Zeit','Programmpunkt'],w:[20,80],rows:l.phases.map(p=>{const r=[`${clk(t)}–${clk(t+(+p.min||0))}`,p.phase];t+=+p.min||0;return r})});const s=phaseSum(l);if(T&&s!==l.ue*ueMin())N.push({k:'notice',t:`Die Unterrichtszeit im Ablaufplan beträgt ${s} statt ${l.ue*ueMin()} Minuten.`})}
+ if(T&&l.teacherNotes.trim()){N.push({k:'h1',t:'Dozentenhinweise und Hintergrund'});N.push({k:'blocks',b:mdBlocks(l.teacherNotes)})}
+ const body=T?l.content:(l.keyPoints.trim()?l.keyPoints:l.content);
+ if(body.trim()){N.push({k:'h1',t:T?'Lehrinhalt':(l.keyPoints.trim()?'Das Wichtigste':'Inhalt')});N.push({k:'blocks',b:mdBlocks(body).filter(b=>T||b.type!=='note')})}
+ if(T&&l.keyPoints.trim()){N.push({k:'h1',t:'Kernaussagen (Handout)'});N.push({k:'blocks',b:mdBlocks(l.keyPoints)})}
+ const qa=parseQuiz(l.quiz);if(qa.length){N.push({k:'h1',t:'Lernkontrolle'});N.push({k:'qa',items:qa,answers:T})}
+ if(l.exercise.trim()){N.push({k:'h1',t:'Planspiel / praktische Übung'});N.push({k:'blocks',b:mdBlocks(l.exercise)});if(T&&l.exerciseSolution.trim()){N.push({k:'h2',t:'Lösung und Auswertung'});N.push({k:'blocks',b:mdBlocks(l.exerciseSolution)})}}
+ const pr=l.practiceIds.map(id=>meta.practice.find(p=>p.id===id)).filter(Boolean);
+ if(pr.length){N.push({k:'h1',t:'Praxisbausteine'});pr.forEach(p=>{N.push({k:'h2',t:`${p.title} (${p.format}${p.duration?', '+p.duration:''})`});const b=[];if(p.goal)b.push({type:'p',text:'**Lernziel:** '+p.goal});if(p.tools)b.push({type:'p',text:'**Hilfsmittel:** '+p.tools});N.push({k:'blocks',b:[...b,...mdBlocks(p.steps)]});if(T&&p.solution.trim()){N.push({k:'blocks',b:[{type:'p',text:'**Hinweise für Lehrende:**'},...mdBlocks(p.solution)]})}})}
+ if(l.homework.trim()){N.push({k:'h1',t:'Hausaufgabe'});N.push({k:'blocks',b:mdBlocks(l.homework)})}
+ if(T){const src=l.sourceIds.map(id=>docs.find(d=>d.id===id)).filter(Boolean);if(src.length){N.push({k:'h1',t:'Quellen'});N.push({k:'blocks',b:src.map(d=>({type:'li',text:d.name+(d.path&&d.path!==d.name?' ('+d.path+')':'')}))})}}
+ else N.push({k:'lines',t:'Notizen',n:8});
+ return N;
+}
+function inlineHTML(t){return esc(t).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>')}
+function blocksHTML(bs){let h='',inList=false;for(const b of bs){if(b.type==='li'){if(!inList){h+='<ul>';inList=true}h+=`<li>${b.num?b.num+'. ':''}${inlineHTML(b.text)}</li>`;continue}if(inList){h+='</ul>';inList=false}if(b.type==='h')h+=`<h3>${inlineHTML(b.text)}</h3>`;else if(b.type==='h2')h+=`<h4>${inlineHTML(b.text)}</h4>`;else if(b.type==='note')h+=`<p class="srcnote">${inlineHTML(b.text)}</p>`;else h+=`<p>${inlineHTML(b.text)}</p>`}if(inList)h+='</ul>';return h}
+function lessonHTML(l,variant,autoprint){
+ const N=lessonNodes(l,variant),org=meta.settings.org;let h='';
+ for(const n of N){
+  if(n.k==='title')h+=`<h1>${esc(n.t)}</h1>`;else if(n.k==='subtitle')h+=`<p class="sub">${esc(n.t)}</p>`;
+  else if(n.k==='notice')h+=`<p class="notice">${esc(n.t)}</p>`;
+  else if(n.k==='kv')h+=`<table class="kv">${n.rows.map(r=>`<tr><th>${esc(r[0])}</th><td>${esc(r[1])}</td></tr>`).join('')}</table>`;
+  else if(n.k==='h1')h+=`<h2>${esc(n.t)}</h2>`;else if(n.k==='h2')h+=`<h3>${esc(n.t)}</h3>`;
+  else if(n.k==='blocks')h+=blocksHTML(n.b);
+  else if(n.k==='table')h+=`<table class="grid"><thead><tr>${n.head.map((x,i)=>`<th style="width:${n.w[i]}%">${esc(x)}</th>`).join('')}</tr></thead><tbody>${n.rows.map(r=>`<tr>${r.map(c=>`<td>${inlineHTML(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+  else if(n.k==='qa')h+='<ol class="qa">'+n.items.map(q=>`<li><p><strong>${inlineHTML(q.q)}</strong></p>${n.answers?`<p class="answer">${inlineHTML(q.a||'(keine Musterantwort hinterlegt)')}</p>`:'<p class="blank"></p><p class="blank"></p>'}</li>`).join('')+'</ol>';
+  else if(n.k==='lines')h+=`<h2>${esc(n.t)}</h2>`+'<p class="blank"></p>'.repeat(n.n);
+ }
+ const css=`@page{size:A4;margin:18mm 18mm 20mm}body{font:11pt/1.5 Calibri,"Segoe UI",Arial,sans-serif;color:#1d2b33;max-width:180mm;margin:24px auto;padding:0 12px}h1{font-size:22pt;margin:0 0 2px;color:#1f3440}.sub{color:#4c5f69;margin:0 0 14px;font-size:12pt}h2{font-size:14pt;color:#1f3440;border-bottom:2px solid #b3261e;padding-bottom:2px;margin:22px 0 8px;break-after:avoid}h3{font-size:12pt;margin:14px 0 6px;break-after:avoid}h4{font-size:11pt;margin:10px 0 4px}table{border-collapse:collapse;width:100%;margin:6px 0 10px;font-size:10pt}th,td{border:1px solid #b8c2c7;padding:4px 6px;text-align:left;vertical-align:top}th{background:#dde5e8}.kv th{width:28%}tr{break-inside:avoid}.notice{background:#fcf2da;border:1px solid #ecd49a;padding:6px 10px;font-weight:600}.srcnote{color:#5a6b73;font-style:italic;font-size:9.5pt}.answer{background:#e4f0e8;padding:4px 8px}.blank{border-bottom:1px solid #b8c2c7;height:1.6em;margin:0}.qa li{margin-bottom:8px}.foot{margin-top:28px;font-size:9pt;color:#6b7b83;border-top:1px solid #d5dcdf;padding-top:4px}.printbar{background:#1f3440;color:#fff;padding:8px 12px;border-radius:6px;margin-bottom:16px;font-size:10pt}@media print{.printbar{display:none}body{margin:0;max-width:none;padding:0}}`;
+ return `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>${esc(l.title)} – ${variant==='teacher'?'Dozentenversion':'Teilnehmer-Handout'}</title><style>${css}</style></head><body>${autoprint?'<div class="printbar">Zum Speichern als PDF im Druckdialog als Drucker „Als PDF speichern“ bzw. „Microsoft Print to PDF“ wählen.</div>':''}${h}<p class="foot">${esc([org,l.title,'Stand '+(l.version||fmtDate(l.updated))].filter(Boolean).join(' – '))}</p>${autoprint?'<script>window.addEventListener("load",()=>setTimeout(()=>window.print(),300))<\/script>':''}</body></html>`;
+}
+
+/* ---------- Word (.docx) ohne Zusatzprogramm ---------- */
+function xe(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g,'')}
+function wRuns(text,o){o=o||{};let r='';for(const part of String(text??'').split(/(\*\*[^*]+\*\*)/)){if(!part)continue;const b=/^\*\*[\s\S]*\*\*$/.test(part),t=b?part.slice(2,-2):part;const rp=`<w:rPr>${b||o.bold?'<w:b/>':''}${o.italic?'<w:i/>':''}${o.color?`<w:color w:val="${o.color}"/>`:''}${o.size?`<w:sz w:val="${o.size}"/><w:szCs w:val="${o.size}"/>`:''}</w:rPr>`;t.split('\n').forEach((ln,i)=>{if(i)r+='<w:r><w:br/></w:r>';if(ln)r+=`<w:r>${rp}<w:t xml:space="preserve">${xe(ln)}</w:t></w:r>`})}return r}
+function wP(text,style,o){o=o||{};return `<w:p><w:pPr>${style?`<w:pStyle w:val="${style}"/>`:''}${o.keepNext?'<w:keepNext/>':''}${o.line?'<w:pBdr><w:bottom w:val="single" w:sz="4" w:space="1" w:color="B8C2C7"/></w:pBdr>':''}${o.shd?`<w:shd w:val="clear" w:color="auto" w:fill="${o.shd}"/>`:''}${o.spacing||''}</w:pPr>${wRuns(text,o)}</w:p>`}
+function wLi(b){return `<w:p><w:pPr><w:pStyle w:val="Liste"/></w:pPr><w:r><w:t>${b.num?xe(b.num)+'.':'•'}</w:t></w:r><w:r><w:tab/></w:r>${wRuns(b.text)}</w:p>`}
+function wBlocks(bs){return bs.map(b=>b.type==='li'?wLi(b):b.type==='h'?wP(b.text,'berschrift2'):b.type==='h2'?wP(b.text,'berschrift3'):b.type==='note'?wP(b.text,'Hinweis'):wP(b.text,null)).join('')}
+function wTable(head,rows,widths,kv){
+ const W=9638,tot=widths.reduce((a,b)=>a+b,0),ws=widths.map(w=>Math.round(w/tot*W));
+ const cell=(t,i,hd)=>`<w:tc><w:tcPr><w:tcW w:w="${ws[i]}" w:type="dxa"/>${hd?'<w:shd w:val="clear" w:color="auto" w:fill="DDE5E8"/>':''}</w:tcPr>${wP(t,'Tabelle',{bold:hd})}</w:tc>`;
+ const b=['top','left','bottom','right','insideH','insideV'].map(s=>`<w:${s} w:val="single" w:sz="4" w:space="0" w:color="B8C2C7"/>`).join('');
+ return `<w:tbl><w:tblPr><w:tblW w:w="${W}" w:type="dxa"/><w:tblBorders>${b}</w:tblBorders><w:tblLayout w:type="fixed"/><w:tblCellMar><w:top w:w="40" w:type="dxa"/><w:left w:w="90" w:type="dxa"/><w:bottom w:w="40" w:type="dxa"/><w:right w:w="90" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${ws.map(w=>`<w:gridCol w:w="${w}"/>`).join('')}</w:tblGrid>${head?`<w:tr><w:trPr><w:tblHeader/></w:trPr>${head.map((h,i)=>cell(h,i,true)).join('')}</w:tr>`:''}${rows.map(r=>`<w:tr><w:trPr><w:cantSplit/></w:trPr>${r.map((c,i)=>cell(c,i,kv&&i===0)).join('')}</w:tr>`).join('')}</w:tbl>${wP('',null)}`;
+}
+function docxBodyXML(l,variant){
+ let x='';
+ for(const n of lessonNodes(l,variant)){
+  if(n.k==='title')x+=wP(n.t,'Titel');else if(n.k==='subtitle')x+=wP(n.t,'Untertitel');
+  else if(n.k==='notice')x+=wP(n.t,null,{bold:true,shd:'FCF2DA'});
+  else if(n.k==='kv')x+=wTable(null,n.rows,[28,72],true);
+  else if(n.k==='h1')x+=wP(n.t,'berschrift1');else if(n.k==='h2')x+=wP(n.t,'berschrift2');
+  else if(n.k==='blocks')x+=wBlocks(n.b);
+  else if(n.k==='table')x+=wTable(n.head,n.rows,n.w,false);
+  else if(n.k==='qa')n.items.forEach((q,i)=>{x+=wP(`${i+1}. **${q.q}**`,null,{keepNext:true});if(n.answers)x+=wP(q.a||'(keine Musterantwort hinterlegt)',null,{shd:'E4F0E8'});else{x+=wP('',null,{line:true});x+=wP('',null,{line:true})}});
+  else if(n.k==='lines'){x+=wP(n.t,'berschrift1');for(let i=0;i<n.n;i++)x+=wP('',null,{line:true})}
+ }
+ return x;
+}
+const W_NS='xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"';
+function docxStyles(){
+ const ps=(id,name,ppr,rpr,extra)=>`<w:style w:type="paragraph" w:styleId="${id}"><w:name w:val="${name}"/><w:basedOn w:val="Standard"/><w:next w:val="Standard"/>${extra||''}<w:qFormat/>${ppr?`<w:pPr>${ppr}</w:pPr>`:''}${rpr?`<w:rPr>${rpr}</w:rPr>`:''}</w:style>`;
+ return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:styles ${W_NS}><w:docDefaults><w:rPrDefault><w:rPr><w:rFonts w:ascii="Calibri" w:hAnsi="Calibri" w:eastAsia="Calibri" w:cs="Calibri"/><w:sz w:val="22"/><w:szCs w:val="22"/><w:lang w:val="de-DE"/></w:rPr></w:rPrDefault><w:pPrDefault><w:pPr><w:spacing w:after="120" w:line="276" w:lineRule="auto"/></w:pPr></w:pPrDefault></w:docDefaults>
+<w:style w:type="paragraph" w:default="1" w:styleId="Standard"><w:name w:val="Normal"/><w:qFormat/></w:style>
+${ps('Titel','Title','<w:spacing w:after="40"/>','<w:b/><w:color w:val="1F3440"/><w:sz w:val="44"/><w:szCs w:val="44"/>')}
+${ps('Untertitel','Subtitle','<w:spacing w:after="240"/>','<w:color w:val="4C5F69"/><w:sz w:val="26"/><w:szCs w:val="26"/>')}
+${ps('berschrift1','heading 1','<w:keepNext/><w:pBdr><w:bottom w:val="single" w:sz="12" w:space="1" w:color="B3261E"/></w:pBdr><w:spacing w:before="360" w:after="120"/><w:outlineLvl w:val="0"/>','<w:b/><w:color w:val="1F3440"/><w:sz w:val="30"/><w:szCs w:val="30"/>')}
+${ps('berschrift2','heading 2','<w:keepNext/><w:spacing w:before="240" w:after="80"/><w:outlineLvl w:val="1"/>','<w:b/><w:color w:val="1F3440"/><w:sz w:val="25"/><w:szCs w:val="25"/>')}
+${ps('berschrift3','heading 3','<w:keepNext/><w:spacing w:before="160" w:after="60"/><w:outlineLvl w:val="2"/>','<w:b/><w:sz w:val="22"/><w:szCs w:val="22"/>')}
+${ps('Liste','List Bullet','<w:tabs><w:tab w:val="left" w:pos="357"/></w:tabs><w:spacing w:after="60"/><w:ind w:left="357" w:hanging="357"/>','')}
+${ps('Hinweis','Hinweis','','<w:i/><w:color w:val="5A6B73"/><w:sz w:val="19"/><w:szCs w:val="19"/>')}
+${ps('Tabelle','Tabelleninhalt','<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>','<w:sz w:val="19"/><w:szCs w:val="19"/>')}
+${ps('Fusszeile','footer','<w:tabs><w:tab w:val="right" w:pos="9638"/></w:tabs><w:spacing w:after="0"/>','<w:color w:val="6B7B83"/><w:sz w:val="16"/><w:szCs w:val="16"/>')}
+</w:styles>`;
+}
+async function buildDocx(l,variant){
+ await loadLib('jszip');
+ const zip=new JSZip(),org=meta.settings.org;
+ const foot=xe([org,l.title,variant==='teacher'?'Dozentenversion':'Teilnehmerunterlage'].filter(Boolean).join(' – '));
+ zip.file('[Content_Types].xml','<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/><Override PartName="/word/footer1.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml"/><Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/></Types>');
+ zip.file('_rels/.rels','<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="docProps/core.xml"/></Relationships>');
+ zip.file('docProps/core.xml',`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><dc:title>${xe(l.title)}</dc:title><dc:creator>${xe(meta.settings.author||org||'')}</dc:creator><dcterms:created xsi:type="dcterms:W3CDTF">${new Date().toISOString().replace(/\.\d+Z$/,'Z')}</dcterms:created></cp:coreProperties>`);
+ zip.file('word/_rels/document.xml.rels','<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer" Target="footer1.xml"/></Relationships>');
+ zip.file('word/styles.xml',docxStyles());
+ zip.file('word/footer1.xml',`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:ftr ${W_NS}><w:p><w:pPr><w:pStyle w:val="Fusszeile"/></w:pPr><w:r><w:t xml:space="preserve">${foot}</w:t></w:r><w:r><w:tab/></w:r><w:r><w:t xml:space="preserve">Seite </w:t></w:r><w:r><w:fldChar w:fldCharType="begin"/></w:r><w:r><w:instrText xml:space="preserve"> PAGE </w:instrText></w:r><w:r><w:fldChar w:fldCharType="separate"/></w:r><w:r><w:t>1</w:t></w:r><w:r><w:fldChar w:fldCharType="end"/></w:r></w:p></w:ftr>`);
+ zip.file('word/document.xml',`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document ${W_NS}><w:body>${docxBodyXML(l,variant)}<w:sectPr><w:footerReference w:type="default" r:id="rId2"/><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134" w:header="567" w:footer="567" w:gutter="0"/></w:sectPr></w:body></w:document>`);
+ return zip.generateAsync({type:'uint8array',compression:'DEFLATE'});
+}
+
+/* ---------- PowerPoint (.pptx) ---------- */
+async function buildPptx(l){
+ await loadLib('pptx');
+ const p=new PptxGenJS(),org=meta.settings.org||'',C={ink:'1F3440',red:'B3261E',grey:'5A6B73'},F='Calibri';
+ p.layout='LAYOUT_WIDE';p.title=l.title;if(meta.settings.author)p.author=meta.settings.author;if(org)p.company=org;
+ p.defineSlideMaster({title:'INHALT',background:{color:'FFFFFF'},objects:[{rect:{x:0,y:0,w:0.14,h:7.5,fill:{color:C.red}}},{text:{text:[org,l.title].filter(Boolean).join(' – '),options:{x:0.5,y:7.0,w:10.5,h:0.35,fontSize:10,color:C.grey,fontFace:F}}}],slideNumber:{x:12.2,y:7.0,w:0.8,h:0.35,fontSize:10,color:C.grey,fontFace:F}});
+ const t=p.addSlide();t.background={color:C.ink};
+ t.addShape(p.ShapeType.rect,{x:0.8,y:4.05,w:2.2,h:0.08,fill:{color:C.red},line:{color:C.red}});
+ t.addText(l.title,{x:0.8,y:1.3,w:11.7,h:2.6,fontSize:40,bold:true,color:'FFFFFF',fontFace:F,valign:'bottom'});
+ t.addText([l.topic!==UNASSIGNED?l.topic:'',`${l.ue} UE – ${hm(l.ue*ueMin())} Unterricht`+(l.start?` – ab ${l.start} Uhr`:''),org].filter(Boolean).join('\n'),{x:0.8,y:4.3,w:11.7,h:1.6,fontSize:18,color:'D6DEE2',fontFace:F,valign:'top'});
+ for(const s of slidesFor(l)){
+  const chunks=[];for(let i=0;i<Math.max(1,s.bullets.length);i+=7)chunks.push(s.bullets.slice(i,i+7));
+  chunks.forEach((bs,ci)=>{
+   const sl=p.addSlide({masterName:'INHALT'});
+   sl.addText((s.title||l.title)+(ci?' (Fortsetzung)':''),{x:0.5,y:0.35,w:12.3,h:0.95,fontSize:28,bold:true,color:C.ink,fontFace:F,valign:'middle'});
+   if(bs.length){const big=bs.join(' ').length>520;sl.addText(bs.map(b=>({text:b.replace(/\*\*/g,''),options:{bullet:{indent:20},breakLine:true}})),{x:0.6,y:1.45,w:12.1,h:5.35,fontSize:big?17:20,color:'222222',fontFace:F,valign:'top',paraSpaceAfter:10,fit:'shrink'})}
+   if(s.notes&&ci===0)sl.addNotes(s.notes);
+  });
+ }
+ return p.write({outputType:'uint8array'});
+}
+
+/* ---------- Ausgabe ---------- */
+function baseName(l){return slug(l.title)}
+function printDoc(html,name){const w=window.open('','_blank');if(!w){download(name+'.html',html,'text/html');return toast('Das Druckfenster wurde blockiert. Die Druckansicht wurde als HTML-Datei gespeichert; bitte öffnen und drucken.','err')}w.document.open();w.document.write(html);w.document.close()}
+async function exportLesson(id,variant,fmt){
+ if(editing&&editing.id===id&&editorDirty)return toast('Bitte die Einheit zuerst speichern.','err');
+ const l=lessons.find(x=>x.id===id);if(!l)return;
+ const suffix=variant==='teacher'?'Dozentenversion':variant==='handout'?'Teilnehmer-Handout':'Praesentation';
+ try{
+  toast('Datei wird erstellt …');
+  if(fmt==='docx')download(`${baseName(l)}_${suffix}.docx`,new Blob([await buildDocx(l,variant)],{type:'application/vnd.openxmlformats-officedocument.wordprocessingml.document'}));
+  else if(fmt==='pdf')printDoc(lessonHTML(l,variant,true),`${baseName(l)}_${suffix}`);
+  else if(fmt==='pptx'){const s=slidesFor(l);if(!s.length)return toast('Für Folien fehlen Lernziele, Lehrinhalt oder Folientext.','err');download(`${baseName(l)}_${suffix}.pptx`,new Blob([await buildPptx(l)],{type:'application/vnd.openxmlformats-officedocument.presentationml.presentation'}))}
+  if(fmt!=='pdf')toast(`${suffix} wurde heruntergeladen.`);
+ }catch(e){toast('Ausgabe fehlgeschlagen: '+e.message,'err')}
+}
+async function exportPackage(id){
+ if(editing&&editing.id===id&&editorDirty)return toast('Bitte die Einheit zuerst speichern.','err');
+ const l=lessons.find(x=>x.id===id);if(!l)return;
+ try{
+  toast('Komplettpaket wird erstellt …');
+  await loadLib('jszip');const z=new JSZip(),b=baseName(l),f=z.folder(b);
+  f.file(`${b}_Dozentenversion.docx`,await buildDocx(l,'teacher'));
+  f.file(`${b}_Teilnehmer-Handout.docx`,await buildDocx(l,'handout'));
+  if(slidesFor(l).length)f.file(`${b}_Praesentation.pptx`,await buildPptx(l));
+  f.file(`${b}_Dozentenversion_Druckansicht.html`,lessonHTML(l,'teacher',true));
+  f.file(`${b}_Teilnehmer-Handout_Druckansicht.html`,lessonHTML(l,'handout',true));
+  f.file('LIESMICH.txt',`Unterrichtseinheit: ${l.title}\nThema: ${l.topic}\nUmfang: ${ueText(l)}\nStatus: ${l.status}\nErstellt: ${new Date().toLocaleString('de-DE')}\n\nPDF: Die Druckansicht-Dateien im Browser öffnen; der Druckdialog startet automatisch. Dort „Als PDF speichern“ bzw. „Microsoft Print to PDF“ wählen.\n`);
+  download(`${b}_Komplettpaket.zip`,await z.generateAsync({type:'blob',compression:'DEFLATE'}));
+  toast('Komplettpaket wurde heruntergeladen.');
+ }catch(e){toast('Ausgabe fehlgeschlagen: '+e.message,'err')}
+}
+
+/* ================= KI-Assistent ================= */
+let aiCands=[],aiChecked=new Set(),suggestTimer;
+const QSTOP=new Set('welche welcher welches einen einem einer meine deine unterlagen material ausbildung thema hierzu schon abend heute möchte suche haben dazu bitte dass kann eine wie mit von für zum zur und oder den dem des auf als ist sind mir ich wir unterricht einheit einheiten stunde erstellen erstelle planspiel hausaufgabe'.split(' '));
+function queryWords(q){return [...new Set(norm(q).split(' '))].filter(w=>w.length>3&&!QSTOP.has(w)&&!STOP.has(w))}
+function relevantPassages(text,words,limit){const chunks=text.split(/\n\s*\n/).filter(x=>x.trim().length>15);const ranked=chunks.map((c,i)=>{const n=norm(c);return {c,i,s:words.reduce((a,w)=>a+(n.includes(w)?1:0),0)}}).filter(x=>x.s>0).sort((a,b)=>b.s-a.s||a.i-b.i);let out=[],len=0;for(const r of ranked){if(len+r.c.length>limit)continue;out.push(r);len+=r.c.length}return out.sort((a,b)=>a.i-b.i).map(x=>x.c).join('\n[…]\n')}
+function preselectAI(ids,mode,wish){
+ if(!ids.length)return toast('Keine Quelle ausgewählt.','err');
+ aiChecked=new Set(ids);aiCands=ids.map(id=>({id,score:0}));
+ $('aiMode').value=mode||'new';if(wish!=null&&wish!=='')$('aiWish').value=wish;
+ $('aiPrompt').value='';$('aiSize').textContent='';
+ go('ai');
+ if(mode==='check'&&!v('aiWish').trim())$('aiWish').value='Inhaltliche Dopplungen, Widersprüche und veraltete Aussagen zwischen den Quellen';
+}
+function renderAI(){
+ const mode=v('aiMode'),sel=$('aiLesson'),old=sel.value;
+ sel.innerHTML='<option value="">– Einheit wählen –</option>'+lessons.slice().sort((a,b)=>a.title.localeCompare(b.title,'de')).map(l=>`<option value="${l.id}">${esc(l.title)} (${l.ue} UE)</option>`).join('');sel.value=old;
+ $('aiLessonWrap').hidden=mode!=='revise';
+ $('aiAdoptBtn').disabled=mode==='check';
+ $('aiAdoptHint').textContent=mode==='check'?'Das Prüfergebnis ist eine Arbeitsgrundlage für „Dubletten & Vergleich“ und wird nicht in eine Einheit übernommen.':mode==='revise'?'Die Antwort wird in die gewählte Einheit übernommen und zur Prüfung geöffnet.':'Aus der Antwort entsteht eine neue Einheit, die zur Prüfung geöffnet wird.';
+ renderAICands();
+}
+function renderAICands(){
+ const el=$('aiCands');
+ const list=aiCands.map(c=>({...c,d:docs.find(d=>d.id===c.id)})).filter(c=>c.d);
+ if(!list.length){el.innerHTML='<p class="muted small">Noch keine Quellen ausgewählt. Thema eingeben und „Passende Quellen suchen“ – oder unter „Quellen“ mehrere Dateien markieren und „An KI-Assistent“ wählen.</p>';return}
+ const chars=list.filter(c=>aiChecked.has(c.id)).reduce((a,c)=>a+c.d.text.length,0);
+ el.innerHTML=`<p class="small muted">${aiChecked.size} von ${list.length} markiert – Volltext zusammen ${chars.toLocaleString('de-DE')} Zeichen</p>`+list.map(c=>`<div class="item"><label class="sel"><input type="checkbox" ${aiChecked.has(c.id)?'checked':''} onchange="aiToggle('${c.id}',this.checked)"></label><div class="grow"><b>${esc(c.d.name)}</b> <span class="pill">${esc(c.d.topic)}</span>${c.d.status!=='aktiv'?`<span class="pill red">${DOC_STATUS[c.d.status]}</span>`:''}<span class="muted small"> ${c.d.text.length.toLocaleString('de-DE')} Zeichen</span></div></div>`).join('');
+}
+function aiToggle(id,on){on?aiChecked.add(id):aiChecked.delete(id);renderAICands()}
+function aiCheckAll(on){aiChecked=on?new Set(aiCands.map(c=>c.id)):new Set();renderAICands()}
+function scheduleSuggest(){clearTimeout(suggestTimer);suggestTimer=setTimeout(()=>{if(docs.length&&queryWords(v('aiWish')).length)suggestSources(false)},700)}
+function suggestSources(manual){
+ if(!docs.length){if(manual)toast('Bitte zuerst Unterlagen unter „Quellen“ einlesen.','err');return}
+ const words=queryWords(v('aiWish'));
+ if(!words.length){if(manual)toast('Bitte ein konkretes Thema oder Stichworte eingeben.','err');return}
+ const ranked=docs.filter(d=>d.status!=='archiviert').map(d=>{const head=norm(d.name+' '+d.topic),body=norm(d.text),hits=words.filter(w=>body.includes(w)).length;return {id:d.id,score:hits*2+words.filter(w=>head.includes(w)).length*5+(d.status==='dublette'?-3:0)}}).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,15);
+ const keep=aiCands.filter(c=>aiChecked.has(c.id)&&!ranked.some(r=>r.id===c.id));
+ const fresh=ranked.filter(r=>!aiCands.some(c=>c.id===r.id));
+ fresh.slice(0,5).forEach(r=>{if(!docs.find(d=>d.id===r.id).status.includes('dublette'))aiChecked.add(r.id)});
+ aiCands=[...keep,...ranked];
+ renderAICands();
+ if(manual&&!ranked.length)toast('Keine passenden Quellen gefunden. Andere Stichworte versuchen oder Quellen manuell auswählen.','err');
+}
+function lessonToMarked(l){return `===TITEL===\n${l.title}\n===THEMA===\n${l.topic}\n===UE===\n${l.ue}\n===ZIELGRUPPE===\n${l.audience}\n===LERNZIELE===\n${l.goals}\n===ABLAUF===\n${l.phases.map(p=>[p.min,p.phase,p.content,p.method,p.media].join(' | ')).join('\n')}\n===DOZENTENHINWEISE===\n${l.teacherNotes}\n===INHALT===\n${l.content}\n===KERNAUSSAGEN===\n${l.keyPoints}\n===FOLIEN===\n${l.slides}\n===LERNKONTROLLE===\n${l.quiz}\n===HAUSAUFGABE===\n${l.homework}\n===PLANSPIEL===\n${l.exercise}\n===PLANSPIEL_LOESUNG===\n${l.exerciseSolution}`}
+function formatSpec(ue){return `===TITEL===
+(prägnanter Titel der Einheit)
+===THEMA===
+(genau eines von: ${topics().join('; ')})
+===UE===
+${ue}
+===ZIELGRUPPE===
+===LERNZIELE===
+(eine Zeile je Lernziel, beginnend mit „Die Teilnehmenden können …“)
+===ABLAUF===
+(eine Zeile je Phase im Format: Minuten | Phase | Inhalt | Methode/Sozialform | Medien; Pausen als eigene Zeile)
+===DOZENTENHINWEISE===
+(Hintergrundwissen, typische Fehler, Hinweise zur Durchführung)
+===INHALT===
+(ausführlicher Lehrinhalt; Überschriften mit „# “, Unterüberschriften mit „## “, Aufzählungen mit „- “; Quellenangaben als eigene Zeile [Quelle: Dateiname, Folie/Seite])
+===KERNAUSSAGEN===
+(teilnehmergerechte Zusammenfassung für das Handout, Aufzählung mit „- “)
+===FOLIEN===
+(je Folie: „## Folientitel“, darunter 3–6 Stichpunkte mit „- “, optional eine Zeile „Notiz: Sprechertext“)
+===LERNKONTROLLE===
+(5–8 Fragen; je Frage eine Zeile „F: …“ und darunter „A: …“)
+===HAUSAUFGABE===
+(themenbezogene Aufgabe mit klarer Aufgabenstellung)
+===PLANSPIEL===
+(Planspiel oder praktische Übung: Lage, Rollen, Ablauf, Auftrag – ohne Lösung)
+===PLANSPIEL_LOESUNG===
+(Erwartungshorizont und Auswertungshinweise für die Dozentin / den Dozenten)
+===PRUEFHINWEISE===
+(Widersprüche zwischen Quellen, Lücken, möglicherweise veraltete Aussagen, offene Fragen)`}
+function buildPrompt(){
+ const mode=v('aiMode'),wish=v('aiWish').trim(),ue=ueVal('aiUe'),aud=v('aiAudience').trim()||'Teilnehmende ohne besondere Vorkenntnisse',org=meta.settings.org;
+ const chosen=aiCands.filter(c=>aiChecked.has(c.id)).map(c=>docs.find(d=>d.id===c.id)).filter(Boolean);
+ const lesson=mode==='revise'?lessons.find(l=>l.id===v('aiLesson')):null;
+ if(mode==='revise'&&!lesson)return toast('Bitte die zu überarbeitende Einheit wählen.','err');
+ if(mode!=='revise'&&!chosen.length)return toast('Bitte mindestens eine Quelle markieren.','err');
+ if(mode!=='check'&&!wish&&!lesson)return toast('Bitte Thema bzw. Wunsch eingeben.','err');
+ const full=document.querySelector('[name=aiScope]:checked').value==='full',words=queryWords(wish);
+ const src=chosen.map((d,i)=>{let t=full?d.text:(relevantPassages(d.text,words,8000)||d.text.slice(0,8000));const cut=!full&&t.length<d.text.length;return `### QUELLE ${i+1}: ${d.name}\nThema: ${d.topic}${cut?' (Auszug)':''}\n\n${t}`}).join('\n\n---\n\n');
+ const who=`Du unterstützt Lehrende${org?' der Einrichtung „'+org+'“':''} bei der Aufbereitung ihrer Unterrichts- und Schulungsunterlagen.`;
+ const rules=`Arbeitsregeln:
+1. Grundlage sind ausschließlich die unten stehenden Quellen. Erfinde keine Fakten, Zahlen, Vorschriften, Prüfungsordnungen oder Zitate.
+2. Führe doppelte Inhalte zusammen. Abweichende oder widersprüchliche Aussagen vereinheitlichst du nicht stillschweigend, sondern benennst sie im Abschnitt PRUEFHINWEISE.
+3. Eigene fachliche Ergänzungen, die nicht aus den Quellen stammen, kennzeichnest du im Text mit [ERGÄNZUNG: …]; Unsicheres mit [PRÜFEN: …].
+4. Eine UE dauert ${ueMin()} Minuten. Die Minuten der Unterrichtsphasen im Abschnitt ABLAUF ergeben zusammen genau ${ue*ueMin()}.${ue>2?' Plane Pausen als eigene Zeilen mit der Phase „Pause“ bzw. „Mittagspause“ ein; sie zählen nicht zur Unterrichtszeit. Gliedere den Lehrinhalt in thematische Blöcke („# Block 1: …“), die zum Ablauf passen, und lege Lernkontrolle, Hausaufgabe und Planspiel für den gesamten Tag an.':''}
+5. Schreibe auf Deutsch, sachlich und für die Zielgruppe verständlich.${ue>3?' Wird die Antwort für eine einzelne Nachricht zu lang, beende sie am Ende eines Absatzes mit einer eigenen Zeile ===FORTSETZUNG FOLGT===. Auf die Nachricht „weiter“ setzt du genau an dieser Stelle fort, ohne bereits ausgegebene Abschnittsmarken zu wiederholen.':''}
+6. Antworte ausschließlich im folgenden Format mit genau diesen Abschnittsmarken, jeweils allein in einer Zeile, ohne Einleitung, ohne Schlussbemerkung und ohne Codeblöcke:`;
+ let p;
+ if(mode==='check')p=`${who}\n\nAufgabe: Vergleiche die folgenden ${chosen.length} Quellen${wish?' mit Blick auf: '+wish:''}.\n1. Welche Inhalte kommen mehrfach vor (mit Dateinamen und Folie/Seite)?\n2. Wo widersprechen sich die Quellen oder weichen in Zahlen, Begriffen oder Empfehlungen voneinander ab?\n3. Welche Aussagen wirken veraltet oder bedürfen einer fachlichen Prüfung?\n4. Welche Quelle eignet sich als Grundfassung, welche Teile anderer Quellen sollten ergänzt werden, welche sind entbehrlich?\nErfinde nichts; wenn etwas aus den Quellen nicht eindeutig hervorgeht, sage das ausdrücklich. Gib das Ergebnis als übersichtliche Liste je Punkt aus.\n\nQUELLEN:\n\n${src}`;
+ else if(mode==='revise')p=`${who}\n\nAufgabe: Überarbeite bzw. ergänze die unten stehende bestehende Unterrichtseinheit. Umfang: ${ue} UE (${ue*ueMin()} Minuten). Zielgruppe: ${lesson.audience||aud}.\nWunsch: ${wish||'fachlich prüfen, sprachlich glätten, fehlende Abschnitte ergänzen'}\nGib die vollständige überarbeitete Einheit zurück, auch unveränderte Abschnitte.\n\n${rules}\n\n${formatSpec(ue)}\n\nBESTEHENDE EINHEIT:\n\n${lessonToMarked({...lesson,ue})}${chosen.length?`\n\nQUELLEN:\n\n${src}`:''}`;
+ else p=`${who}\n\nAufgabe: Erstelle aus den unten stehenden ${chosen.length} Quellen eine Unterrichtseinheit von ${ue} UE (${ue*ueMin()} Minuten).\nThema / Wunsch: ${wish}\nZielgruppe: ${aud}\nDaraus werden eine Dozentenversion, ein Teilnehmer-Handout und eine Präsentation erzeugt.\n\n${rules}\n\n${formatSpec(ue)}\n\nQUELLEN:\n\n${src}`;
+ $('aiPrompt').value=p;
+ const n=p.length;$('aiSize').textContent=`${n.toLocaleString('de-DE')} Zeichen (grob ${Math.round(n/3500)} Tsd. Tokens)`+(n>350000?' – sehr umfangreich, ggf. Auszüge verwenden oder aufteilen':'');
+ toast('Auftrag erstellt.');
+}
+async function copyPrompt(){const t=v('aiPrompt');if(!t)return toast('Bitte zuerst „Auftrag erstellen“.','err');try{await navigator.clipboard.writeText(t);toast('Auftrag in die Zwischenablage kopiert.')}catch(e){$('aiPrompt').select();document.execCommand('copy');toast('Auftrag markiert und kopiert. Falls das Einfügen nicht klappt: Strg+C.')}}
+const MARK_FIELDS={TITEL:'title',THEMA:'topic',UE:'ue',ZIELGRUPPE:'audience',LERNZIELE:'goals',ABLAUF:'phases',DOZENTENHINWEISE:'teacherNotes',INHALT:'content',KERNAUSSAGEN:'keyPoints',FOLIEN:'slides',LERNKONTROLLE:'quiz',HAUSAUFGABE:'homework',PLANSPIEL:'exercise',PLANSPIEL_LOESUNG:'exerciseSolution',PRUEFHINWEISE:'checks'};
+function parseMarked(t){
+ t=String(t).replace(/```[a-z]*\n?/gi,'').replace(/^[ \t*#>]*={2,}\s*FORTSETZUNG[ A-ZÄÖÜ_]*={2,}[ \t*]*\n?/gim,'');
+ const re=/^[ \t*#>]*={2,}\s*([A-Za-zÄÖÜäöü_ ]+?)\s*={2,}[ \t*]*$/gm,hits=[];let m;
+ while((m=re.exec(t)))hits.push({key:m[1].toUpperCase().replace(/Ä/g,'AE').replace(/Ö/g,'OE').replace(/Ü/g,'UE').replace(/\s+/g,'_'),start:m.index,end:re.lastIndex});
+ const out={};hits.forEach((h,i)=>{const f=MARK_FIELDS[h.key];if(f)out[f]=t.slice(h.end,i+1<hits.length?hits[i+1].start:t.length).trim()});
+ return out;
+}
+function parsePhases(t){return String(t).split('\n').map(l=>l.trim()).filter(l=>l&&!/^[\s|:-]+$/.test(l)).map(l=>l.replace(/^\||\|$/g,'').split('|').map(s=>s.trim())).filter(c=>/\d/.test(c[0])&&!/^min/i.test(c[0])).map(c=>({min:parseInt(c[0],10)||0,phase:c[1]||'',content:c[2]||'',method:c[3]||'',media:c[4]||''}))}
+function applyParsed(l,p){
+ for(const [f,val] of Object.entries(p)){
+  if(f==='ue')l.ue=clamp(parseInt(val,10)||l.ue||1,1,MAX_UE);
+  else if(f==='topic'){const t=matchTopic(val);if(t!==UNASSIGNED||l.topic===UNASSIGNED)l.topic=t}
+  else if(f==='phases'){const ph=parsePhases(val);if(ph.length)l.phases=ph}
+  else if(f==='checks'){if(val&&!/^(keine|–|-)\.?$/i.test(val))l.teacherNotes=(l.teacherNotes.replace(/\n*## Prüfhinweise aus KI-Abgleich[\s\S]*$/,'')+'\n\n## Prüfhinweise aus KI-Abgleich\n'+val).trim()}
+  else l[f]=val;
+ }
+ l.aiDraft=true;if(l.status==='freigegeben')l.status='Entwurf';
+ return l;
+}
+function adoptAnswer(){
+ const mode=v('aiMode'),t=v('aiAnswer').trim();
+ if(!t)return toast('Bitte zuerst die Antwort der KI einfügen.','err');
+ if(mode==='check')return;
+ const p=parseMarked(t),found=Object.keys(p).length;
+ if(mode==='revise'){
+  const base=lessons.find(l=>l.id===v('aiLesson'));if(!base)return toast('Bitte die zu überarbeitende Einheit wählen.','err');
+  if(!found)return toast('In der Antwort wurden keine Abschnittsmarken wie ===INHALT=== gefunden.','err');
+  if(!confirmLeaveEditor())return;
+  editing=applyParsed({...JSON.parse(JSON.stringify(base)),ue:ueVal('aiUe')},p);
+  const add=aiCands.filter(c=>aiChecked.has(c.id)).map(c=>c.id);editing.sourceIds=[...new Set([...editing.sourceIds,...add])];
+  editorIsNew=false;showEditor();editorDirty=true;toast(`${found} Abschnitte übernommen – bitte prüfen und speichern.`);return;
+ }
+ const ids=aiCands.filter(c=>aiChecked.has(c.id)).map(c=>c.id);
+ if(!found){newLesson({title:v('aiWish').slice(0,80),ue:ueVal('aiUe'),content:t,sourceIds:ids,aiDraft:true,teacherNotes:'KI-Antwort ohne Abschnittsmarken übernommen; bitte auf die Felder verteilen.'},true);return}
+ if(!confirmLeaveEditor())return;
+ const l=applyParsed(normalizeLesson({id:uid('lesson'),ue:ueVal('aiUe'),audience:v('aiAudience'),sourceIds:ids,title:v('aiWish').slice(0,80)||'KI-Entwurf'}),p);
+ editing=l;editorIsNew=true;showEditor();editorDirty=true;toast(`${found} Abschnitte übernommen – bitte prüfen und speichern.`);
+}
+
+/* ================= Praxis ================= */
+let editingPractice='';
+function renderPractice(){
+ $('pTopic').innerHTML=topicOptions(v('pTopic')&&v('pTopic')!==NEW_TOPIC?v('pTopic'):UNASSIGNED,true,usedTopics(),true);
+ $('gTopic').innerHTML=topicOptions(v('gTopic')&&v('gTopic')!==NEW_TOPIC?v('gTopic'):(usedTopics().find(t=>t!==UNASSIGNED)||OTHER),false,usedTopics(),true);
+ if(!$('pFormat').options.length)$('pFormat').innerHTML=PRACTICE_FORMATS.map(f=>`<option>${f}</option>`).join('');
+ const list=meta.practice.slice().sort((a,b)=>a.topic.localeCompare(b.topic,'de')||a.title.localeCompare(b.title,'de'));
+ $('practiceList').innerHTML=list.length?list.map(p=>{const used=lessons.filter(l=>l.practiceIds.includes(p.id)).length;return `<div class="item"><div class="grow"><div class="titleline"><b>${esc(p.title)}</b> <span class="pill">${esc(p.format)}</span><span class="pill">${esc(p.topic)}</span><span class="pill">${esc(p.level)}</span><span class="pill ${p.status==='freigegeben'?'green':'amber'}">${esc(p.status)}</span>${used?`<span class="pill green">in ${used} Einheit${used>1?'en':''}</span>`:''}</div><div class="small muted">${esc(p.duration||'Dauer offen')}${p.tools?' – '+esc(p.tools):''}</div><div class="small">${esc(p.goal)}</div><div class="row"><button class="btn" onclick="editPractice('${p.id}')">Bearbeiten</button><button class="btn ghost" onclick="togglePracticeStatus('${p.id}')">${p.status==='freigegeben'?'Zurück auf Entwurf':'Freigeben'}</button><button class="btn ghost danger" onclick="deletePractice('${p.id}')">Löschen</button></div></div></div>`}).join(''):'<p class="muted">Noch keine Praxisbausteine.</p>';
+}
+function clearPractice(){editingPractice='';['pTitle','pDuration','pTools','pGoal','pSteps','pSolution'].forEach(id=>$(id).value='');$('pHeading').textContent='Neuer Praxisbaustein'}
+function editPractice(id){const p=meta.practice.find(x=>x.id===id);if(!p)return;editingPractice=id;$('pTopic').innerHTML=topicOptions(p.topic,true,[p.topic],true);$('pFormat').value=PRACTICE_FORMATS.includes(p.format)?p.format:'Planspiel';$('pLevel').value=p.level;[['pTitle','title'],['pDuration','duration'],['pTools','tools'],['pGoal','goal'],['pSteps','steps'],['pSolution','solution']].forEach(([i,f])=>$(i).value=p[f]||'');$('pHeading').textContent='Praxisbaustein bearbeiten';$('pTitle').scrollIntoView({behavior:'smooth'})}
+async function savePractice(){
+ const title=v('pTitle').trim();if(!title){toast('Bitte einen Titel eingeben.','err');return $('pTitle').focus()}
+ const data={title,topic:v('pTopic'),format:v('pFormat'),duration:v('pDuration'),level:v('pLevel'),tools:v('pTools'),goal:v('pGoal'),steps:v('pSteps'),solution:v('pSolution')};
+ if(editingPractice){const p=meta.practice.find(x=>x.id===editingPractice);Object.assign(p,data)}else meta.practice.push(normalizePractice({id:uid('prac'),...data,status:'Entwurf'}));
+ await saveMeta();toast('Praxisbaustein gespeichert.');clearPractice();renderPractice();renderChrome();
+}
+async function togglePracticeStatus(id){const p=meta.practice.find(x=>x.id===id);if(!p)return;p.status=p.status==='freigegeben'?'Entwurf':'freigegeben';await saveMeta();renderPractice()}
+async function deletePractice(id){const p=meta.practice.find(x=>x.id===id);if(!p)return;const used=lessons.filter(l=>l.practiceIds.includes(id));if(!confirm(`Praxisbaustein „${p.title}“ löschen?${used.length?`\nEr ist mit ${used.length} Einheit(en) verknüpft; die Verknüpfung entfällt.`:''}`))return;meta.practice=meta.practice.filter(x=>x.id!==id);for(const l of used){l.practiceIds=l.practiceIds.filter(x=>x!==id);try{await dbPut('lessons',l)}catch(e){}}await saveMeta();if(editingPractice===id)clearPractice();renderPractice();renderChrome()}
+function generateExercise(){
+ const topic=v('gTopic'),n=clamp(+v('gPeople')||6,1,30),mins=clamp(+v('gMinutes')||45,20,360),style=v('gStyle');
+ const r=f=>Math.max(5,Math.round(mins*f/5)*5);let title,format,goal,steps,sol,tools='';
+ const rhs=meta.settings.topicPreset==='rhs';
+ if(style==='Planspiel am Tisch'){
+  title=`Planspiel: ${topic}`;format='Planspiel';goal=`Die Teilnehmenden wenden die Inhalte aus „${topic}“ in einer simulierten Situation an und begründen ihre Entscheidungen.`;tools='Fallbeschreibung, Rollenkarten, Ereigniskarten';
+  steps=[`Einführung (ca. ${r(.1)} Min.): Ausgangssituation, Auftrag und Material an alle ${n} Teilnehmenden ausgeben.`,`Rollen verteilen, passend zum Thema, z. B. Leitung, Fachkräfte, Betroffene, Beobachtung und Dokumentation.`,`Phase 1 (ca. ${r(.3)} Min.): Situation einschätzen und eine erste Entscheidung in Kleingruppen treffen, Ergebnis kurz vorstellen.`,`Die Spielleitung spielt eine Veränderung der Situation ein (Ereigniskarte).`,`Phase 2 (ca. ${r(.25)} Min.): Vorgehen anpassen und begründen.`,`Auswertung (ca. ${r(.25)} Min.): Entscheidungen und Begründungen mit den Lerninhalten abgleichen.`];
+  sol='Erwartungshorizont vor der Durchführung schriftlich festlegen, Ereigniskarten vorbereiten, Situation an die Zielgruppe anpassen.';
+ }else if(style==='Fallbeispiel'){
+  title=`Fallbeispiel: ${topic}`;format='Fallbeispiel';goal=`Die Teilnehmenden analysieren einen typischen Fall aus „${topic}“ und leiten begründete Lösungen ab.`;tools='Fallbeschreibung, Leitfragen';
+  steps=[`Fall vorstellen (ca. ${r(.15)} Min.).`,`Einzelarbeit (ca. ${r(.2)} Min.): Fall lesen, Leitfragen beantworten.`,`Gruppenarbeit (ca. ${r(.35)} Min.): Lösungswege vergleichen und einen gemeinsamen Vorschlag erarbeiten.`,`Vorstellung und Diskussion im Plenum (ca. ${r(.3)} Min.).`];
+  sol='Musterlösung und typische Fehlannahmen vorab notieren.';
+ }else if(style==='Stationslernen'){
+  title=`Stationslernen: ${topic}`;format='Stationstraining';goal=`Die Teilnehmenden erarbeiten Teilaspekte von „${topic}“ selbstständig an Stationen.`;tools='Stationskarten, Material je Station, Laufzettel';
+  steps=[`Einführung und Laufzettel ausgeben (ca. ${r(.1)} Min.).`,`Drei bis vier Stationen mit je einer Teilaufgabe; Gruppen zu je ${Math.max(2,Math.ceil(n/4))} Personen wechseln nach Zeit.`,`Jede Station endet mit einer kurzen Kontrollfrage auf dem Laufzettel.`,`Abschluss (ca. ${r(.15)} Min.): Ergebnisse sichern, offene Fragen klären.`];
+  sol='Lösungen je Station auf einem Lösungsblatt bereithalten.';
+ }else if(rhs&&topic.startsWith('Orientierung')){
+  title='Orientierungschallenge';format='Orientierungslauf';goal='Karte, Kompass und digitale Orientierung bewusst vergleichen und einen Auftrag auch bei Ausfall digitaler Hilfen fortführen.';tools='Karte, Kompass, GPS-Gerät oder App';
+  steps=['Kurze Lageeinweisung und Kartenausschnitt ausgeben.','Teams bestimmen ohne GPS einen ersten Zielpunkt über Karte und Kompass.','Station 1: Koordinatenaufgabe; eine Kontrollgruppe darf GPS nutzen.','Station 2: „GPS-Ausfall“ wird eingespielt, Weiterweg nur analog.','Letzte Station: kleine Lageänderung und Rückmeldung nach vereinbartem Verfahren.','Gemeinsame Auswertung: Wege, Fehlerquellen, Zeitbedarf, Entscheidungsqualität.'];sol='Lösungskoordinaten und Wegalternativen vorab festhalten.';
+ }else if(rhs&&topic==='Sprechfunk'){
+  title='Funk-Lageparcours';format='Stationstraining';goal='Informationen vollständig und regelgerecht über Funk weitergeben.';tools='Funkgeräte bzw. Übungsgeräte, Lagekarten';
+  steps=['Teilnehmende erhalten unterschiedliche Teilinformationen einer Lage.','Informationen dürfen nur über festgelegte Funkwege weitergegeben werden.','Stationen erzeugen Rückfragen, Buchstabier- und Koordinatenaufgaben sowie eine Lageänderung.','Abschluss: Abgleich, welche Informationen korrekt bei der Führung angekommen sind.'];sol='Funkregeln und örtliche Vorgaben vorab prüfen.';
+ }else{
+  title=`Übung: ${topic}`;format='Stationstraining';goal=`Inhalte aus „${topic}“ praktisch anwenden.`;
+  steps=['Kurze Aktivierung des Vorwissens.','Drei aufeinander aufbauende Aufgaben bzw. Stationen.','Einspielen einer veränderten Ausgangssituation.','Gemeinsame Nachbesprechung.'];sol='Fachlich und an die Zielgruppe angepasst konkretisieren.';
+ }
+ editingPractice='';$('pHeading').textContent='Neuer Praxisbaustein (Entwurf aus Vorlage)';
+ $('pTitle').value=title;$('pTopic').innerHTML=topicOptions(topic,true,[topic],true);$('pFormat').value=format;$('pDuration').value=mins+' Min.';$('pLevel').value=style==='praxisnah'?'Praxisnah':'Aufbau';$('pTools').value=tools;$('pGoal').value=goal;
+ $('pSteps').value=`${n} Teilnehmende, ${mins} Minuten, Charakter: ${style}\n`+steps.map((s,i)=>`${i+1}. ${s}`).join('\n');$('pSolution').value='Entwurf aus der Vorlage – vor Freigabe fachlich prüfen. '+sol;
+ $('pTitle').scrollIntoView({behavior:'smooth'});toast('Vorlage ins Formular übernommen – bitte anpassen und speichern.');
+}
+
+/* ================= Daten ================= */
+async function renderData(){
+ $('sOrg').value=meta.settings.org||'';$('sUeMin').value=ueMin();$('sPreset').innerHTML=Object.entries(TOPIC_PRESETS).map(([k,p])=>`<option value="${k}"${k===(meta.settings.topicPreset||'none')?' selected':''}>${esc(p.label)}</option>`).join('');$('sAuthor').value=meta.settings.author||'';$('sTopics').value=(meta.settings.topics||[]).join('\n');
+ $('sTopicsDefault').textContent=preset().topics.length?'Aus der Themenvorlage: '+preset().topics.join(', ')+'.':'Ohne Themenvorlage stehen nur Ihre eigenen Themen und „Sonstiges“ zur Auswahl.';
+ $('lastBackup').textContent=meta.lastBackup?'Letzte Sicherung: '+new Date(meta.lastBackup).toLocaleString('de-DE'):'Noch keine Sicherung erstellt.';
+ let info=`${docs.length} Quellen, ${lessons.length} Einheiten, ${meta.practice.length} Praxisbausteine.`;
+ try{if(navigator.storage&&navigator.storage.estimate){const e=await navigator.storage.estimate();info+=` Belegt: ca. ${(e.usage/1048576).toFixed(1)} MB.`}if(navigator.storage&&navigator.storage.persisted)info+=(await navigator.storage.persisted())?' Dauerhafter Speicher ist gewährt.':' Dauerhafter Speicher ist noch nicht gewährt.'}catch(e){}
+ $('storageInfo').textContent=info;
+}
+async function saveSettings(){const um=clamp(parseInt(v('sUeMin'),10)||45,20,180);if(um!==ueMin()&&lessons.length&&!confirm(`Die Länge einer UE auf ${um} Minuten ändern? Bestehende Ablaufpläne bleiben unverändert und müssen ggf. angepasst werden.`))return;meta.settings.ueMinutes=um;meta.settings.topicPreset=v('sPreset')||'none';meta.settings.org=v('sOrg').trim();meta.settings.author=v('sAuthor').trim();meta.settings.topics=[...new Set(lines(v('sTopics')).filter(t=>t!==UNASSIGNED&&t!==OTHER))];await saveMeta();toast('Einstellungen gespeichert.');renderData()}
+async function requestPersist(){try{if(!(navigator.storage&&navigator.storage.persist))return toast('Dieser Browser unterstützt die Anfrage nicht.','err');const ok=await navigator.storage.persist();toast(ok?'Dauerhafter Speicher wurde gewährt.':'Der Browser hat die Anfrage abgelehnt. Regelmäßige Sicherungen sind dann besonders wichtig.',ok?'':'err');renderData()}catch(e){toast(e.message,'err')}}
+async function exportBackup(){
+ if(!db)return toast('Der Browserspeicher ist nicht verfügbar.','err');
+ const prev=meta.lastBackup;meta.lastBackup=nowISO();
+ const data={format:'unterlagenwerkstatt-backup',version:2,appVersion:APP_VERSION,created:nowISO(),documents:docs,lessons,meta};
+ try{download(`unterlagenwerkstatt-sicherung-${nowISO().slice(0,10)}.json`,JSON.stringify(data),'application/json')}catch(e){meta.lastBackup=prev;return toast('Sicherung fehlgeschlagen: '+e.message,'err')}
+ await saveMeta();toast('Sicherung wurde heruntergeladen.');renderPage(current);
+}
+async function restoreBackup(){
+ const f=$('restoreFile').files[0];if(!f)return toast('Bitte zuerst eine Sicherungsdatei auswählen.','err');
+ let data;try{data=JSON.parse(await f.text())}catch(e){return toast('Die Datei ist keine lesbare Sicherung (kein gültiges JSON).','err')}
+ let nd,nl,nm;
+ if(data.format==='unterlagenwerkstatt-backup'||data.format==='rhs-unterlagenwerkstatt-backup'){nd=data.documents;nl=data.lessons;nm=normalizeMeta(data.meta)}
+ else if(data.format==='rhs-ausbildungsbibliothek-full-backup'){nd=data.documents;nl=data.lessons;nm=normalizeMeta({...meta,practice:(data.state&&data.state.practice)||[],migratedV10:true})}
+ else if(data.format==='rhs-ausbildungsbibliothek-backup'){
+  const pr=(data.state&&Array.isArray(data.state.practice))?data.state.practice:[];const have=new Set(meta.practice.map(p=>p.id)),add=pr.filter(p=>!have.has(p.id));
+  if(!add.length)return toast('Diese ältere Sicherung enthält keine neuen Praxisbausteine.');
+  if(!confirm(`Ältere Sicherung (nur Katalog). ${add.length} Praxisbaustein(e) ergänzen? Vorhandene Daten bleiben erhalten.`))return;
+  add.forEach(p=>meta.practice.push(normalizePractice(p)));await saveMeta();$('restoreFile').value='';toast(`${add.length} Praxisbausteine ergänzt.`);return renderPage(current);
+ }else return toast('Unbekanntes Dateiformat – das ist keine Sicherung der Unterlagenwerkstatt.','err');
+ if(!Array.isArray(nd)||!Array.isArray(nl))return toast('Die Sicherung ist unvollständig.','err');
+ nd=nd.filter(d=>d&&d.id&&typeof d.text==='string').map(normalizeDoc);nl=nl.filter(l=>l&&l.id).map(normalizeLesson);
+ if(!confirm(`Sicherung vom ${fmtDate(data.created)||'unbekannten Datum'} einspielen?\n\nEnthalten: ${nd.length} Quellen, ${nl.length} Einheiten, ${nm.practice.length} Praxisbausteine.\n\nDer aktuelle Bestand (${docs.length} Quellen, ${lessons.length} Einheiten) wird vollständig ersetzt.`))return;
+ try{await tx(['documents','lessons','meta'],t=>{const D=t.objectStore('documents'),L=t.objectStore('lessons'),M=t.objectStore('meta');D.clear();L.clear();M.clear();nd.forEach(x=>D.put(x));nl.forEach(x=>L.put(x));M.put(nm)})}
+ catch(e){return toast('Einspielen fehlgeschlagen, der bisherige Bestand ist unverändert: '+e.message,'err')}
+ docs=nd;lessons=nl;meta=nm;fpCache.clear();invalidate();selDocs.clear();closeEditor(true);$('restoreFile').value='';
+ toast('Sicherung eingespielt.');renderPage(current);
+}
+async function wipeAll(){
+ if(!confirm('Wirklich alle Quellen, Einheiten, Praxisbausteine und Einstellungen löschen?'))return;
+ if(prompt('Zur Bestätigung bitte LÖSCHEN eingeben:')!=='LÖSCHEN')return toast('Abgebrochen.');
+ try{await tx(['documents','lessons','meta'],t=>{['documents','lessons','meta'].forEach(s=>t.objectStore(s).clear())})}catch(e){return storeErr(e)}
+ docs=[];lessons=[];meta=defaultMeta();meta.migratedV10=true;await saveMeta();fpCache.clear();invalidate();selDocs.clear();closeEditor(true);toast('Alle Daten wurden gelöscht.');go('home');
+}
+
+/* ================= Anleitung ================= */
+function helpJump(id){const el=$(id);if(el){el.scrollIntoView({behavior:'smooth'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1400)}return false}
+function helpAt(id){go('help');setTimeout(()=>helpJump(id),30)}
+function printHelp(){
+ const sec=$('p-help').cloneNode(true);sec.querySelectorAll('button').forEach(b=>b.remove());sec.querySelectorAll('.toc a').forEach(a=>a.removeAttribute('onclick'));
+ const css=`@page{size:A4;margin:16mm}body{font:10.5pt/1.45 Calibri,"Segoe UI",Arial,sans-serif;color:#1d2b33;max-width:180mm;margin:20px auto;padding:0 10px}h2{font-size:20pt;color:#1f3440;margin:0 0 4px}h3{font-size:13pt;color:#1f3440;border-bottom:2px solid #b3261e;padding-bottom:2px;margin:18px 0 8px;break-after:avoid}h4{font-size:11pt;margin:12px 0 4px;break-after:avoid}table{border-collapse:collapse;width:100%;margin:6px 0 10px;font-size:9.5pt}th,td{border:1px solid #b8c2c7;padding:3px 6px;text-align:left;vertical-align:top}th{background:#dde5e8}tr{break-inside:avoid}.note{background:#fcf2da;border:1px solid #ecd49a;padding:6px 10px}.muted{color:#4c5f69}code{font-family:Consolas,monospace;font-size:9pt;background:#eef1f2;padding:0 3px}a{color:inherit;text-decoration:none}.card{break-inside:auto}.printbar{background:#1f3440;color:#fff;padding:8px 12px;border-radius:6px;margin-bottom:14px}@media print{.printbar{display:none}body{margin:0;max-width:none;padding:0}}`;
+ const html=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Anleitung Unterlagenwerkstatt ${APP_VERSION}</title><style>${css}</style></head><body><div class="printbar">Zum Speichern als PDF im Druckdialog „Als PDF speichern“ bzw. „Microsoft Print to PDF“ wählen.</div>${sec.innerHTML.replace('<h2>Anleitung</h2>',`<h2>Anleitung – Unterlagenwerkstatt ${APP_VERSION}</h2>`)}<script>window.addEventListener("load",()=>setTimeout(()=>window.print(),300))<\/script></body></html>`;
+ printDoc(html,'Anleitung_Unterlagenwerkstatt');
+}
+
+/* ================= Start ================= */
+async function init(){
+ buildNav();
+ try{
+  if(!window.indexedDB)throw new Error('Dieser Browser stellt keinen lokalen Speicher bereit.');
+  db=await openDB();db.onversionchange=()=>{db.close();toast('Die Werkstatt wurde in einem anderen Tab aktualisiert. Bitte diese Seite neu laden.','err')};
+  const [d,l,m]=await Promise.all([dbAll('documents'),dbAll('lessons'),dbAll('meta')]);
+  meta=normalizeMeta(m.find(x=>x.key==='state'));docs=d.map(normalizeDoc);lessons=l.map(normalizeLesson);
+  await migrateV10();
+  if(!meta.settings.topicPreset){meta.settings.topicPreset=usedTopics().some(t=>RHS_TOPICS.includes(t))?'rhs':'none';await saveMeta()}
+ }catch(e){
+  $('fatal').innerHTML=`<div class="note err"><b>Der lokale Speicher ist nicht verfügbar.</b> ${esc(e.message||e)} Im privaten Modus mancher Browser ist er gesperrt. Bitte die Datei in einem normalen Fenster von Edge, Chrome oder Firefox öffnen.</div>`;
+ }
+ go(location.hash.slice(1)||'home');
+ if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
+}
+if(typeof window!=='undefined'&&typeof document!=='undefined'&&!window.__UW_TEST__)init();
+</script>
+</body>
+</html>
