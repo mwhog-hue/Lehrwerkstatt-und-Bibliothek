@@ -172,6 +172,7 @@ details.ueb summary{cursor:pointer}
 @media(max-width:820px){.dropzone{display:none}}
 .lfc{display:grid;grid-template-columns:1fr 230px;gap:10px;align-items:center;border-top:1px solid var(--line);padding:8px 0}.lfc .muted{word-break:break-all}
 @media(max-width:820px){.lfc{grid-template-columns:1fr}}
+select.lfpk{padding:3px 4px;font-size:.8rem;min-width:112px}
 
 </style>
 </head>
@@ -455,7 +456,7 @@ details.ueb summary{cursor:pointer}
 <div class="card" id="h-lw-dateien"><h3>F2. Dateien einmal in die App laden</h3><p>Unter <b>Dateien</b> werden die Original-Dateien der Lehrpakete (Präsentation, Kursbuch, Dozentenfassung, Handout, Karten) einmal eingelesen. Danach öffnen sie sich offline – unter „Dateien“, im Lehrstoff (Reiter „Dateien“) und in der Kurztheorie des Glücksrads.</p>
 <ul><li><b>Ganzer Ordner:</b> den Ordner mit allen Lehrpaketen wählen; Unterordner werden mitgelesen. Am Rechner lässt sich ein Ordner auch hineinziehen. Ob ein Handy die Ordnerauswahl anbietet, hängt von Gerät und Browser ab – sonst alle Dateien markieren oder die ZIP-Dateien der Lehrpakete wählen.</li>
 <li><b>ZIP-Dateien</b> werden in der App entpackt (beim ersten Mal ist dafür eine Internetverbindung nötig).</li>
-<li><b>Zuordnung:</b> über den Namensanfang K01 … R31 von Datei oder Ordner. „Vollständigkeit“ zeigt, bei welchem Paket Präsentation, Kursbuch, Dozentenfassung oder Handout fehlen.</li>
+<li><b>Zuordnung:</b> über den Namensanfang K01 … R31 von Datei oder Ordner. Prüfungsordnung, Ausführungsbestimmungen und Richtlinien werden am Namen erkannt und unter „Regelwerke“ abgelegt (auch auf der Seite „Nachweise“ griffbereit); alles andere unter „Weitere Unterlagen“. In der Liste lässt sich die Zuordnung je Datei ändern. „Vollständigkeit“ zeigt, bei welchem Paket Präsentation, Kursbuch, Dozentenfassung oder Handout fehlen.</li>
 <li><b>Doppelungen:</b> Jede Datei wird über eine Prüfsumme mit dem Bestand verglichen. Bei gleicher Datei, doppelter Datei in der Auswahl oder gleichem Namen mit anderem Inhalt erscheint eine Warnung mit Entscheidung (überspringen, ersetzen, beide behalten). Vorgewählt ist die Empfehlung; bei gleichem Namen wird die neuere Fassung empfohlen.</li>
 <li><b>Öffnen:</b> PDF öffnet im Browser, Präsentationen und Word-Dateien werden zum Öffnen in der passenden App gespeichert.</li></ul>
 <div class="note">Die Dateien sind nicht Teil der normalen Sicherung (Größe). „Alle Dateien als ZIP herunterladen“ sichert sie getrennt. Am iPhone die Werkstatt auf den Home-Bildschirm legen, damit der Browser die Daten dauerhaft behält.</div></div>
@@ -7554,10 +7555,14 @@ lwRenderRad=function(){_lwRenderRadOld9();if(radW!=='kt'||radTab!=='uebersicht')
 let lfFiles=[],lfPending=null,lfFilter='',lfQ='';
 const LF_EXT=/\.(pdf|pptx|docx|xlsx|ics|json|txt|md|jpg|jpeg|png)$/i;
 const LF_KINDS=[['Praesentation','Präsentation'],['Kursbuch','Kursbuch'],['Dozentenfassung','Dozentenfassung'],['Handout','Handout'],['Anwesenheitsliste','Anwesenheitsliste'],['Stationskarten','Stationskarten'],['Helferkarten','Helferkarten'],['Impulskarten','Impulskarten'],['Dreijahresplan','Plan'],['Jahresplan','Plan'],['Landkarte','Landkarte']];
+const LF_GRP={REG:'Regelwerke (PO, Ausführungsbestimmungen)','':'Weitere Unterlagen'};
+function lfGrpLabel(p){return p in LF_GRP?LF_GRP[p]:p+' · '+((pkgById(p)||{}).title||'')}
+async function lfSetPkg(id,p){const f=await lfGet(id);if(!f)return;f.pkg=p;try{await tx(['files'],t=>t.objectStore('files').put(f))}catch(e){return storeErr(e)}await lfLoad();lfRenderDateien();toast('Zuordnung geändert.')}
 const LF_NEED=['Praesentation','Kursbuch','Dozentenfassung','Handout'];
 function lfPkgOf(path){const parts=String(path).split('/').reverse();for(const s of parts){const m=s.match(/^(K0[1-7]|R0[89]|R[12]\d|R3[01])(?=[_\- .])/i);if(m)return m[1].toUpperCase()}return ''}
-function lfKind(name){for(const [k,l] of LF_KINDS)if(name.toLowerCase().includes(k.toLowerCase()))return k;return 'sonstige'}
-function lfKindLabel(k){const x=LF_KINDS.find(y=>y[0]===k);return x?x[1]:'Sonstige'}
+const LF_REG=/(^|[_\s\-])PO([_\s\-]|$)|pr.{0,2}fungsordnung|ausf.{0,2}hrungsbestimmung|richtlinie|rahmenvorgabe/i;
+function lfKind(name){if(LF_REG.test(name))return 'Regelwerk';for(const [k,l] of LF_KINDS)if(name.toLowerCase().includes(k.toLowerCase()))return k;return 'sonstige'}
+function lfKindLabel(k){if(k==='Regelwerk')return 'Regelwerk';const x=LF_KINDS.find(y=>y[0]===k);return x?x[1]:'Sonstige'}
 function lfSize(n){return n>=1048576?(n/1048576).toFixed(1).replace('.',',')+' MB':Math.max(1,Math.round(n/1024))+' KB'}
 async function lfHash(blob){const ab=await blob.arrayBuffer();if(window.crypto&&crypto.subtle){const h=await crypto.subtle.digest('SHA-256',ab);return [...new Uint8Array(h)].map(b=>b.toString(16).padStart(2,'0')).join('')}
  let h=2166136261;const u=new Uint8Array(ab);for(let i=0;i<u.length;i++){h^=u[i];h=Math.imul(h,16777619)}return 'fnv-'+(h>>>0).toString(16)+'-'+u.length}
@@ -7583,7 +7588,7 @@ async function lfAnalyse(list){
  const st=$('lfStatus');st.textContent='Dateien werden gelesen und geprüft …';
  const {out,skipped}=await lfCollect(list);const byHash=new Map(lfFiles.map(f=>[f.hash,f])),byName=new Map(lfFiles.map(f=>[f.name.toLowerCase(),f]));
  const seen=new Map();const items=[];let i=0;
- for(const x of out){i++;if(i%10===0)st.textContent=`Prüfe ${i} von ${out.length} …`;x.hash=await lfHash(x.blob);x.pkg=lfPkgOf(x.path);x.kind=lfKind(x.name);
+ for(const x of out){i++;if(i%10===0)st.textContent=`Prüfe ${i} von ${out.length} …`;x.hash=await lfHash(x.blob);x.kind=lfKind(x.name);x.pkg=x.kind==='Regelwerk'?'REG':lfPkgOf(x.path);
   const same=byHash.get(x.hash),twin=seen.get(x.hash),nameHit=byName.get(x.name.toLowerCase());
   if(same){x.conf='gleich';x.other=same;x.choice='skip'}
   else if(twin){x.conf='doppelt';x.other=twin;x.choice='skip'}
@@ -7631,18 +7636,23 @@ async function lfRenderDateien(){
  const B=$('lfBody');if(!B)return;let est='';try{if(navigator.storage&&navigator.storage.estimate){const e=await navigator.storage.estimate();est=`Belegt: ${lfSize(e.usage||0)}${e.quota?` von etwa ${lfSize(e.quota)} verfügbar`:''}.`}}catch(e){}
  const tot=lfFiles.reduce((s,f)=>s+(f.size||0),0);const pk=Object.keys(LW_DIRS);
  const missing=pk.map(p=>[p,LF_NEED.filter(k=>!lfFiles.some(f=>f.pkg===p&&f.kind===k))]).filter(x=>x[1].length);
- const shown=lfFiles.filter(f=>(!lfFilter||(lfFilter==='-'?!f.pkg:f.pkg===lfFilter))&&(!lfQ||f.name.toLowerCase().includes(lfQ.toLowerCase()))).sort((a,b)=>(a.pkg||'zz').localeCompare(b.pkg||'zz')||a.name.localeCompare(b.name));
+ const shown=lfFiles.filter(f=>(!lfFilter||(lfFilter==='-'?!f.pkg:f.pkg===lfFilter))&&(!lfQ||f.name.toLowerCase().includes(lfQ.toLowerCase()))).sort((a,b)=>(a.pkg||'zzz').localeCompare(b.pkg||'zzz')||a.name.localeCompare(b.name));
  B.innerHTML=`${lfConfHTML()}
  <div class="card"><h3>Vollständigkeit</h3><p class="small">${lfFiles.length} Dateien, zusammen ${lfSize(tot)}. ${est}</p>
  ${missing.length?`<details class="small"><summary><b>${missing.length} von ${pk.length} Lehrpaketen unvollständig</b> (Präsentation, Kursbuch, Dozentenfassung, Handout)</summary><table class="tbl small">${missing.map(([p,m])=>`<tr><td><b>${p}</b> ${esc((pkgById(p)||{}).title||'')}</td><td>fehlt: ${m.map(lfKindLabel).join(', ')}</td></tr>`).join('')}</table></details>`:'<p><span class="pill green">Alle Lehrpakete vollständig</span></p>'}</div>
- <div class="card"><div class="grid2"><label>Lehrpaket<select onchange="lfFilter=this.value;lfRenderDateien()"><option value="">alle</option>${pk.map(p=>`<option value="${p}"${p===lfFilter?' selected':''}>${p} · ${esc((pkgById(p)||{}).title||'')}</option>`).join('')}<option value="-"${lfFilter==='-'?' selected':''}>ohne Zuordnung</option></select></label><label>Suche<input value="${esc(lfQ)}" placeholder="Dateiname" oninput="lfQ=this.value;clearTimeout(window._lfq);window._lfq=setTimeout(lfRenderDateien,250)"></label></div>
- <div class="scroll"><table class="tbl small"><tr><th>Paket</th><th>Datei</th><th>Art</th><th>Größe</th><th></th></tr>${shown.map(f=>`<tr><td>${esc(f.pkg||'–')}</td><td>${esc(f.name)}</td><td>${esc(lfKindLabel(f.kind))}</td><td class="num">${lfSize(f.size)}</td><td class="nowrap">${lfBtns(f)}<button class="btn ghost danger" onclick="lfDel('${f.id}')">Löschen</button></td></tr>`).join('')||'<tr class="empty"><td colspan="5">Noch keine Dateien.</td></tr>'}</table></div>
+ <div class="card"><div class="grid2"><label>Zuordnung<select onchange="lfFilter=this.value;lfRenderDateien()"><option value="">alle</option>${pk.map(p=>`<option value="${p}"${p===lfFilter?' selected':''}>${p} · ${esc((pkgById(p)||{}).title||'')}</option>`).join('')}<option value="REG"${lfFilter==='REG'?' selected':''}>Regelwerke (PO, Ausführungsbestimmungen)</option><option value="-"${lfFilter==='-'?' selected':''}>Weitere Unterlagen</option></select></label><label>Suche<input value="${esc(lfQ)}" placeholder="Dateiname" oninput="lfQ=this.value;clearTimeout(window._lfq);window._lfq=setTimeout(lfRenderDateien,250)"></label></div>
+ <div class="scroll"><table class="tbl small"><tr><th>Zuordnung</th><th>Datei</th><th>Art</th><th>Größe</th><th></th></tr>${shown.map(f=>`<tr><td><select class="lfpk" onchange="lfSetPkg('${f.id}',this.value)">${[...pk,'REG',''].map(p=>`<option value="${p}"${(f.pkg||'')===p?' selected':''}>${p==='REG'?'Regelwerk':p===''?'Weitere':p}</option>`).join('')}</select></td><td>${esc(f.name)}</td><td>${esc(lfKindLabel(f.kind))}</td><td class="num nowrap">${lfSize(f.size)}</td><td class="nowrap">${lfBtns(f)}<button class="btn ghost danger" onclick="lfDel('${f.id}')">Löschen</button></td></tr>`).join('')||'<tr class="empty"><td colspan="5">Noch keine Dateien.</td></tr>'}</table></div>
  <div class="row"><button class="btn" onclick="lfExport()">Alle Dateien als ZIP herunterladen</button><button class="btn ghost danger" onclick="lfDelAll()">Alle Dateien löschen</button></div></div>`}
 // --- Einbindung ---
 const _lwInitOld10=lwInit;
 lwInit=async function(){await _lwInitOld10();await lfLoad()};
 const _lwChromeOld10=lwChrome;
 lwChrome=function(){_lwChromeOld10();const b=document.getElementById('b-dateien');if(b)b.textContent=lfFiles.length||''};
+
+// Regelwerke auf der Seite „Nachweise“ griffbereit
+const _lwRenderNachweiseOld10=lwRenderNachweise;
+lwRenderNachweise=function(){_lwRenderNachweiseOld10();const B=$('nachBody');if(!B)return;const R=lfFiles.filter(f=>f.pkg==='REG').sort((a,b)=>a.name.localeCompare(b.name));
+ B.insertAdjacentHTML('beforeend',`<div class="card"><h3>Regelwerke</h3>${R.length?`<table class="tbl small">${R.map(f=>`<tr><td>${esc(f.name)}</td><td class="nowrap">${lfBtns(f)}</td></tr>`).join('')}</table>`:'<p class="muted small">Noch keine Regelwerke in der App. Prüfungsordnung und Ausführungsbestimmungen unter „Dateien“ einlesen – sie werden am Namen erkannt oder lassen sich dort der Zuordnung „Regelwerk“ zuweisen.</p>'}</div>`)};
 
 /* ---------- Personen und Hunde aus BARRY übernehmen ---------- */
 // Quellen: (1) BARRY-Bestand auf diesem Gerät (localStorage „barry-core-v1“, nur wenn BARRY unter derselben Adresse läuft),
