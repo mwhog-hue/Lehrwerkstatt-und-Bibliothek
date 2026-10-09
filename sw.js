@@ -1,9 +1,9 @@
 /* Lehrwerkstatt (vormals Unterlagenwerkstatt) – Offline-Unterstützung.
    Bei jeder neuen Version CACHE hochzählen, damit Nutzer die neue Fassung erhalten. */
-const CACHE = 'lehrwerkstatt-v2.1';
-const SHELL = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png',
-  './icons/icon-maskable-192.png', './icons/icon-maskable-512.png', './icons/apple-touch-icon.png',
-  './icons/favicon.ico', './icons/icon-32.png', './icons/icon-16.png'];
+const CACHE = 'lehrwerkstatt-v2.2';
+const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png',
+  './icon-maskable-192.png', './icon-maskable-512.png', './apple-touch-icon.png',
+  './favicon.ico', './icon-32.png', './icon-16.png'];
 const LIB_HOSTS = ['cdnjs.cloudflare.com', 'cdn.jsdelivr.net'];
 
 self.addEventListener('install', e => {

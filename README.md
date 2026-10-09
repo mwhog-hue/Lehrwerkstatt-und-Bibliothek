@@ -2,7 +2,7 @@
 
 *(vormals „Unterlagenwerkstatt“)*
 
-<img src="icons/icon-192.png" alt="" width="96" align="right">
+<img src="icon-192.png" alt="" width="96" align="right">
 
 Die Lehrwerkstatt hilft Lehrenden, Trainerinnen und Trainern, über Jahre gewachsene Lehr- und Schulungsunterlagen zu ordnen und daraus einheitliche Unterrichtseinheiten zu machen – für jedes Fachgebiet.
 
@@ -45,7 +45,7 @@ Unter „Daten & Einstellungen“ → „Vollständige Sicherung herunterladen�
 | `LW_index.html` | Weiterleitung für alte, gespeicherte Links auf `LW_index.html` – leitet auf `./` (= `index.html`) um |
 | `manifest.webmanifest` | App-Beschreibung für die Installation (Name, Symbole, Startadresse) |
 | `sw.js` | Offline-Unterstützung (Service Worker) |
-| `icons/` | App-Symbole: `icon-192.png`, `icon-512.png` (normal), `icon-maskable-192.png`, `icon-maskable-512.png` (mit Schutzrand für runde/abgerundete Symbolformen), `apple-touch-icon.png` (iPhone/iPad), `favicon.ico`, `icon-16.png`, `icon-32.png` (Browser-Tab), `Lehrwerkstatt_Original.png` (Vorlage, wird von der App nicht geladen) |
+| Symboldateien (im Hauptordner) | App-Symbole: `icon-192.png`, `icon-512.png` (normal), `icon-maskable-192.png`, `icon-maskable-512.png` (mit Schutzrand für runde/abgerundete Symbolformen), `apple-touch-icon.png` (iPhone/iPad), `favicon.ico`, `icon-16.png`, `icon-32.png` (Browser-Tab), `Lehrwerkstatt_Original.png` (Vorlage, wird von der App nicht geladen) |
 | `docs/Kurzanleitung.pdf` | Kurzanleitung zum Weitergeben |
 | `.nojekyll` | GitHub Pages liefert die Dateien unverändert aus |
 
@@ -56,9 +56,15 @@ Unter „Daten & Einstellungen“ → „Vollständige Sicherung herunterladen�
 ### Erstmals veröffentlichen
 
 1. Neues öffentliches Repository anlegen, z. B. `lehrwerkstatt`.
-2. Alle Dateien dieses Ordners hochladen („Add file“ → „Upload files“), dabei die Ordnerstruktur beibehalten.
+2. Alle Dateien dieses Ordners hochladen („Add file“ → „Upload files“). Ab Version 2.2 liegen auch die Symbole im Hauptordner; es muss kein Unterordner angelegt werden (Ausnahme: `docs/`).
 3. „Settings“ → „Pages“ → unter „Build and deployment“ als Quelle „Deploy from a branch“, Branch `main`, Ordner `/ (root)` wählen und speichern.
 4. Nach kurzer Zeit ist die App unter `https://<benutzername>.github.io/<repository>/` erreichbar.
+
+### Umstellung auf Version 2.2
+
+1. `index.html`, `sw.js`, `manifest.webmanifest`, `LW_index.html` und `README.md` hochladen und ersetzen.
+2. Die Symboldateien (`icon-*.png`, `apple-touch-icon.png`, `favicon.ico`) bleiben im Hauptordner. Ein Ordner `icons/` wird nicht mehr gebraucht.
+3. Bereits gespeicherte Daten der Lehrwerkstatt übernimmt die App beim ersten Start einmalig in ihren neuen, eigenen Speicher. Der alte Speicher bleibt unverändert. Die Ausbildungsbibliothek auf derselben Adresse wird nicht berührt.
 
 ### Umstellung eines bestehenden Repositorys (Version 2.0 → 2.1)
 

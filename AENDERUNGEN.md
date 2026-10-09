@@ -1,3 +1,33 @@
+# Lehrwerkstatt – Änderungen in Version 2.2
+
+*Stand: 09.10.2026*
+
+Sehr geehrte Frau Weiße,
+
+Version 2.2 behebt die beiden Fehler beim Öffnen und Installieren und setzt Ihre Anmerkungen zum Übungsbestand um. Alle bisherigen Funktionen und das Sicherungsformat bleiben erhalten.
+
+## 1. Fehler behoben
+
+| Fehler | Ursache | Behebung |
+|---|---|---|
+| Graues „G“ statt Logo bei der Installation, kurze Fehlermeldung beim Aufruf des Symbols | Das Manifest suchte die Symbole im Ordner `icons/`, im Repository liegen sie im Hauptordner (Fehler 404). | Alle Verweise zeigen jetzt auf den Hauptordner. |
+| „Der lokale Speicher ist nicht verfügbar. The requested version (2) is less than the existing version (4).“ (z. B. in Ecosia) | Lehrwerkstatt und Ausbildungsbibliothek benutzten auf derselben Adresse (`mwhog-hue.github.io`) denselben Speichernamen. Die Ausbildungsbibliothek führt ihn in Version 4, die Lehrwerkstatt öffnete Version 2. Dieser Fehler bestand schon vor Version 2.1. | Die Lehrwerkstatt hat einen eigenen Speicher (`lehrwerkstatt-dokumente-v1`). Daten aus dem alten Speicher übernimmt sie beim ersten Start einmalig, aber nur, wenn sie von der Lehrwerkstatt stammen. Der Speicher der Ausbildungsbibliothek bleibt unberührt. |
+
+## 2. Übungsbestand
+
+- **Filter „Ort“:** drinnen möglich (Schlechtwetter), nur drinnen oder nur draußen. Übungen mit Hund oder als Helfer haben einen Hinweis für das Üben drinnen.
+- **Ausbilder-Regel:** Die Stufe „Ausbilder erforderlich“ heißt jetzt „Erst mit Ausbilder – danach privat nach Absprache“. Aus dem Training bekannte oder mit dem Ausbilder abgesprochene Übungen darf das Team privat wiederholen, gegebenenfalls mit einem erfahrenen Helfer. „Nur mit Ausbilder“ gilt nur noch für 11 Übungen: Trümmergelände, freigegebene Gebäude und Mantrailing.
+- **Detailansicht:** Statt der Angaben zur Entstehung des Übungsbestands (Herkunft, zusammengeführte Karten, App-Bezug, Befundvermerke) steht dort nur noch der „Bezug zu den Unterlagen“ (Folien bzw. Kapitel, bei Erster Hilfe die Kursfassung).
+- **Ausbilderfassung R11:** Ein Vermerk zu einer früheren Fassung der Unterlagen wurde entfernt. Neu ist unter „Dokumentation“ das Feld „Privat üben“.
+
+## 3. Veröffentlichen
+
+Laden Sie `index.html`, `sw.js` (Cache `lehrwerkstatt-v2.2`), `manifest.webmanifest`, `LW_index.html` und `README.md` hoch und ersetzen Sie die alten Dateien. Die Symboldateien bleiben im Hauptordner.
+
+Anschließend auf dem Pixel: Entfernen Sie die defekte Installation unter *Einstellungen → Apps → Lehrwerkstatt → Deinstallieren*. Ist sie dort nicht aufgeführt, gehen Sie in Chrome auf *Website-Einstellungen → Alle Websites → mwhog-hue.github.io → Löschen und zurücksetzen*. Das löscht auch die Daten aller Apps unter dieser Adresse, also nur nach einer Sicherung. Danach die Seite öffnen und über *⋮ → Zum Startbildschirm hinzufügen → Installieren* neu installieren.
+
+---
+
 # Lehrwerkstatt – Änderungen in Version 2.1
 
 *(vormals „Unterlagenwerkstatt“, Version 2.0) · Stand: 09.10.2026*
