@@ -1,8 +1,12 @@
-# Lehrwerkstatt – Version 2.2.1 (09.10.2026)
+# Lehrwerkstatt – Version 2.2.2 (09.10.2026)
 
 - ZIP-Archive lassen sich unter *Quellen* einlesen; Hinweis zur Ordnerauswahl am Handy.
 - Ausbilderfassungen: R13-H3 auf 30 Min., R21-G2 nicht privat, R26 Wasserortung/Wasserrettung (Wasserwacht), R31 Heben bei Schmerzen.
-- Cache in `sw.js`: `lehrwerkstatt-v2.2.1` (bereits eingetragen).
+- **Themen automatisch zuordnen:** Neuer Knopf unter *Quellen* und in der Übersicht bei Schritt 2. Ist noch keine Themenvorlage gewählt, stellt er nach Rückfrage „Rettungshundearbeit“ ein. Die Module des Ausbildungspakets erkennt er am Kürzel (K01–K07, R08–R31, EH) und am Ordnernamen. Neues Thema in der Vorlage: „Ausbildung Rettungshund“.
+- **Dubletten:** Neuer Knopf „Fassungen eines Ordners: kein Duplikat“. Präsentation, Dozentenfassung, Kursbuch und Handout desselben Moduls sind gewollte Überschneidungen und lassen sich damit auf einmal bestätigen. Rückgängig über „wieder anzeigen“.
+- **Handy:** Lange Dateinamen werden umbrochen; die Knöpfe liegen nicht mehr über dem Text.
+- Versionsanzeige in der Kopfzeile berichtigt.
+- Cache in `sw.js`: `lehrwerkstatt-v2.2.2` (bereits eingetragen).
 
 ---
 
