@@ -1,8 +1,10 @@
 {
+  "id": "./",
   "name": "Lehrwerkstatt",
   "short_name": "Lehrwerkstatt",
-  "description": "Ausbildung der Rettungshundestaffel planen, durchführen und dokumentieren – mit Lehrstoff, Kalender, Übungsbestand, Glücksrad und Nachweisen; Unterlagen ordnen und als Unterrichtseinheiten ausgeben.",
+  "description": "Lehr- und Schulungsunterlagen ordnen, Dopplungen finden, Übungen aus dem Grundbestand übernehmen und als Unterrichtseinheiten mit Dozentenversion, Handout und Präsentation ausgeben.",
   "lang": "de",
+  "dir": "ltr",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -11,6 +13,7 @@
   "icons": [
     {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
     {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable"},
     {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
   ]
 }
