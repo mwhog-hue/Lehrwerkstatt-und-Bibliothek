@@ -1,6 +1,6 @@
 /* Lehrwerkstatt (vormals Unterlagenwerkstatt) – Offline-Unterstützung.
    Bei jeder neuen Version CACHE hochzählen, damit Nutzer die neue Fassung erhalten. */
-const CACHE = 'lehrwerkstatt-v2.2.2';
+const CACHE = 'lehrwerkstatt-v2.3.1';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png',
   './icon-maskable-192.png', './icon-maskable-512.png', './apple-touch-icon.png',
   './favicon.ico', './icon-32.png', './icon-16.png'];

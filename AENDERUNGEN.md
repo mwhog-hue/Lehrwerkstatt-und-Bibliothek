@@ -1,3 +1,18 @@
+# Lehrwerkstatt – Version 2.3.1 (09.10.2026)
+
+- **Einlesen großer Mengen am Handy stabiler:** Ausgewählte Dateien und ZIP-Archive werden nacheinander verarbeitet; der Inhalt eines ZIP wird erst beim Einlesen der einzelnen Datei entpackt. Bisher wurden alle ZIPs auf einmal in den Speicher geladen, was am Handy zum Abbruch führen konnte.
+- Bricht das Einlesen trotzdem ab, einfach dieselbe Auswahl erneut einlesen: Bereits gespeicherte Dateien werden übersprungen, nur die fehlenden kommen dazu.
+- Cache in `sw.js`: `lehrwerkstatt-v2.3.1` (bereits eingetragen).
+
+---
+
+# Lehrwerkstatt – Version 2.3 (09.10.2026)
+
+- Übungsbestand um **K08 Kommunikation** erweitert: 15 Übungen mit Ausbilderfassung und Rollenkarten in der Detailansicht. Insgesamt 435 Übungen.
+- Cache in `sw.js`: `lehrwerkstatt-v2.3` (bereits eingetragen).
+
+---
+
 # Lehrwerkstatt – Version 2.2.2 (09.10.2026)
 
 - ZIP-Archive lassen sich unter *Quellen* einlesen; Hinweis zur Ordnerauswahl am Handy.
