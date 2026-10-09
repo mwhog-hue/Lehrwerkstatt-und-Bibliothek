@@ -1,3 +1,11 @@
+# Lehrwerkstatt – Version 2.2.1 (09.10.2026)
+
+- ZIP-Archive lassen sich unter *Quellen* einlesen; Hinweis zur Ordnerauswahl am Handy.
+- Ausbilderfassungen: R13-H3 auf 30 Min., R21-G2 nicht privat, R26 Wasserortung/Wasserrettung (Wasserwacht), R31 Heben bei Schmerzen.
+- Cache in `sw.js`: `lehrwerkstatt-v2.2.1` (bereits eingetragen).
+
+---
+
 # Lehrwerkstatt – Änderungen in Version 2.2
 
 *Stand: 09.10.2026*
@@ -12,6 +20,9 @@ Version 2.2 behebt die beiden Fehler beim Öffnen und Installieren und setzt Ihr
 |---|---|---|
 | Graues „G“ statt Logo bei der Installation, kurze Fehlermeldung beim Aufruf des Symbols | Das Manifest suchte die Symbole im Ordner `icons/`, im Repository liegen sie im Hauptordner (Fehler 404). | Alle Verweise zeigen jetzt auf den Hauptordner. |
 | „Der lokale Speicher ist nicht verfügbar. The requested version (2) is less than the existing version (4).“ (z. B. in Ecosia) | Lehrwerkstatt und Ausbildungsbibliothek benutzten auf derselben Adresse (`mwhog-hue.github.io`) denselben Speichernamen. Die Ausbildungsbibliothek führt ihn in Version 4, die Lehrwerkstatt öffnete Version 2. Dieser Fehler bestand schon vor Version 2.1. | Die Lehrwerkstatt hat einen eigenen Speicher (`lehrwerkstatt-dokumente-v1`). Daten aus dem alten Speicher übernimmt sie beim ersten Start einmalig, aber nur, wenn sie von der Lehrwerkstatt stammen. Der Speicher der Ausbildungsbibliothek bleibt unberührt. |
+
+- **ZIP-Archive einlesen:** Unter *Quellen → Einzelne oder mehrere Dateien* lassen sich jetzt auch ZIP-Dateien wählen, z. B. ein ganzes Ausbildungspaket oder einzelne Teile davon. Die Lehrwerkstatt entpackt sie selbst, auch verschachtelte ZIPs und Unterordner, und übernimmt den Pfad im Archiv als Fundstelle. Version 2.0 konnte keine ZIP-Dateien lesen; das ist jetzt neu.
+- **Ordnerauswahl am Handy:** Bei „Ganzer Ordner“ zeigt Android zuerst „Öffnen aus“. Dort das Gerät antippen, den Ordner öffnen und „Diesen Ordner verwenden“ bestätigen. Ein Hinweis dazu steht jetzt direkt in der App.
 
 ## 2. Übungsbestand
 
